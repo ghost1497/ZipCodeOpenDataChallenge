@@ -5,7 +5,7 @@
 - Contents include embedded folders containing our infrastructure 
 - Platforms/Frameworks used
 	- Spring
-	- sketch/invision
+	- Sketch/invision
 
 	## Delaware Explore App:
 	- Prototype based in Wilmington
