@@ -1,8 +1,7 @@
-#READ ME
+# READ ME
 
--
 
-##Contents
+## Contents
 - Contents include embedded folders containing our infrastructure 
 - Platforms/Frameworks used
 	- Spring
