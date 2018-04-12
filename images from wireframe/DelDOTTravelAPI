@@ -1,4 +1,94 @@
 #API
+
+API RESOURCES:
+-
+Trip It API
+-
+[Trip It GitHub]
+(http://tripit.github.io/api/doc/v1/index.html)
+
+API KEY:
+```88d8a0a5d1add6a7c0b03055fd2b0689a1f3b19f```
+
+API SECRET:
+```f1f1e235ad0a29989914987005309af3e6f2c3d2```
+
+GET REQUEST:
+
+A get request is used to retrieve a specific object from the TripIt API given its TripIt object ID. Since get requests do not change data they are all made via an HTTP GET request for a URL that takes the following form:
+```https://api.tripit.com/v1/get/<object type>/id/<TripIt Object ID>
+<object type>
+``` 
+
+
+is one of the following strings:
+
+- air
+- activity
+- car
+- parking
+- cruise
+- directions
+- lodging
+- map
+- note
+- points_program
+- profile
+- rail
+- restaurant
+- transport
+- trip
+- weather
+
+```<TripIt Object ID>
+``` 
+
+- is the object ID of the TripIt object being requested.
+
+The get request for a trip object can take an optional filter parameter called include_objects. The default value for this parameter is false but if it is set to true then the response from the API will include all objects (e.g. air, car, lodging, etc...) that are associated with that trip. This enables an API client to request a trip and all of its associated objects in a single call.
+
+**LIST REQUEST:**
+
+A list request is used to retrieve multiple objects given an object type and set of filter parameters. Since list requests do not change data they are all made via an HTTP GET request for a URL that takes the following form:
+
+```https://api.tripit.com/v1/list/<object type>/<filter parameter>/<filter value>
+<object type>
+``` 
+
+- is one of the following strings:
+- trip
+- object
+- points_program
+- Valid values for
+```<filter parameter> and <filter value>``` 
+depend on the
+```<object type>```
+
+All method Lists can be found here:
+```http://tripit.github.io/api/doc/v1/index.html#method_list```
+
+
+National Park Service API
+-
+
+**API KEY:**
+ ```MOIl5DXkgrc8OSrnOkSRiOBk7p9L223YCYesjvfh``` 
+
+**EXAMPLE URL REQUEST:**
+ ```https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=MOIl5DXkgrc8OSrnOkSRiOBk7p9L223YCYesjvfh``` 
+
+**GET REQUEST:**
+
+- stateCode
+- array [string]
+- A comma delimited list of 2 character state codes.
+fields
+array [string]
+(query)
+
+A comma delimited list of resource properties to include in the JSON response in addition to the default properties. The available properties for each resource are listed in the documentation for each resource. Invalid property values will be ignored
+--
+
 -
 ###DelDOT
  (http://bidcondocs.delaware.gov/SHS/SHS_12004CAD_Add4b.pdf)
