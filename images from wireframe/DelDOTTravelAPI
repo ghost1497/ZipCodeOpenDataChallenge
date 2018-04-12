@@ -1,0 +1,223 @@
+#API
+-
+###DelDOT
+ (http://bidcondocs.delaware.gov/SHS/SHS_12004CAD_Add4b.pdf)
+
+###GENERAL  INFORMATION  
+This document covers the technical portions related to a new DelDOT XML service.  The 
+service is being created to allow external resources to access DelDOT specific data sets via a 
+consistent XML API. 
+This will allow the external agencies that DelDOT approves to have access to pre-determine 
+sets of datasets in a near real-time fashion. 
+
+1.1    **Purpose**    
+This document was created to describe the XML documents that the public feeds provide. This document is not intended to explain how the end user/agency is going to actually process the data, only what the url’s are, their associated XML documents and frequencies.
+ 
+1.2    **Scope**   
+This document will outline the types exposed data feeds, each feeds XML schema and the tag elements meaning. 
+
+###OVERVIEW
+2.0  **Overview**  
+As the amount of dynamic data continues to expand within DelDOT so is the need for this data 
+to be shared with other agencies (city, county, state and federal). As an initial phase of 
+providing this data in a programmatic consumabl
+e format, DelDOT is creating and exposing via 
+their public website a set of data feeds. 
+These feeds are intended for Business to Business (B2B) and Business to Government (B2G).  
+They are not intended specifically for consum
+er consumption since the general public can 
+already use DelDOT public website many ways of viewing this same data via tabular listings or 
+interactive maps. 
+This document will not delve into how the integr
+ator of these data feeds will go about consuming 
+them and integrating them into their system.  It 
+will only cover the type of feeds, the schema’s of 
+those feeds and the tags within each XML schema (data dictionary of sorts). 
+
+2.1    **Technical Requirements**    
+To consume the DelDOT data feeds, you will need to be able to do the following:
+
+- Make standard HTTP (port 80) requests to DelDOT public website (www.deldot.gov). 
+- Receive standard UTF-8 encoded XML documents. 
+- Parse UTF-8 encoded XML documents. 
+
+###Technical Information
+3.0  **Tech Info**  
+The following discusses the data feeds, their content, their XML schema and each data type xml 
+tag definition. 
+
+3.1    **Data Feeds**    
+The feeds are accessed via [DelDOT public website] 
+(http://www.deldot.gov)
+
+*The feeds that are currently available are listed below:* 
+
+- Data Feed 
+- URL 
+- [Traffic Cameras] 
+(http://www.deldot.gov/traffic/data.ejs?type=cam)
+- [Real-Time Travel Advisories] 
+(http://www.deldot.gov/traffic/data.ejs?type=rtta)
+- [Scheduled Travel Restrictions] 
+(http://www.deldot.gov/traffic/data.ejs?type=str) 
+- [Traffic Status]
+(http://www.deldot.gov/traffic/data.ejs?type=traffic)
+- [Variable Message Signs]
+(http://www.deldot.gov/traffic/data.ejs?type=vms) 
+- [Variable Speed Limit] 
+(http://www.deldot.gov/traffic/data.ejs?type=vsl)
+
+ 
+3.2    **Traffic Cameras**   
+This feed provides all publicly active traffic cameras that DelDOT maintains. Below is an example of the traffic camera XML. Only a portion of the actual XML document has been listed:
+
+```<?xml version="1.0" encoding="UTF-8"?> 
+<data> 
+    <trafficCamera> 
+        <id>96</id> 
+        <location>DE 1 &amp; DE 54</location> 
+        <area>Fenwick Island</area> 
+        <url>http://webvideoserv.deldot.gov/video.jpg?source=CAM001&amp;framerate=0</url> 
+        <latitude>38.45211733</latitude> 
+        <longitude>-75.05216544</longitude> 
+    </trafficCamera> 
+    <trafficCamera> 
+        <id>58</id> 
+        <location>DE 1 &amp; DE 26 (Bethany Beach)</location> 
+        <area>Bethany Beach</area> 
+        <url>http://webvideoserv.deldot.gov/video.jpg?source=CAM002&amp;framerate=0</url> 
+        <latitude>38.53814811</latitude> 
+        <longitude>-75.05916194</longitude> 
+    </trafficCamera> 
+: 
+: 
+: 
+    <trafficCamera> 
+        <id>110015</id> 
+        <location>U.S. 202 &amp; DE 92 (Naamans Road)</location> 
+        <area>Talleyville</area> 
+        <url>http://webvideoserv.deldot.gov/video.jpg?source=CAM048&amp;framerate=0</url> 
+        <latitude>39.82873492</latitude> 
+        <longitude>-75.54421168</longitude> 
+    </trafficCamera> 
+</data> 
+
+```
+
+3.2.1   **Traffic Cameras Polling Frequency**  
+Polling frequency should not be more than every 15 minutes. 
+
+3.2.2   **Traffic Cameras Tag Element Definitions**
+
+Tag: 						Definition:
+ 
+**id:** Unique number that represents the traffic camera in DelDOT system. 
+
+**location:** Description of where the traffic camera is located. 
+
+**area:** General area that the traffic camera is located.
+ 
+**url:** Web url of an image from the traffic camera.
+ 
+**latitude:** Latitude of traffic camera location. 
+
+**longitude:** Longitude of traffic camera location.
+
+3.3    **Real-Time Travel Advisories (RTTA)**  
+ This feed provides all real-time travel advisories that the DelDOT Traffic Management Center (TMC) currently knows about and are impacting traffic in some way. Below is an example of the 
+RTTA XML. Only a portion of the actual XML document has been listed:
+
+```
+<?xml version="1.0" encoding="UTF-8"?> 
+<data> 
+    <rtta> 
+        <id>8614</id> 
+        <type>Construction</type> 
+        <county>New Castle County</county> 
+        <details>9TH ST. BETWEEN GRANT ST. AND BANCROFT PARKWAY. DETOUR: TRAVELING EAST ON 9TH 
+ST. DETOURED NORTH ON BANCROFT PARKWAY TO PENNSYLVANIA AVE. TRAVELING WEST ON 9TH ST. DETOURED AT 
+THE INTERSECTION OF 9TH ST &amp; ST. TO LINCOLN ST. TO EAST ON PENNSYLVANIA AVE &amp; FOLLOW THE 
+DETOUR TO BANCROFT PARKWAY. EXPECT DELAYS. 
+        </details> 
+        <latitude>38.52775596</latitude> 
+        <longitude>-75.35728455</longitude> 
+        <timestamp>2011-02-02 15:37:39.0</timestamp> 
+    </rtta> 
+: 
+: 
+: 
+    <rtta> 
+        <id>8543</id> 
+        <type>Construction</type> 
+        <county>New Castle County</county> 
+        <details>MARYLAND AVE BETWEEN CLAYTON RD AND BROOKSIDE DR, NEAR RT 100. DELAYS ARE 
+EXPECTED DURING AM AND PM RUSH HOURS. 
+        </details> 
+        <latitude>38.67237686</latitude> 
+        <longitude>-75.40758133</longitude> 
+        <timestamp>2010-08-02 13:11:00.0</timestamp> 
+    </rtta> 
+</data> 
+```
+
+3.3.1   **Real-Time   Travel   Advisories Polling Frequency**   
+ Polling frequency should not be more than every 5 minutes.
+ 
+3.3.2   **Real-Time   Travel   Advisories Tag Element Definitions**   
+Tag:        		Definition: 
+
+**id:** Unique number the RTTA is represented in DelDOT system. 
+
+**Type:** Advisory type
+
+**county:** County that the RTTA is located within. 
+
+**details:** Detailed description of the advisory.
+ 
+**latitude:** Latitude of RTTA location.
+ 
+**longitude:** Longitude of RTTA location. 
+
+**timestamp:** Timestamp of when the RTTA was last updated. 
+
+3.4  **Scheduled Travel Restrictions (STR)**   
+This feed provides all scheduled travel restrictions that DelDOT Public Relations knows will be 
+impacting traffic at a scheduled time in the future.  A STR can be a reoccurring restriction. It could last an hour, a day, a week or months depending upon the project it is describing. Only a portion of the actual XML document has been listed:
+
+```
+<?xml version="1.0" encoding="UTF-8"?> 
+<data> 
+    <str> 
+        <id>4437</id> 
+        <type>Closure</type> 
+        <startDate>09/15/2010</startDate> 
+        <endDate>09/15/2011</endDate> 
+        <county>Kent County</county> 
+        <location>Strauss Avenue between Route 8/Halltown Road and Enss Road</location> 
+        <details>The roadway will be closed on Friday, September 17 for deteriorating crossroad 
+pipes. At all times, and emergency vehicles will have access. Detour signage is posted. 
+        </details> 
+        <latitude>39.11614361</latitude> 
+        <longitude>-75.73914528</longitude> 
+    </str> 
+: 
+: 
+: 
+    <str> 
+        <id>4557</id> 
+        <type>Restriction</type> 
+        <startDate>09/08/2010</startDate> 
+        <endDate>05/06/2011</endDate> 
+        <county>New Castle County</county> 
+        <location>South Market Street/Route 13 between A Street and Garashes Lane (Market Street 
+Improvements T200900705) 
+        </location> 
+        <details>One lane open 24/7. Elevate roadway, relocation of utilities, drainage, 
+constructing sidewalks, lighting, and landscaping. ALL BUSINESSES ARE OPEN DURING THIS 
+CONSTRUCTION. 
+        </details> 
+        <latitude>39.73471618</latitude> 
+        <longitude>-75.55508137</longitude> 
+    </str> 
+</data> 
+```
