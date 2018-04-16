@@ -1,6 +1,8 @@
 #API
 
 API RESOURCES:
+
+
 -
 
 **Yelp API**
@@ -427,3 +429,356 @@ CONSTRUCTION.
     </str> 
 </data> 
 ```
+
+3.4.1   **Scheduled Travel Restrictions Polling Frequency**
+Polling frequency should not be more than every 5 minutes. 
+
+3.4.2   Scheduled Travel Restrictions Tag Element Definitions 
+Tag 
+Definition 
+id 
+Unique number the STR is represented in DelDOT system. 
+type 
+Type of restriction. 
+startDate 
+The date when the restriction will start. 
+endDate 
+The date when the restriction will end. 
+timestamp 
+Timestamp of when the STR was last updated. 
+county 
+County that the STR is located within. 
+location 
+Detailed description of the location. 
+details 
+Detailed description of the restriction. 
+latitude 
+Latitude of STR location. 
+longitude 
+Longitude of STR location. 
+
+3.5    Traffic    Status    
+This feed provides you with traffic status in numerous locations throughout the entire state (even 
+several leading into DE from MD).  This information is a summary of the traffic flow at each of 
+those locations. Only a portion of the actual XML document has been listed.  
+
+```
+<?xml version="1.0" encoding="UTF-8"?> 
+<data> 
+    <trafficLocation> 
+        <id>1.4409</id> 
+        <name>Wavetronix Portable I95 0.5m S/O Tolls</name> 
+        <status>No Data Available</status> 
+        <rgbColor>CCCCCC</rgbColor> 
+        <latitude>39.64251100</latitude> 
+        <longitude>-75.77210600</longitude> 
+        <timestamp>2011-03-23 04:25:52.0</timestamp> 
+        <direction> 
+            <name>Northbound</name> 
+            <status>No Data Available</status> 
+            <rgbColor>CCCCCC</rgbColor> 
+            <numberOfLanes/> 
+            <avgSpeed/> 
+            <fiveMinuteVolume/> 
+            <fiveMinuteMaxVolume/> 
+            <fiveMinuteVolumePercentage/> 
+            <oneHourProjectedVolume/> 
+            <vehiclesPerHour/> 
+            <oneHourMaxVolume/> 
+            <fiveMinuteOccupancy/> 
+            <fiveMinuteOccupied/> 
+            <volumePlusOccupancy/> 
+            <sampleSize/> 
+            <sampleSizeExpected/> 
+            <sampleSizePercentage/> 
+            <latitude>39.64271100</latitude> 
+            <longitude>-75.77210600</longitude> 
+            <timestamp>2011-03-23 04:25:52.0</timestamp> 
+        </direction> 
+        <direction> 
+            <name>Southbound</name> 
+            <status>No Data Available</status> 
+            <rgbColor>CCCCCC</rgbColor> 
+            <numberOfLanes/> 
+            <avgSpeed/> 
+            <fiveMinuteVolume/> 
+            <fiveMinuteMaxVolume/> 
+            <fiveMinuteVolumePercentage/> 
+            <oneHourProjectedVolume/> 
+            <vehiclesPerHour/> 
+            <oneHourMaxVolume/> 
+            <fiveMinuteOccupancy/> 
+            <fiveMinuteOccupied/> 
+            <volumePlusOccupancy/> 
+            <sampleSize/> 
+            <sampleSizeExpected/> 
+            <sampleSizePercentage/> 
+            <latitude>39.64231100</latitude> 
+            <longitude>-75.77210600</longitude> 
+            <timestamp>2011-03-23 04:25:52.0</timestamp> 
+        </direction> 
+    </trafficLocation> 
+: 
+: 
+: 
+    <trafficLocation> 
+        <id>0.139</id> 
+        <name>US 113 &amp; RT 36</name> 
+                <status>No Delay</status> 
+                <rgbColor>339900</rgbColor> 
+                <latitude>38.90169506</latitude> 
+                <longitude>-75.43966028</longitude> 
+                <timestamp>2011-03-23 14:55:00.0</timestamp> 
+                <direction> 
+                    <name>Northbound</name> 
+                    <status>No Delay</status> 
+                    <rgbColor>339900</rgbColor> 
+                    <numberOfLanes>2</numberOfLanes> 
+                    <avgSpeed/> 
+                    <fiveMinuteVolume>53</fiveMinuteVolume> 
+                    <fiveMinuteMaxVolume>300</fiveMinuteMaxVolume> 
+                    <fiveMinuteVolumePercentage>18</fiveMinuteVolumePercentage> 
+                    <oneHourProjectedVolume>636</oneHourProjectedVolume> 
+                    <vehiclesPerHour>1800</vehiclesPerHour> 
+                    <oneHourMaxVolume>3600</oneHourMaxVolume> 
+                    <fiveMinuteOccupancy>3</fiveMinuteOccupancy> 
+                    <fiveMinuteOccupied>18</fiveMinuteOccupied> 
+                    <volumePlusOccupancy>21</volumePlusOccupancy> 
+                    <sampleSize>10</sampleSize> 
+                    <sampleSizeExpected>10</sampleSizeExpected> 
+                    <sampleSizePercentage>100</sampleSizePercentage> 
+                    <latitude>38.90189506</latitude> 
+                    <longitude>-75.43966028</longitude> 
+                    <timestamp>2011-03-23 14:55:00.0</timestamp> 
+                </direction> 
+                <direction> 
+                    <name>Southbound</name> 
+                    <status>No Delay</status> 
+                    <rgbColor>339900</rgbColor> 
+                    <numberOfLanes>2</numberOfLanes> 
+                    <avgSpeed/> 
+                    <fiveMinuteVolume>50</fiveMinuteVolume> 
+                    <fiveMinuteMaxVolume>300</fiveMinuteMaxVolume> 
+                    <fiveMinuteVolumePercentage>17</fiveMinuteVolumePercentage> 
+                    <oneHourProjectedVolume>600</oneHourProjectedVolume> 
+                    <vehiclesPerHour>1800</vehiclesPerHour> 
+                    <oneHourMaxVolume>3600</oneHourMaxVolume> 
+                    <fiveMinuteOccupancy>2</fiveMinuteOccupancy> 
+                    <fiveMinuteOccupied>14</fiveMinuteOccupied> 
+                    <volumePlusOccupancy>19</volumePlusOccupancy> 
+                    <sampleSize>10</sampleSize> 
+                    <sampleSizeExpected>10</sampleSizeExpected> 
+                    <sampleSizePercentage>100</sampleSizePercentage> 
+                    <latitude>38.90149506</latitude> 
+                    <longitude>-75.43966028</longitude> 
+                    <timestamp>2011-03-23 14:55:00.0</timestamp> 
+                </direction> 
+            </trafficLocation> 
+        </data> 
+        
+        ```
+        
+        
+        3.6    Variable Message Sign (VMS)  
+        This feed provides you with the current message displayed on the VMS located throughout the 
+        state.  
+        Only a portion of the actual XML document has been listed.
+        <?xml version="1.0" encoding="UTF-8"?> 
+        <data> 
+            <vms> 
+                <id>4082</id> 
+                <message/> 
+                <latitude>39.675716</latitude> 
+                <longitude>-75.681714</longitude> 
+                <timestamp>2011-03-23 14:56:33.0</timestamp> 
+            </vms> 
+        : 
+        : 
+        : 
+            <vms> 
+                <id>4918</id> 
+                <message>SR 1 SB 
+                    <br/> 
+                    CLOSED 
+                    <br/> 
+                    AT I-95 
+                    <br/> 
+                    --------- 
+                    FOLLOW 
+                    <br/> 
+                    DETOUR 
+                </message> 
+                <latitude>39.694274</latitude> 
+                <longitude>-75.652649</longitude> 
+                <timestamp>2011-03-23 14:56:33.0</timestamp> 
+            </vms> 
+        </data> 
+        
+        4.2    Real-Time    Travel    Advisories    
+        <?xml version="1.0" encoding="UTF-8"?> 
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+          <xs:element name="data"> 
+            <xs:complexType> 
+              <xs:sequence> 
+                <xs:element maxOccurs="unbounded" ref="rtta"/> 
+              </xs:sequence> 
+            </xs:complexType> 
+          </xs:element> 
+          <xs:element name="rtta"> 
+            <xs:complexType> 
+              <xs:sequence> 
+                <xs:element ref="id"/> 
+                <xs:element ref="type"/> 
+                <xs:element ref="county"/> 
+                <xs:element ref="details"/> 
+                <xs:element ref="latitude"/> 
+                <xs:element ref="longitude"/> 
+                <xs:element ref="timestamp"/> 
+              </xs:sequence> 
+            </xs:complexType> 
+          </xs:element> 
+          <xs:element name="id" type="xs:integer"/> 
+          <xs:element name="type" type="xs:NCName"/> 
+          <xs:element name="county" type="xs:string"/> 
+          <xs:element name="details" type="xs:string"/> 
+          <xs:element name="latitude" type="xs:decimal"/> 
+          <xs:element name="longitude" type="xs:decimal"/> 
+          <xs:element name="timestamp" type="xs:string"/> 
+        </xs:schema> 
+        
+        4.3    Scheduled Travel Restrictions 
+        <?xml version="1.0" encoding="UTF-8"?> 
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+          <xs:element name="data"> 
+            <xs:complexType> 
+              <xs:sequence> 
+                <xs:element maxOccurs="unbounded" ref="str"/> 
+              </xs:sequence> 
+            </xs:complexType> 
+          </xs:element> 
+          <xs:element name="str"> 
+            <xs:complexType> 
+              <xs:sequence> 
+                <xs:element ref="id"/> 
+                <xs:element ref="type"/> 
+                <xs:element ref="startDate"/> 
+                <xs:element ref="endDate"/> 
+                <xs:element ref="county"/> 
+                <xs:element ref="location"/> 
+                <xs:element ref="details"/> 
+                <xs:element ref="latitude"/> 
+                <xs:element ref="longitude"/> 
+              </xs:sequence> 
+            </xs:complexType> 
+          </xs:element> 
+          <xs:element name="id" type="xs:integer"/> 
+          <xs:element name="type" type="xs:NCName"/> 
+          <xs:element name="startDate" type="xs:string"/> 
+          <xs:element name="endDate" type="xs:string"/> 
+          <xs:element name="county" type="xs:string"/> 
+          <xs:element name="location" type="xs:string"/> 
+          <xs:element name="details" type="xs:string"/> 
+          <xs:element name="latitude" type="xs:decimal"/> 
+          <xs:element name="longitude" type="xs:decimal"/> 
+        </xs:schema> 
+        
+        4.4    Traffic    Status    
+        <?xml version="1.0" encoding="UTF-8"?> 
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+          <xs:element name="data"> 
+            <xs:complexType> 
+              <xs:sequence> 
+                <xs:element maxOccurs="unbounded" ref="trafficLocation"/> 
+              </xs:sequence> 
+            </xs:complexType> 
+          </xs:element> 
+          <xs:element name="trafficLocation"> 
+            <xs:complexType> 
+              <xs:sequence> 
+                <xs:element ref="id"/> 
+                <xs:element ref="name"/> 
+                <xs:element ref="status"/> 
+                <xs:element ref="rgbColor"/> 
+                <xs:element ref="latitude"/> 
+                <xs:element ref="longitude"/> 
+                <xs:element ref="timestamp"/> 
+                <xs:element maxOccurs="unbounded" ref="direction"/> 
+              </xs:sequence> 
+            </xs:complexType> 
+          </xs:element> 
+          <xs:element name="id" type="xs:decimal"/> 
+          <xs:element name="direction"> 
+            <xs:complexType> 
+              <xs:sequence> 
+                <xs:element ref="name"/> 
+                <xs:element ref="status"/> 
+                <xs:element ref="rgbColor"/> 
+                <xs:element ref="numberOfLanes"/> 
+                        <xs:element ref="avgSpeed"/> 
+                        <xs:element ref="fiveMinuteVolume"/> 
+                        <xs:element ref="fiveMinuteMaxVolume"/> 
+                        <xs:element ref="fiveMinuteVolumePercentage"/> 
+                        <xs:element ref="oneHourProjectedVolume"/> 
+                        <xs:element ref="vehiclesPerHour"/> 
+                        <xs:element ref="oneHourMaxVolume"/> 
+                        <xs:element ref="fiveMinuteOccupancy"/> 
+                        <xs:element ref="fiveMinuteOccupied"/> 
+                        <xs:element ref="volumePlusOccupancy"/> 
+                        <xs:element ref="sampleSize"/> 
+                        <xs:element ref="sampleSizeExpected"/> 
+                        <xs:element ref="sampleSizePercentage"/> 
+                        <xs:element ref="latitude"/> 
+                        <xs:element ref="longitude"/> 
+                        <xs:element ref="timestamp"/> 
+                      </xs:sequence> 
+                    </xs:complexType> 
+                  </xs:element> 
+                  <xs:element name="numberOfLanes" type="xs:string"/> 
+                  <xs:element name="avgSpeed" type="xs:string"/> 
+                  <xs:element name="fiveMinuteVolume" type="xs:string"/> 
+                  <xs:element name="fiveMinuteMaxVolume" type="xs:string"/> 
+                  <xs:element name="fiveMinuteVolumePercentage" type="xs:string"/> 
+                  <xs:element name="oneHourProjectedVolume" type="xs:string"/> 
+                  <xs:element name="vehiclesPerHour" type="xs:string"/> 
+                  <xs:element name="oneHourMaxVolume" type="xs:string"/> 
+                  <xs:element name="fiveMinuteOccupancy" type="xs:string"/> 
+                  <xs:element name="fiveMinuteOccupied" type="xs:string"/> 
+                  <xs:element name="volumePlusOccupancy" type="xs:string"/> 
+                  <xs:element name="sampleSize" type="xs:string"/> 
+                  <xs:element name="sampleSizeExpected" type="xs:string"/> 
+                  <xs:element name="sampleSizePercentage" type="xs:string"/> 
+                  <xs:element name="name" type="xs:string"/> 
+                  <xs:element name="status" type="xs:string"/> 
+                  <xs:element name="rgbColor" type="xs:NMTOKEN"/> 
+                  <xs:element name="latitude" type="xs:decimal"/> 
+                  <xs:element name="longitude" type="xs:decimal"/> 
+                  <xs:element name="timestamp" type="xs:string"/> 
+                </xs:schema> 
+                
+                4.6    Variable    Speed    LImit    
+                <?xml version="1.0" encoding="UTF-8"?> 
+                <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+                  <xs:element name="data"> 
+                    <xs:complexType> 
+                      <xs:sequence> 
+                        <xs:element maxOccurs="unbounded" ref="vsl"/> 
+                      </xs:sequence> 
+                    </xs:complexType> 
+                  </xs:element> 
+                  <xs:element name="vsl"> 
+                    <xs:complexType> 
+                      <xs:sequence> 
+                        <xs:element ref="id"/> 
+                        <xs:element ref="speedlimit"/> 
+                        <xs:element ref="latitude"/> 
+                        <xs:element ref="longitude"/> 
+                        <xs:element ref="timestamp"/> 
+                      </xs:sequence> 
+                    </xs:complexType> 
+                  </xs:element> 
+                  <xs:element name="id" type="xs:integer"/> 
+                  <xs:element name="speedlimit" type="xs:integer"/> 
+                  <xs:element name="latitude" type="xs:decimal"/> 
+                  <xs:element name="longitude" type="xs:decimal"/> 
+                  <xs:element name="timestamp" type="xs:string"/> 
+                </xs:schema> 
