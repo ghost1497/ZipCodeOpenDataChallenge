@@ -14,12 +14,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'signup.html',
 })
 export class SignupPage {
+  name: string;
+  email: string;
 
+
+//need to figure out the constructor
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignupPage');
+  }
+
+  checkBox(){
+    //
+  }
+
+  nextButton(){
+    //
   }
 
 }
