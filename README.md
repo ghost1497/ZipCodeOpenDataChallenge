@@ -1,5 +1,4 @@
 # READ ME
--
 *Open Data Delaware has been focused on answering one question: 
 How can we make Delaware the most accessible state in the country?*
 
