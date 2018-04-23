@@ -27,14 +27,14 @@ Page 5: Enter username & email w/ accommodations if selected
 *NOTE* Disability limited to paraplegic (wheel chair) accessibility for Demo
 
 ## User Interface Aspect:
-1.Should be fast
-2.Easy to use/navigate
-3.NOT TOO WORDY (minimal info on each page)
-4.Don't ask for too much user input (assume user is lazy which is why they are using the app)
-5.Nice pictures
-6.Functionality 
-7.Implement F.I.R.S.T and S.O.L.I.D principles 
-8.Follow the 12 Factor App concepts
+1. Should be fast
+2. Easy to use/navigate
+3. NOT TOO WORDY (minimal info on each page)
+4. Don't ask for too much user input (assume user is lazy which is why they are using the app)
+5. Nice pictures
+6. Functionality 
+7. Implement F.I.R.S.T and S.O.L.I.D principles 
+8. Follow the 12 Factor App concepts
 
 ## Contents
 - Contents include embedded folders containing our infrastructure 
@@ -101,4 +101,3 @@ Button: "Yup looks good!"
 ======== or =========
 Button: "Take me back"
 (NO MONEY INVOLVED)
-
