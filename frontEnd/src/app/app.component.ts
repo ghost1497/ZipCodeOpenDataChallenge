@@ -4,7 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { NavController } from 'ionic-angular';
 
 import { LaunchPage } from '../pages/launch/launch';
-import { GuideOnePage } from '../pages/guide-one/guide-one';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -22,7 +22,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       
-      this.nav.push(GuideOnePage);
+      
     });
   }
 }

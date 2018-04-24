@@ -25707,8 +25707,8 @@ page-launch .logoimg {
 }
 
 page-launch ion-card {
-  height: 346px;
-  width: 346px;
+  height: 291.27px;
+  width: 269px;
   background-color: #FFF;
   -webkit-box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
   box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
@@ -25719,16 +25719,20 @@ page-launch .button {
   width: 289px;
   background-color: white;
   color: #000;
+  font-family: Avenir;
+  font-size: 16px;
   -webkit-box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
   box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
 }
 
-page-launch .next {
-  height: 22px;
-  width: 35px;
+page-launch .card-one-text {
+  top: 621px;
+  height: 40px;
+  width: 303px;
   color: #000;
   font-family: Avenir;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
-  line-height: 22px;
+  line-height: 20px;
+  text-align: center;
 }
