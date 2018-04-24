@@ -7,6 +7,7 @@
 
 ## Endpoint calls
 - **Profile controller**
+URL: https://visitdelawarebackendv2.herokuapp.com
 	- GET all profiles: `"/profiles"`
 	- GET one profile by id: `"/profiles/{id}"`
 	- GET one profile by name: `"/profiles/findByName/{name}"`
