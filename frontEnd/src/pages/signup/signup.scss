@@ -1,3 +1,49 @@
-page-signup {
 
-}
+    
+
+       page-signup {
+       
+        .scroll-content {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow-y: auto;
+              }
+        
+              ion-item:first-child {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+              }
+              ion-item:last-child {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+              }
+            
+              ion-item.item {
+                background-color: rgba(255, 255, 255, 0.4);
+                margin-bottom: 1px;
+                .label {
+                  width: 50%;
+                  color: rgba(0, 0, 0, 0.6);
+                  font-size: 1.2em;
+                }
+            }
+              p {
+                font-size: 0.8em;
+                color: #d2d2d2;
+            }
+            ion-label, .select-text {
+                margin-left: 10px;
+            }
+     
+            ion-input, ion-select, ion-textarea {
+                background-color: #f2f2f2;
+                padding: 5px 10px;
+            }
+     
+        
+     
+        }
+
+    

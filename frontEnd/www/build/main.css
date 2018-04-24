@@ -25677,3 +25677,85 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-bottom));
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
+
+page-main .card-background-page {
+  background-image: url(../assets/imgs/example.jpg);
+}
+
+page-main .card-background-page ion-card {
+  position: relative;
+  text-align: center;
+}
+
+page-main .card-background-page .card-title {
+  position: absolute;
+  top: 36%;
+  font-size: 2.0em;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+
+page-main .card-background-page .card-subtitle {
+  font-size: 1.0em;
+  position: absolute;
+  top: 52%;
+  width: 80%;
+  color: #fff;
+}
+
+page-signup .scroll-content {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+page-signup ion-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+page-signup ion-item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+page-signup ion-item.item {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 1px;
+}
+
+page-signup ion-item.item .label {
+  width: 50%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.2em;
+}
+
+page-signup p {
+  font-size: 0.8em;
+  color: #d2d2d2;
+}
+
+page-signup ion-label, page-signup .select-text {
+  margin-left: 10px;
+}
+
+page-signup ion-input, page-signup ion-select, page-signup ion-textarea {
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+}

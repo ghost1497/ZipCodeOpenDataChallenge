@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPage, IonicPageModule, NavController, NavParams} from 'ionic-angular';
 import { SignupPage } from './signup';
 
 @NgModule({
@@ -10,4 +10,9 @@ import { SignupPage } from './signup';
     IonicPageModule.forChild(SignupPage),
   ],
 })
-export class SignupPageModule {}
+export class SignupPageModule {
+  constructor(navParams : NavParams){
+  let id = navParams.get('id');
+  let name = navParams.get('name');
+  }
+}
