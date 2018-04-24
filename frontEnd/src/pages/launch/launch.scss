@@ -1,5 +1,42 @@
 page-launch {
 
+    .logoimg {
+        width: 1000;
+        height: 1000;
+        top: 27%;
+        left: 5%; 
+        position: absolute;
+    }
+
+
+    ion-card {
+        height: 346px;	
+        width: 346px;	
+        background-color: #FFF;	
+        box-shadow: 0 2px 4px 0 rgba(183,180,180,0.5);
+    }
+
+   .button {
+        height: 45px;	
+        width: 289px;	
+        background-color: white;	
+        color: #000;
+        box-shadow: 0 2px 4px 0 rgba(183,180,180,0.5);
+        
+    }
+
+    .next {	
+        height: 22px;	
+        width: 35px;	
+        color: #000;	
+        font-family: Avenir;	
+        font-size: 16px;	
+        font-weight: 300;	
+        line-height: 22px;
+    }
+        
+    
+
    
 
 }

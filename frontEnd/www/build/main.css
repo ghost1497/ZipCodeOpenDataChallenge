@@ -25677,3 +25677,58 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-bottom));
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
+
+.splash {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #ff7400;
+}
+
+page-launch .logoimg {
+  width: 1000;
+  height: 1000;
+  top: 27%;
+  left: 5%;
+  position: absolute;
+}
+
+page-launch ion-card {
+  height: 346px;
+  width: 346px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
+}
+
+page-launch .button {
+  height: 45px;
+  width: 289px;
+  background-color: white;
+  color: #000;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
+}
+
+page-launch .next {
+  height: 22px;
+  width: 35px;
+  color: #000;
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}

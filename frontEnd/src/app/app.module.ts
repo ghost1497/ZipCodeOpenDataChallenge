@@ -6,12 +6,27 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { LaunchPage } from '../pages/launch/launch';
+import { GuideOnePage } from '../pages/guide-one/guide-one';
+import { ListPage } from '../pages/list/list';
+import { MainPage } from '../pages/main/main';
+import { SignupPage } from '../pages/signup/signup';
+import { ItineraryPage } from '../pages/itinerary/itinerary';
+import { DonePage } from '../pages/done/done';
+import { CustomPage } from '../pages/custom/custom';
 
 
 @NgModule({
   declarations: [
     MyApp,
-    LaunchPage
+    LaunchPage,
+    GuideOnePage,
+    ListPage,
+    MainPage,
+    SignupPage,
+    ItineraryPage,
+    DonePage, 
+    CustomPage
+
   ],
   imports: [
     BrowserModule,
@@ -20,7 +35,14 @@ import { LaunchPage } from '../pages/launch/launch';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    LaunchPage
+    LaunchPage,
+    GuideOnePage,
+    ListPage,
+    MainPage,
+    SignupPage,
+    ItineraryPage,
+    DonePage,
+    CustomPage
   ],
   providers: [
     StatusBar,
