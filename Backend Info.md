@@ -9,6 +9,7 @@
 - **Profile controller**
 	- GET all profiles: `"/profiles"`
 	- GET one profile: `"/profiles/{id}"`
+	- GET one profile by name: `"/profiles/{name}"`
 	- POST one profile: `"/profiles"`
 	- PUT one profile: `"/profiles/{id}"`
 	- DELETE one profile: `"/profiles/{id}"`
