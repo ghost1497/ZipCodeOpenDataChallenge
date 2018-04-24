@@ -1,4 +1,4 @@
-#API
+# API
 
 API RESOURCES:
 
@@ -7,11 +7,14 @@ API RESOURCES:
 
 **Yelp API**
 -
+
 My App
 Client ID:
+
 ```rDnriYCyIYK49NlSCzevBg```
 
 API Key:
+
 ```CZ2DBpudAEnZUpaL6oLVLFdT0u_BFapHwxKo3Ad_5ulSzDjvoVFCiyVBTVcNoPOQ7wQWtmEgDHmRB06r5jlc5uO3wosCLzR3qFT9kX_1ui3AwYjrc7tT0Kw_kKjQWnYx```
 
 [Business Lookup:](https://www.yelp.com/developers/documentation/v3/business)
@@ -125,15 +128,19 @@ Trip It API
 (http://tripit.github.io/api/doc/v1/index.html)
 
 API KEY:
+
 ```88d8a0a5d1add6a7c0b03055fd2b0689a1f3b19f```
 
 API SECRET:
+
 ```f1f1e235ad0a29989914987005309af3e6f2c3d2```
 
 GET REQUEST:
 
 A get request is used to retrieve a specific object from the TripIt API given its TripIt object ID. Since get requests do not change data they are all made via an HTTP GET request for a URL that takes the following form:
-```https://api.tripit.com/v1/get/<object type>/id/<TripIt Object ID>
+
+```
+https://api.tripit.com/v1/get/<object type>/id/<TripIt Object ID>
 <object type>
 ``` 
 
@@ -157,7 +164,8 @@ is one of the following strings:
 - trip
 - weather
 
-```<TripIt Object ID>
+```
+<TripIt Object ID>
 ``` 
 
 - is the object ID of the TripIt object being requested.
@@ -177,11 +185,15 @@ A list request is used to retrieve multiple objects given an object type and set
 - object
 - points_program
 - Valid values for
+
 ```<filter parameter> and <filter value>``` 
+
 depend on the
+
 ```<object type>```
 
 All method Lists can be found here:
+
 ```http://tripit.github.io/api/doc/v1/index.html#method_list```
 
 
@@ -189,9 +201,11 @@ National Park Service API
 -
 
 **API KEY:**
+
  ```MOIl5DXkgrc8OSrnOkSRiOBk7p9L223YCYesjvfh``` 
 
 **EXAMPLE URL REQUEST:**
+
  ```https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=MOIl5DXkgrc8OSrnOkSRiOBk7p9L223YCYesjvfh``` 
 
 **GET REQUEST:**
@@ -207,10 +221,10 @@ A comma delimited list of resource properties to include in the JSON response in
 --
 
 -
-###DelDOT
+### DelDOT
  (http://bidcondocs.delaware.gov/SHS/SHS_12004CAD_Add4b.pdf)
 
-###GENERAL  INFORMATION  
+### GENERAL  INFORMATION  
 This document covers the technical portions related to a new DelDOT XML service.  The 
 service is being created to allow external resources to access DelDOT specific data sets via a 
 consistent XML API. 
@@ -223,7 +237,7 @@ This document was created to describe the XML documents that the public feeds pr
 1.2    **Scope**   
 This document will outline the types exposed data feeds, each feeds XML schema and the tag elements meaning. 
 
-###OVERVIEW
+### OVERVIEW
 2.0  **Overview**  
 As the amount of dynamic data continues to expand within DelDOT so is the need for this data 
 to be shared with other agencies (city, county, state and federal). As an initial phase of 
@@ -248,7 +262,7 @@ To consume the DelDOT data feeds, you will need to be able to do the following:
 - Receive standard UTF-8 encoded XML documents. 
 - Parse UTF-8 encoded XML documents. 
 
-###Technical Information
+### Technical Information
 3.0  **Tech Info**  
 The following discusses the data feeds, their content, their XML schema and each data type xml 
 tag definition. 
