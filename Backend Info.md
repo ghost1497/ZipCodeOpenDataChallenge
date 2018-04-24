@@ -13,3 +13,11 @@
 	- POST one profile: `"/profiles"`
 	- PUT one profile: `"/profiles/{id}"`
 	- DELETE one profile: `"/profiles/{id}"`
+	
+	- Attributes of profile database:
+		- PROFILE_ID : `Integer id;`
+		- NAME_ON_PROFILE : `String name;`
+		- EMAIL_ON_PROFILE : `String emailAddress;`
+		- BIRTHDAY_ON_PROFILE : `String birthDate; //format is 'mmddyyyy'`
+		- ZIPCODE : `Integer zipcode;`
+		- MOBILE_HANDICAP_FLAG : `boolean handicapFlag;`
