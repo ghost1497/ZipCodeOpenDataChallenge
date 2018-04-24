@@ -23,21 +23,18 @@ export class SignupPage {
   constructor(public navCtrl: NavController, public formBuilder: FormBuilder) {
     this.signUpForm = formBuilder.group({
       fullName: ['',Validators.compose([Validators.maxLength(30), Validators.pattern('[a-zA-Z ]*'), Validators.required])],
-     email: [''],
+     email: ['',Validators.compose([Validators.required, Validators.email.bind(this)])],
      age:['',AgeValidator.isValid],
-     zipCode:['']
-    
+     zipCode:['',Validators.compose([Validators.minLength(5),Validators.maxLength(5), Validators.required])]
   });
   }
   
   save(){
-    this.submitAttempt = true;
- 
     if(!this.signUpForm.valid){
-    
+      this.submitAttempt = true;
     }
     else{
-      this.gotoMainPage;
+      this.gotoMainPage();
       console.log("success!")
         console.log(this.signUpForm.value);
     }

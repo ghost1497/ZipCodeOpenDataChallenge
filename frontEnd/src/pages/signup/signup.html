@@ -20,14 +20,14 @@
           <ion-label floating>Full Name</ion-label>
           <ion-input formControlName="fullName" type="text" [class.invalid]="!signUpForm.controls.fullName.valid && (signUpForm.controls.fullName.dirty || submitAttempt)"></ion-input>
       </ion-item>
-
+      
       <ion-item *ngIf="!signUpForm.controls.fullName.valid  && (signUpForm.controls.fullName.dirty || submitAttempt)">
           <p>Please enter a valid name.</p>
       </ion-item>
  
         <ion-item>
             <ion-label floating>Email</ion-label>
-            <ion-input formControlName="email" type="email"></ion-input>
+            <ion-input formControlName="email" type="email"  [class.invalid]="!signUpForm.controls.email.valid && (signUpForm.controls.email.dirty || submitAttempt)"></ion-input>
         </ion-item>
 
         <ion-item *ngIf="!signUpForm.controls.email.valid  && (signUpForm.controls.email.dirty || submitAttempt)">
@@ -36,7 +36,7 @@
         
         <ion-item>
             <ion-label floating>Age</ion-label>
-            <ion-input formControlName="age" type="number"></ion-input>
+            <ion-input formControlName="age" type="number" [class.invalid]="!signUpForm.controls.age.valid && (signUpForm.controls.age.dirty || submitAttempt)"></ion-input>
         </ion-item>
         <ion-item *ngIf="!signUpForm.controls.age.valid  && (signUpForm.controls.age.dirty || submitAttempt)">
             <p>Please enter a valid age.</p>
@@ -44,9 +44,9 @@
         
         <ion-item>
             <ion-label floating>ZipCode</ion-label>
-            <ion-input formControlName="zipCode" type="number"></ion-input>
+            <ion-input formControlName="zipCode" type="number" [class.invalid]="!signUpForm.controls.zipCode.valid && (signUpForm.controls.zipCode.dirty || submitAttempt)"></ion-input>
         </ion-item>
-        <ion-item *ngIf="!signUpForm.controls.zipCode.valid  && (signUpForm.controls.ZipCode.dirty || submitAttempt)">
+        <ion-item *ngIf="!signUpForm.controls.zipCode.valid  && (signUpForm.controls.zipCode.dirty || submitAttempt)">
             <p>Please enter a valid zipcode.</p>
         </ion-item>
 
