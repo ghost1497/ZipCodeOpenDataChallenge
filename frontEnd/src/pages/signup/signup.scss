@@ -76,7 +76,7 @@ page-signup {
         width: 247px;
         font-family: Avenir;
         font-size: 2px;
-        border-bottom: none;
+        
 
         ion-label {
             font-size: 14px;
@@ -100,6 +100,27 @@ page-signup {
         text-indent: 4%; 
         
     }
+    }
+
+    ion-label.group-accom{
+        padding-left: 5%;
+        padding-top: 1%;
+        font-family: Avenir;
+        font-weight: 500;
+    }
+
+    ion-list.list {
+        width: 234px;
+        font-family: Avenir;
+
+        button {
+            height: 38px;
+        
+            span.button-inner {
+                height: 31px;
+                font-family: Avenir;
+            }
+        }
     }
 
 

@@ -25799,7 +25799,6 @@ page-signup div.group-date {
   width: 247px;
   font-family: Avenir;
   font-size: 2px;
-  border-bottom: none;
 }
 
 page-signup div.group-date ion-label {
@@ -25822,4 +25821,25 @@ page-signup div.group-zipcode input[type=text] {
   border: 1px solid #808080;
   border-radius: 4px;
   text-indent: 4%;
+}
+
+page-signup ion-label.group-accom {
+  padding-left: 5%;
+  padding-top: 1%;
+  font-family: Avenir;
+  font-weight: 500;
+}
+
+page-signup ion-list.list {
+  width: 234px;
+  font-family: Avenir;
+}
+
+page-signup ion-list.list button {
+  height: 38px;
+}
+
+page-signup ion-list.list button span.button-inner {
+  height: 31px;
+  font-family: Avenir;
 }

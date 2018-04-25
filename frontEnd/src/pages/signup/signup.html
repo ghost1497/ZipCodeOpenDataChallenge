@@ -31,7 +31,7 @@
       
     </div> -->
     <div class="group-date">
-      <ion-item>
+      <ion-item no-lines>
        <ion-label>Select Birthday</ion-label>
        <ion-datetime displayFormat="MMDDYYYY" [(ngModel)]="myDate" name="birthdate"></ion-datetime>
       </ion-item>
@@ -41,8 +41,9 @@
       <input class="zipcodefield" type="text" placeholder="Zipcode" required>
     </div>
 
+    <ion-label class="group-accom">Accomodations:</ion-label>
 
-    <!-- <ion-list> -->
+    <ion-list no-lines> 
 
       <ion-item>
         <ion-label>Pepperoni</ion-label>
@@ -62,9 +63,9 @@
       <ion-item>
         <ion-label>Mushrooms</ion-label>
         <ion-checkbox [(ngModel)]="mushrooms" name="inactive"></ion-checkbox>
-      </ion-item>
+      </ion-item> 
     
-    <!-- </ion-list> -->
+     </ion-list>
 
   </form>
 </ion-content>
