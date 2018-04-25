@@ -25736,3 +25736,90 @@ page-launch .card-one-text {
   line-height: 20px;
   text-align: center;
 }
+
+page-signup p {
+  height: 75px;
+  width: 310px;
+  color: #000;
+  font-family: Avenir;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 20%;
+  padding-right: 5%;
+}
+
+page-signup .form {
+  padding-top: 40%;
+  padding-left: 5%;
+  margin: auto;
+}
+
+page-signup div.group-name {
+  display: block;
+  padding-left: 5%;
+}
+
+page-signup div.group-name input[type=text] {
+  width: 234px;
+  height: 29px;
+  font-family: Avenir;
+  color: #000;
+  line-height: normal;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  text-indent: 2%;
+}
+
+page-signup div.group-email {
+  display: block;
+  padding-top: 6%;
+  padding-left: 5%;
+}
+
+page-signup div.group-email input[type=text] {
+  width: 234px;
+  height: 29px;
+  font-family: Avenir;
+  line-height: normal;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  text-indent: 2%;
+}
+
+page-signup div.group-date {
+  padding-right: 10%;
+  padding-left: -10%;
+  padding-top: 5%;
+  width: 247px;
+  font-family: Avenir;
+  font-size: 2px;
+  border-bottom: none;
+}
+
+page-signup div.group-date ion-label {
+  font-size: 14px;
+}
+
+page-signup div.group-zipcode {
+  display: block;
+  padding-top: 6%;
+  padding-left: 5%;
+}
+
+page-signup div.group-zipcode input[type=text] {
+  width: 117px;
+  height: 29px;
+  font-family: Avenir;
+  line-height: normal;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  text-indent: 4%;
+}
