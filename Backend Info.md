@@ -6,8 +6,8 @@
 - Directions on how to pull and work on backend are located in the "Deploy" tab of the Heroku dashboard
 
 ## Endpoint calls
-- **Profile controller**
 URL: https://visitdelawarebackendv2.herokuapp.com
+- **Profile controller**
 	- GET all profiles: `"/profiles"`
 	- GET one profile by id: `"/profiles/{id}"`
 	- GET one profile by name: `"/profiles/findByName/{name}"`
@@ -22,3 +22,19 @@ URL: https://visitdelawarebackendv2.herokuapp.com
 		- BIRTHDAY_ON_PROFILE : `String birthDate; //format is 'mmddyyyy'`
 		- ZIPCODE : `Integer zipcode;`
 		- MOBILE_HANDICAP_FLAG : `boolean handicapFlag;`
+		
+- **National Parks Controller**
+	- GET all parks in DE: `"/parksInDE"`
+	- Attributes of NP database:
+		- LOCAL_ID_KEY : `Long local_id;`
+		- STATES : `String states;`
+		- LATLONG : `String latLong;`
+		- DESCRIPTION : `String description;`
+		- DESIGNATION : `String designation;`
+		- API_PARK_ID : `String id;`
+		- DIRECTIONS_INFO : `String directionsInfo;`
+		- DIRECTIONS_URL : `String directionsUrl;`
+		- FULL_NAME : `String fullName;`
+		- URL : `String url;`
+		- WEATHER_INFO : `String weatherInfo;`
+		- NAME_OF_PARK : `String name;`
