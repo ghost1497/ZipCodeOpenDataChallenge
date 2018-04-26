@@ -99,4 +99,7 @@
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
+    <feature name="DatePicker">
+        <param name="ios-package" value="DatePicker" />
+    </feature>
 </widget>

@@ -31,6 +31,10 @@
             {
               "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"CDVIonicKeyboard\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"DatePicker\"><param name=\"ios-package\" value=\"DatePicker\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -51,6 +55,9 @@
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-datepicker": {
       "PACKAGE_NAME": "io.ionic.starter"
     }
   },
@@ -87,6 +94,14 @@
       "clobbers": [
         "window.Keyboard"
       ]
+    },
+    {
+      "id": "cordova-plugin-datepicker.DatePicker",
+      "file": "plugins/cordova-plugin-datepicker/www/ios/DatePicker.js",
+      "pluginId": "cordova-plugin-datepicker",
+      "clobbers": [
+        "datePicker"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -94,6 +109,7 @@
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-ionic-webview": "1.2.0",
-    "cordova-plugin-ionic-keyboard": "2.0.5"
+    "cordova-plugin-ionic-keyboard": "2.0.5",
+    "cordova-plugin-datepicker": "0.9.3"
   }
 }

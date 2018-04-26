@@ -38,6 +38,8 @@
 		1BFAAC2EDD9045E2BBBEA8F5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD224BB86204552B60E26E0 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A9826205A3E84EB6929ADFD6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 13949A19C15A499A907FF5D9 /* libz.tbd */; };
 		75370912DFF4449ABBDB9C8E /* CDVIonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 827FA8EFF87C4233A4E31A6F /* CDVIonicKeyboard.m */; };
+		59F72BB27F6541338FC36793 /* DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 88355DC97E53476E9394E474 /* DatePicker.m */; };
+		F139603D3764472D9F3F7F10 /* DatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B93DF31A61C4C4F9561CFA8 /* DatePicker.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +124,9 @@
 		13949A19C15A499A907FF5D9 /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
 		827FA8EFF87C4233A4E31A6F /* CDVIonicKeyboard.m */ = {isa = PBXFileReference; name = "CDVIonicKeyboard.m"; path = "cordova-plugin-ionic-keyboard/CDVIonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		D6EDF269CF804F28A39DA5AA /* CDVIonicKeyboard.h */ = {isa = PBXFileReference; name = "CDVIonicKeyboard.h"; path = "cordova-plugin-ionic-keyboard/CDVIonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		88355DC97E53476E9394E474 /* DatePicker.m */ = {isa = PBXFileReference; name = "DatePicker.m"; path = "cordova-plugin-datepicker/DatePicker.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		70BE89DCC24240DC847D4EA4 /* DatePicker.h */ = {isa = PBXFileReference; name = "DatePicker.h"; path = "cordova-plugin-datepicker/DatePicker.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9B93DF31A61C4C4F9561CFA8 /* DatePicker.xib */ = {isa = PBXFileReference; name = "DatePicker.xib"; path = "DatePicker.xib"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = file.xib; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +199,7 @@
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* frontEnd-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				9B93DF31A61C4C4F9561CFA8 /* DatePicker.xib */,
 			);
 			name = Resources;
 			path = "frontEnd/Resources";
@@ -271,6 +277,8 @@
 				A74112A24F7C4F518ED897DB /* GCDWebServerStreamedResponse.h */,
 				827FA8EFF87C4233A4E31A6F /* CDVIonicKeyboard.m */,
 				D6EDF269CF804F28A39DA5AA /* CDVIonicKeyboard.h */,
+				88355DC97E53476E9394E474 /* DatePicker.m */,
+				70BE89DCC24240DC847D4EA4 /* DatePicker.h */,
 			);
 			name = Plugins;
 			path = "frontEnd/Plugins";
@@ -352,6 +360,7 @@
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				F139603D3764472D9F3F7F10 /* DatePicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +412,7 @@
 				E521E82B9797466BB007251A /* GCDWebServerFileResponse.m in Sources */,
 				0F6590C77BBC4F6FB1145481 /* GCDWebServerStreamedResponse.m in Sources */,
 				75370912DFF4449ABBDB9C8E /* CDVIonicKeyboard.m in Sources */,
+				59F72BB27F6541338FC36793 /* DatePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

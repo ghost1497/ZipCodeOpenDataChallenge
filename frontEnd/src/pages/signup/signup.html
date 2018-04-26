@@ -18,42 +18,46 @@
    <form [formGroup]="signUpForm">
       <ion-item>
           <ion-label floating>Full Name</ion-label>
-          <ion-input formControlName="fullName" type="text" [class.invalid]="!signUpForm.controls.fullName.valid && (signUpForm.controls.fullName.dirty || submitAttempt)"></ion-input>
+          <ion-input formControlName="name" type="text" [class.invalid]="!signUpForm.controls.name.valid && (signUpForm.controls.name.dirty || submitAttempt)"></ion-input>
       </ion-item>
       
-      <ion-item *ngIf="!signUpForm.controls.fullName.valid  && (signUpForm.controls.fullName.dirty || submitAttempt)">
+      <ion-item *ngIf="!signUpForm.controls.name.valid  && (signUpForm.controls.name.dirty || submitAttempt)">
           <p>Please enter a valid name.</p>
       </ion-item>
  
         <ion-item>
             <ion-label floating>Email</ion-label>
-            <ion-input formControlName="email" type="email"  [class.invalid]="!signUpForm.controls.email.valid && (signUpForm.controls.email.dirty || submitAttempt)"></ion-input>
+            <ion-input formControlName="emailAddress" type="email"  [class.invalid]="!signUpForm.controls.emailAddress.valid && (signUpForm.controls.emailAddress.dirty || submitAttempt)"></ion-input>
         </ion-item>
 
-        <ion-item *ngIf="!signUpForm.controls.email.valid  && (signUpForm.controls.email.dirty || submitAttempt)">
+        <ion-item *ngIf="!signUpForm.controls.emailAddress.valid  && (signUpForm.controls.emailAddress.dirty || submitAttempt)">
             <p>Please enter a valid email.</p>
         </ion-item>
         
-        <ion-item>
-            <ion-label floating>Age</ion-label>
-            <ion-input formControlName="age" type="number" [class.invalid]="!signUpForm.controls.age.valid && (signUpForm.controls.age.dirty || submitAttempt)"></ion-input>
+        <!-- <ion-item>
+            <ion-label floating>Birth Date</ion-label>
+            <ion-input formControlName="birthDate" type="number" [class.invalid]="!signUpForm.controls.birthDate.valid && (signUpForm.controls.birthDate.dirty || submitAttempt)"></ion-input>
         </ion-item>
-        <ion-item *ngIf="!signUpForm.controls.age.valid  && (signUpForm.controls.age.dirty || submitAttempt)">
-            <p>Please enter a valid age.</p>
+        <ion-item *ngIf="!signUpForm.controls.birthDate.valid  && (signUpForm.controls.birthDate.dirty || submitAttempt)">
+            <p>Please enter a valid birthdate.</p>
+        </ion-item> -->
+        <ion-item>
+            <ion-label>Birth Date</ion-label>
+           <ion-datetime formControlName="birthDate" type="text"   displayFormat="MM DD YYYY" max="2006"> </ion-datetime>
         </ion-item>
         
         <ion-item>
             <ion-label floating>ZipCode</ion-label>
-            <ion-input formControlName="zipCode" type="number" [class.invalid]="!signUpForm.controls.zipCode.valid && (signUpForm.controls.zipCode.dirty || submitAttempt)"></ion-input>
+            <ion-input formControlName="zipcode" type="number" [class.invalid]="!signUpForm.controls.zipcode.valid && (signUpForm.controls.zipcode.dirty || submitAttempt)"></ion-input>
         </ion-item>
-        <ion-item *ngIf="!signUpForm.controls.zipCode.valid  && (signUpForm.controls.zipCode.dirty || submitAttempt)">
+        <ion-item *ngIf="!signUpForm.controls.zipcode.valid  && (signUpForm.controls.zipcode.dirty || submitAttempt)">
             <p>Please enter a valid zipcode.</p>
         </ion-item>
 
 
 
 <i class="fa fa-wheelchair-alt" aria-hidden="true">
-    <ion-checkbox  color="dark" checked="true"></ion-checkbox>
+    <ion-checkbox formControlName="handicapFlag" color="dark" checked="true"></ion-checkbox>
         </i>
         
         <button  ion-button (click)="save()">Sign Up</button>

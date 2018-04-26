@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CustomPage } from '../custom/custom';
+import { PackagePage } from '../package/package';
 
 /**
  * Generated class for the MainPage page.
@@ -15,9 +17,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MainPage {
 
-  constructor(public navParams: NavParams) {
+  constructor(public navParams: NavParams,public navCtrl: NavController) {
   
   }
+  goToCustomPage(){
+    //push another page onto the history stack
+        //causing the nav controller to animate the new page in
+        this.navCtrl.push(CustomPage);
+    }
+    goToPackagePage(){
+      //push another page onto the history stack
+          //causing the nav controller to animate the new page in
+          this.navCtrl.push(PackagePage);
+      }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MainPage');

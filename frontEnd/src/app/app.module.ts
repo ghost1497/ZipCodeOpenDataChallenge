@@ -7,30 +7,42 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import {SignupPage} from '../pages/signup/signup';
 import {MainPage} from '../pages/main/main';
+import { HttpClientModule } from '@angular/common/http';
+import { PackagePage } from '../pages/package/package';
+import { CustomPage } from '../pages/custom/custom';
+
+//import { SignUpProvider } from '../providers/sign-up/sign-up';
 
 
 @NgModule({
   declarations: [
     MyApp,
     SignupPage,
-    MainPage
+    MainPage,
+    PackagePage,
+    CustomPage
 
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    HttpClientModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     SignupPage,
-    MainPage
+    MainPage,
+    CustomPage,
+    PackagePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+   // SignUpProvider,
   ]
 })
 export class AppModule {}
