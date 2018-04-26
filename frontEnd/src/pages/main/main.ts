@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CustomPage } from '../custom/custom';
+import { PackagePage } from '../package/package';
 
 /**
  * Generated class for the MainPage page.
@@ -19,16 +21,16 @@ export class MainPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MainPage');
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad MainPage');
+  // }
+
+  goToPackagePage() {
+    this.navCtrl.push(PackagePage);
   }
 
-  packageButton(){
-    //
-  }
-
-  customButton(){
-    //
+  goToCustomPage() {
+    this.navCtrl.push(CustomPage);
   }
 
 }

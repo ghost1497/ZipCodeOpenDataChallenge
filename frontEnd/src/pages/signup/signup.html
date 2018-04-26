@@ -17,7 +17,7 @@
       so we can help you find the things you 
       want to experience!</p>
 
-  <form class="form">
+  <form class="form" autocomplete="on">
     <!-- Dashboard Style -->
     <div class="group-name">
       <input class="field" type="text" placeholder="Full name" required>
@@ -45,27 +45,15 @@
 
     <ion-list no-lines> 
 
-      <ion-item>
-        <ion-label>Pepperoni</ion-label>
+      <ion-item class="disability">
+        <ion-label>Persons with Disability</ion-label>
         <ion-checkbox [(ngModel)]="pepperoni" name="mobiledisability"></ion-checkbox>
       </ion-item>
-    
-      <ion-item>
-        <ion-label>Sausage</ion-label>
-        <ion-checkbox [(ngModel)]="sausage" disabled="true" name="inactive"></ion-checkbox>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label>Mushrooms</ion-label>
-        <ion-checkbox [(ngModel)]="mushrooms" name="inactive"></ion-checkbox>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>Mushrooms</ion-label>
-        <ion-checkbox [(ngModel)]="mushrooms" name="inactive"></ion-checkbox>
-      </ion-item> 
     
      </ion-list>
 
   </form>
+
+    <button ion-button (click)="goToMainPage()">NEXT</button>
+ 
 </ion-content>

@@ -1,3 +1,39 @@
 page-main {
 
+    div.custom {
+        padding-left: 2%;
+        
+
+        .button-ios{
+            border-radius: 10px;
+            height: 2.8em;
+            font-size: 1.6rem;
+            color: #fff;
+            background: linear-gradient(to right, #1488cc, #2b32b2);
+            margin: 0.4rem 0.2rem;
+            padding: 0 1em;
+            height: 150px;
+            width: 280px;
+        }
+    
+    }
+
+    div.packages {
+        padding-left: 2%;
+        padding-top: 5%;
+
+        .button-ios {
+            
+            border-radius: 10px;
+            height: 2.8em;
+            font-size: 1.6rem;
+            color: #fff;
+            background: linear-gradient(to right, #1488cc, #2b32b2); 
+            margin: 0.4rem 0.2rem;
+            padding: 0 1em;
+            height: 150px;
+            width: 280px;
+        }
+    }
+
 }

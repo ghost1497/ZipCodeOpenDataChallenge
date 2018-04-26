@@ -72,21 +72,34 @@ page-signup {
     div.group-date{
         padding-right: 10%;
         padding-left:-10%;
-        padding-top:5%;
+        padding-top:6%;
         width: 247px;
+        height: 29px;                
         font-family: Avenir;
-        font-size: 2px;
-        
 
-        ion-label {
-            font-size: 14px;
+        ion-item.item {
+            height: 29px;
+
+            div.item-inner{
+                height: 29px;
+
+                div.input-wrapper {
+                    height: 29px;
+
+                    #lbl-0.label.label-ios {
+                        height: 29px;
+                        font-size: 15px;
+                        padding-top: 0%;
+                    }
+                }
+            }
         }
     }
 
     div.group-zipcode {
         display: block;
-    padding-top: 6%;
-    padding-left: 5%;
+        padding-top: 12%;
+        padding-left: 5%;
     
 
     input[type=text] {
@@ -102,26 +115,44 @@ page-signup {
     }
     }
 
-    ion-label.group-accom{
+    ion-label.group-accom {
         padding-left: 5%;
         padding-top: 1%;
         font-family: Avenir;
+        font-size: 15px;
         font-weight: 500;
     }
 
-    ion-list.list {
-        width: 234px;
+    div.next-button {
+        height: 45px;	
+        width: 289px;	
+        background-color: white;	
+        color: #000;
         font-family: Avenir;
-
-        button {
-            height: 38px;
-        
-            span.button-inner {
-                height: 31px;
-                font-family: Avenir;
-            }
-        }
+        font-size: 16px;
+        box-shadow: 0 2px 4px 0 rgba(183,180,180,0.5);
     }
+
+    ion-list.list {
+        width: 240px;
+        font-family: Avenir;
+        font-size: 8px;
+        padding-bottom: 5%;
+      
+    }
+
+    .button-ios {
+        height: 45px;	
+        width: 289px;	
+        align-items: center;
+        background-color: white;	
+        color: #000;
+        font-family: Avenir;
+        font-size: 16px;
+        box-shadow: 0 2px 4px 0 rgba(183,180,180,0.5);
+    }
+        
+    
 
 
 }

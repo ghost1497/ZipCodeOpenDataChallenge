@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { MainPage } from '../main/main';
 
 /**
  * Generated class for the SignupPage page.
@@ -22,16 +23,16 @@ export class SignupPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SignupPage');
-  }
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad SignupPage');
+  // }
 
   checkBox(){
     //
   }
 
-  nextButton(){
-    //
+  goToMainPage() {
+    this.navCtrl.push(MainPage);
   }
 
 }

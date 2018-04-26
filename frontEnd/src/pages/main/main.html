@@ -7,12 +7,18 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>main</ion-title>
+   -
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <div class="custom">
+    <button ion-button block (click)="goToCustomPage()">Custom Packages</button>
+  </div>
 
+  <div class="packages">
+    <button ion-button block (click)="goToPackagesPage()">Pre-Packages</button>
+  </div>
 </ion-content>
