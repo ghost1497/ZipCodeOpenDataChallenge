@@ -1,14 +1,14 @@
 # READ ME
-##Problem
+## Problem
 *Open Data Delaware has been focused on answering one question:* 
 How can we make Delaware the most accessible state in the country?
 
-##Solution
+## Solution
 People with disabilities desire mobile independence above all else, which raises the need for better access design. 
 Our solution provides a fun and innovative way to overcome those accessibility challenges at the tip of fingers.
  
 
-#Technical Rubric:
+# Technical Rubric:
 -
 *Openness*
 - Is the source code publicly available?
@@ -26,7 +26,7 @@ Our solution provides a fun and innovative way to overcome those accessibility c
 - Is the code clean?
 - Are the external dependencies free or at least have a reasonable cost?
 
-#Creative Rubric:
+# Creative Rubric:
 -
 *Uniqueness*
 - Is the concept original?
@@ -44,7 +44,7 @@ Our solution provides a fun and innovative way to overcome those accessibility c
 *Impact*
 - Does the idea improve accessibility to outdoor spaces and transit modes for the underserved.
 
-##Problems to alleviate:
+## Problems to alleviate:
 Lack of elevators in large establishments 
 Faded zebra crossings on crossways (for those w/ vision impairments)
 Move theaters with no subtitle accommodation (for those w/ hearing impairments) 
@@ -52,7 +52,7 @@ Lack of informational signs with Braille (vision impaired)
 Steps and curbs that block entrances
 Stripes on train zone
 
-##App Features:
+## App Features:
 *Current features:*
 
 *Features to Add:*
@@ -192,7 +192,7 @@ Does the app include any instructions congealed to mesh with the visual-first de
 10.) Issues:
 If there are any bugs with the app how can I contact someone to let them know?
 
-#Where is the data stored?
+# Where is the data stored?
 -
 - Create a way to log all actions and data coming into the app
 - This should consist of logging errors, long load times, store user profile, buttons frequently hit
