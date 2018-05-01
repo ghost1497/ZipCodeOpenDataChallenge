@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ListPage } from '../list/list';
 
 /**
  * Generated class for the PackagePage page.
@@ -18,8 +19,12 @@ export class PackagePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PackagePage');
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad PackagePage');
+  // }
+
+  goToListPage() {
+    this.navCtrl.push(ListPage);
   }
 
 }

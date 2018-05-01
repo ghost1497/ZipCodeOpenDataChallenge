@@ -1,3 +1,41 @@
 page-package {
 
+    ion-navbar {
+        background: white;
+    }
+
+    ion-title.title {
+        font-family: Avenir;
+        font-weight: bold;
+    }
+
+   
+    .col {
+        padding: 0px;
+    }
+
+    .card-ios {
+        background: white;
+        color: #fff;
+        height: 140px;
+        text-align: center;
+        padding-top: 28%;
+    }
+    
+    label {
+        font-family: Avenir;
+        font-weight: bold;
+        font-size: 15px;
+        
+    }
+
+    .button-ios {
+        height: 45px;	
+        width: 289px;
+        background-color: white;	
+        color: #000;
+        font-family: Avenir;
+        font-size: 16px;
+        box-shadow: 0 2px 4px 0 rgba(183,180,180,0.5);
+    }
 }

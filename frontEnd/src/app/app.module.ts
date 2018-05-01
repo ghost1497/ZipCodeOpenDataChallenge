@@ -13,6 +13,9 @@ import { SignupPage } from '../pages/signup/signup';
 import { ItineraryPage } from '../pages/itinerary/itinerary';
 import { DonePage } from '../pages/done/done';
 import { CustomPage } from '../pages/custom/custom';
+import { PackagePage } from '../pages/package/package';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -25,12 +28,15 @@ import { CustomPage } from '../pages/custom/custom';
     SignupPage,
     ItineraryPage,
     DonePage, 
-    CustomPage
+    CustomPage,
+    PackagePage
 
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule
+  
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,7 +48,8 @@ import { CustomPage } from '../pages/custom/custom';
     SignupPage,
     ItineraryPage,
     DonePage,
-    CustomPage
+    CustomPage,
+    PackagePage
   ],
   providers: [
     StatusBar,

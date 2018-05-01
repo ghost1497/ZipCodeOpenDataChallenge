@@ -17,7 +17,7 @@
       so we can help you find the things you 
       want to experience!</p>
 
-  <form class="form" autocomplete="on">
+  <form class="form" autocomplete="on" [formGroup]="signUpForm">
     <!-- Dashboard Style -->
     <div class="group-name">
       <input class="field" type="text" placeholder="Full name" required>
@@ -53,7 +53,7 @@
      </ion-list>
 
   </form>
-
+<!-- Button for Sign Up -->
     <button ion-button (click)="goToMainPage()">NEXT</button>
  
 </ion-content>
