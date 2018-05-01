@@ -17,19 +17,18 @@
       so we can help you find the things you 
       want to experience!</p>
 
+
+  <!-- this is our form for the signup page -->
   <form class="form" autocomplete="on" [formGroup]="signUpForm">
     <!-- Dashboard Style -->
     <div class="group-name">
-      <input class="field" type="text" placeholder="Full name" required>
+      <input formControlName="fullName" class="field" type="text" placeholder="Full name" required>
     </div>
 
     <div class="group-email">
       <input class="email" type="text" placeholder="Email" required>
     </div>
 
-    <!-- <div class="group-birthdate"> 
-      
-    </div> -->
     <div class="group-date">
       <ion-item no-lines>
        <ion-label>Select Birthday</ion-label>
@@ -53,6 +52,7 @@
      </ion-list>
 
   </form>
+
 <!-- Button for Sign Up -->
     <button ion-button (click)="goToMainPage()">NEXT</button>
  
