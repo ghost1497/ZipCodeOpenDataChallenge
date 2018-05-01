@@ -38,3 +38,17 @@ URL: https://visitdelawarebackendv2.herokuapp.com
 		- URL : `String url;`
 		- WEATHER_INFO : `String weatherInfo;`
 		- NAME_OF_PARK : `String name;`
+		
+- **State Park Events Controller**
+	- GET all park events in DE: `"/stateParkEvents"`
+	- Attributes of SPE database:
+		- LOCAL_ID: `Long localId;`
+		- CATEGORY: `String category;`
+		- COST : `String cost;`
+		- DESCRIPTION : `String description;`
+		- END_DATE : `Date end_date;`
+		- PARK : `String park;`
+		- PROGRAM_TITLE : `String programtitle;`
+		- REGION: `String region;`
+		- START_DATE : `Date start_date;`
+		- START_TIME : `String start_time;`
