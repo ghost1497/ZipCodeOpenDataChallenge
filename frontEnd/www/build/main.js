@@ -58,7 +58,7 @@ var LaunchPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__main_main__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(159);
 // import { Component } from '@angular/core';
@@ -82,7 +82,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 // @IonicPage()
 // @Component({
 //   selector: 'page-signup',
-//template:/*ion-inline-start:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <p align="center">First we need some more information \n      so we can help you find the things you \n      want to experience!</p>\n\n\n  <!-- this is our form for the signup page -->\n  <form class="form" autocomplete="on" [formGroup]="signUpForm">\n    <!-- Dashboard Style -->\n    <div class="group-name">\n      <input formControlName="fullName" class="field" type="text" placeholder="Full name" required>\n    </div>\n\n    <div class="group-email">\n      <input class="email" type="text" placeholder="Email" required>\n    </div>\n\n    <div class="group-date">\n      <ion-item no-lines>\n       <ion-label>Select Birthday</ion-label>\n       <ion-datetime displayFormat="MMDDYYYY" [(ngModel)]="myDate" name="birthdate"></ion-datetime>\n      </ion-item>\n    </div>\n\n    <div class="group-zipcode">\n      <input class="zipcodefield" type="text" placeholder="Zipcode" required>\n    </div>\n\n    <ion-label class="group-accom">Accomodations:</ion-label>\n\n    <ion-list no-lines> \n\n      <ion-item class="disability">\n        <ion-label>Persons with Disability</ion-label>\n        <ion-checkbox [(ngModel)]="pepperoni" name="mobiledisability"></ion-checkbox>\n      </ion-item>\n    \n     </ion-list>\n\n  </form>\n\n<!-- Button for Sign Up -->\n    <button ion-button (click)="goToMainPage()">NEXT</button>\n \n</ion-content>\n'/*ion-inline-end:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/,
+//template:/*ion-inline-start:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <p align="center">First we need some more information \n      so we can help you find the things you \n      want to experience!</p>\n\n\n  <!-- this is our form for the signup page -->\n  <form class="form" autocomplete="on">\n    <!-- Dashboard Style -->\n    <div class="group-name">\n      <input class="field" type="text" placeholder="Full name" required>\n    </div>\n\n    <div class="group-email">\n      <input class="email" type="text" placeholder="Email" required>\n    </div>\n\n    <div class="group-date">\n      <ion-item no-lines>\n       <ion-label>Select Birthday</ion-label>\n       <ion-datetime displayFormat="MMDDYYYY" [(ngModel)]="myDate" name="birthdate"></ion-datetime>\n      </ion-item>\n    </div>\n\n    <div class="group-zipcode">\n      <input class="zipcodefield" type="text" placeholder="Zipcode" required>\n    </div>\n\n    <ion-label class="group-accom">Accomodations:</ion-label>\n\n    <ion-list no-lines> \n\n      <ion-item class="disability">\n        <ion-label>Persons with Disability</ion-label>\n        <ion-checkbox [(ngModel)]="pepperoni" name="mobiledisability"></ion-checkbox>\n      </ion-item>\n    \n     </ion-list>\n\n  </form>\n\n<!-- Button for Sign Up -->\n    <button ion-button (click)="goToMainPage()">NEXT</button>\n \n</ion-content>\n'/*ion-inline-end:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/,
 // })
 // export class SignupPage {
 //   name: string;
@@ -105,6 +105,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the SignupPage page.
  *
@@ -112,19 +113,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var SignupPage = /** @class */ (function () {
-    function SignupPage(navCtrl, formBuilder, http) {
+    function SignupPage(navCtrl, formBuilder, http, myGroup) {
         this.navCtrl = navCtrl;
         this.formBuilder = formBuilder;
         this.http = http;
+        this.myGroup = myGroup;
         this.submitAttempt = false;
         console.log('Hello SignUpProvider Provider');
         this.url = "https://visitdelawarebackendv2.herokuapp.com";
         this.signUpForm = formBuilder.group({
-            name: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].maxLength(30), __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].pattern('[a-zA-Z ]*'), __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required])],
-            emailAddress: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].email.bind(this)])],
+            name: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].maxLength(30), __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].pattern('[a-zA-Z ]*'), __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].required])],
+            emailAddress: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].email.bind(this)])],
             birthDate: [''],
-            zipcode: [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].minLength(5), __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].maxLength(5), __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required])],
+            zipcode: [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].minLength(5), __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].maxLength(5), __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].required])],
             handicapFlag: []
+        });
+        this.myGroup = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormGroup */]({
+            fullName: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormControl */]()
         });
     }
     SignupPage.prototype.save = function () {
@@ -160,9 +165,9 @@ var SignupPage = /** @class */ (function () {
     };
     SignupPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-signup',template:/*ion-inline-start:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <p align="center">First we need some more information \n      so we can help you find the things you \n      want to experience!</p>\n\n\n  <!-- this is our form for the signup page -->\n  <form class="form" autocomplete="on" [formGroup]="signUpForm">\n    <!-- Dashboard Style -->\n    <div class="group-name">\n      <input formControlName="name" class="field" type="text" placeholder="Full name" [class.invalid]="!signUpForm.controls.name.valid && (signUpForm.controls.name.dirty || submitAttempt)" required>\n    </div>\n\n    <ion-item *ngIf="!signUpForm.controls.name.valid  && (signUpForm.controls.name.dirty || submitAttempt)">\n        <p>Please enter a valid name.</p>\n    </ion-item>\n\n    <div class="group-email">\n      <input class="email" type="text" placeholder="Email" formControlName="emailAddress" type="email"  [class.invalid]="!signUpForm.controls.emailAddress.valid && (signUpForm.controls.emailAddress.dirty || submitAttempt)" required>\n    </div>\n\n    <ion-item *ngIf="!signUpForm.controls.emailAddress.valid  && (signUpForm.controls.emailAddress.dirty || submitAttempt)">\n        <p>Please enter a valid email.</p>\n    </ion-item>\n\n    <div class="group-date">\n      <ion-item no-lines>\n       <ion-label>Select Birthday</ion-label>\n       <ion-datetime displayFormat="MMDDYYYY" [(ngModel)]="myDate" name="birthdate" max="2006"></ion-datetime>\n      </ion-item>\n    </div>\n\n    <div class="group-zipcode">\n      <input class="zipcodefield" type="text" placeholder="Zipcode" formControlName="zipcode" type="number" [class.invalid]="!signUpForm.controls.zipcode.valid && (signUpForm.controls.zipcode.dirty || submitAttempt)" required>\n    </div>\n\n  </ion-item>\n  <ion-item *ngIf="!signUpForm.controls.zipcode.valid  && (signUpForm.controls.zipcode.dirty || submitAttempt)">\n      <p>Please enter a valid zipcode.</p>\n  </ion-item>\n\n  \n\n    <ion-label class="group-accom">Accomodations:</ion-label>\n\n    <ion-list no-lines> \n\n      <ion-item class="disability">\n        <ion-label>Persons with Disability</ion-label>\n        <ion-checkbox [(ngModel)]="pepperoni" name="mobiledisability"></ion-checkbox>\n      </ion-item>\n    \n     </ion-list>\n\n  </form>\n\n<!-- Button for Sign Up -->\n    <button ion-button (click)="goToMainPage()">NEXT</button>\n \n</ion-content>\n'/*ion-inline-end:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/,
+            selector: 'page-signup',template:/*ion-inline-start:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <p align="center">First we need some more information \n      so we can help you find the things you \n      want to experience!</p>\n\n\n  <!-- this is our form for the signup page -->\n  <form class="form" autocomplete="on" [formGroup]="signUpForm">\n    <!-- Dashboard Style -->\n    <div class="group-name">\n      <input formControlName="fullName" class="field" type="text" placeholder="Full name" required>\n    </div>\n\n    <div class="group-email">\n      <input class="email" type="text" placeholder="Email" required>\n    </div>\n\n    <div class="group-date">\n      <ion-item no-lines>\n       <ion-label>Select Birthday</ion-label>\n       <ion-datetime displayFormat="MMDDYYYY" [(ngModel)]="myDate" name="birthdate"></ion-datetime>\n      </ion-item>\n    </div>\n\n    <div class="group-zipcode">\n      <input class="zipcodefield" type="text" placeholder="Zipcode" required>\n    </div>\n\n    <ion-label class="group-accom">Accomodations:</ion-label>\n\n    <ion-list no-lines> \n\n      <ion-item class="disability">\n        <ion-label>Persons with Disability</ion-label>\n        <ion-checkbox [(ngModel)]="pepperoni" name="mobiledisability"></ion-checkbox>\n      </ion-item>\n    \n     </ion-list>\n\n  </form>\n\n<!-- Button for Sign Up -->\n    <button ion-button (click)="goToMainPage()">NEXT</button>\n \n</ion-content>\n'/*ion-inline-end:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormGroup */]])
     ], SignupPage);
     return SignupPage;
 }());
@@ -343,11 +348,11 @@ webpackEmptyAsyncContext.id = 116;
 
 var map = {
 	"../pages/custom/custom.module": [
-		283,
+		282,
 		8
 	],
 	"../pages/done/done.module": [
-		285,
+		283,
 		7
 	],
 	"../pages/guide-one/guide-one.module": [
@@ -355,27 +360,27 @@ var map = {
 		6
 	],
 	"../pages/itinerary/itinerary.module": [
-		286,
+		285,
 		5
 	],
 	"../pages/launch/launch.module": [
-		287,
+		286,
 		4
 	],
 	"../pages/list/list.module": [
-		288,
+		287,
 		3
 	],
 	"../pages/main/main.module": [
-		289,
+		288,
 		2
 	],
 	"../pages/package/package.module": [
-		290,
+		289,
 		1
 	],
 	"../pages/signup/signup.module": [
-		291,
+		290,
 		0
 	]
 };
@@ -395,52 +400,7 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 202:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GuideOnePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the GuideOnePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var GuideOnePage = /** @class */ (function () {
-    function GuideOnePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    GuideOnePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad GuideOnePage');
-    };
-    GuideOnePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-guide-one',template:/*ion-inline-start:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/guide-one/guide-one.html"*/'<!--\n  Generated template for the GuideOnePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>guideOne</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n\n  \n\n  \n</ion-content>\n'/*ion-inline-end:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/guide-one/guide-one.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], GuideOnePage);
-    return GuideOnePage;
-}());
-
-//# sourceMappingURL=guide-one.js.map
-
-/***/ }),
-
-/***/ 203:
+/***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -485,7 +445,52 @@ var DonePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 204:
+/***/ 201:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GuideOnePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the GuideOnePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var GuideOnePage = /** @class */ (function () {
+    function GuideOnePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    GuideOnePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad GuideOnePage');
+    };
+    GuideOnePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-guide-one',template:/*ion-inline-start:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/guide-one/guide-one.html"*/'<!--\n  Generated template for the GuideOnePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>guideOne</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n\n  \n\n  \n</ion-content>\n'/*ion-inline-end:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/guide-one/guide-one.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], GuideOnePage);
+    return GuideOnePage;
+}());
+
+//# sourceMappingURL=guide-one.js.map
+
+/***/ }),
+
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -530,13 +535,13 @@ var ItineraryPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 205:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(224);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -544,7 +549,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 226:
+/***/ 224:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -552,19 +557,18 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_launch_launch__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_guide_one_guide_one__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_list_list__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_main_main__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_signup_signup__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_itinerary_itinerary__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_done_done__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_custom_custom__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_package_package__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_common_http__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_launch_launch__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_guide_one_guide_one__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_list_list__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_main_main__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_signup_signup__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_itinerary_itinerary__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_done_done__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_custom_custom__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_package_package__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_common_http__ = __webpack_require__(159);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -575,7 +579,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
+//import { StatusBar } from '@ionic-native/status-bar';
 
 
 
@@ -593,24 +597,24 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_launch_launch__["a" /* LaunchPage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_guide_one_guide_one__["a" /* GuideOnePage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_list_list__["a" /* ListPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_main_main__["a" /* MainPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_signup_signup__["a" /* SignupPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_itinerary_itinerary__["a" /* ItineraryPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_done_done__["a" /* DonePage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_custom_custom__["a" /* CustomPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_package_package__["a" /* PackagePage */]
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_launch_launch__["a" /* LaunchPage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_guide_one_guide_one__["a" /* GuideOnePage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_list_list__["a" /* ListPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_main_main__["a" /* MainPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_signup_signup__["a" /* SignupPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_itinerary_itinerary__["a" /* ItineraryPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_done_done__["a" /* DonePage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_custom_custom__["a" /* CustomPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_package_package__["a" /* PackagePage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/custom/custom.module#CustomPageModule', name: 'CustomPage', segment: 'custom', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/guide-one/guide-one.module#GuideOnePageModule', name: 'GuideOnePage', segment: 'guide-one', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/done/done.module#DonePageModule', name: 'DonePage', segment: 'done', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/guide-one/guide-one.module#GuideOnePageModule', name: 'GuideOnePage', segment: 'guide-one', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/itinerary/itinerary.module#ItineraryPageModule', name: 'ItineraryPage', segment: 'itinerary', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/launch/launch.module#LaunchPageModule', name: 'LaunchPage', segment: 'launch', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/list/list.module#ListPageModule', name: 'ListPage', segment: 'list', priority: 'low', defaultHistory: [] },
@@ -619,23 +623,23 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
                     ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_15__angular_common_http__["b" /* HttpClientModule */]
+                __WEBPACK_IMPORTED_MODULE_14__angular_common_http__["b" /* HttpClientModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_launch_launch__["a" /* LaunchPage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_guide_one_guide_one__["a" /* GuideOnePage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_list_list__["a" /* ListPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_main_main__["a" /* MainPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_signup_signup__["a" /* SignupPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_itinerary_itinerary__["a" /* ItineraryPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_done_done__["a" /* DonePage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_custom_custom__["a" /* CustomPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_package_package__["a" /* PackagePage */]
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_launch_launch__["a" /* LaunchPage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_guide_one_guide_one__["a" /* GuideOnePage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_list_list__["a" /* ListPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_main_main__["a" /* MainPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_signup_signup__["a" /* SignupPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_itinerary_itinerary__["a" /* ItineraryPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_done_done__["a" /* DonePage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_custom_custom__["a" /* CustomPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_package_package__["a" /* PackagePage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
+                //StatusBar,
                 __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] },
             ]
@@ -648,15 +652,14 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 282:
+/***/ 281:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_launch_launch__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_launch_launch__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -668,17 +671,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
+//import { StatusBar } from '@ionic-native/status-bar';
 
 
 var MyApp = /** @class */ (function () {
-    function MyApp(platform, statusBar) {
+    function MyApp(platform) {
         // set the rootPage to the first page we want displayed
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_3__pages_launch_launch__["a" /* LaunchPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_2__pages_launch_launch__["a" /* LaunchPage */];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
-            statusBar.styleDefault();
+            //statusBar.styleDefault();
         });
     }
     __decorate([
@@ -688,7 +691,7 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]])
     ], MyApp);
     return MyApp;
 }());
@@ -742,5 +745,5 @@ var CustomPage = /** @class */ (function () {
 
 /***/ })
 
-},[205]);
+},[203]);
 //# sourceMappingURL=main.js.map
