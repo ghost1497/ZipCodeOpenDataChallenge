@@ -165,7 +165,7 @@ var SignupPage = /** @class */ (function () {
     };
     SignupPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-signup',template:/*ion-inline-start:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <p align="center">First we need some more information \n      so we can help you find the things you \n      want to experience!</p>\n\n\n  <!-- this is our form for the signup page -->\n  <form class="form" autocomplete="on" [formGroup]="signUpForm">\n    <!-- Dashboard Style -->\n    <div class="group-name">\n      <input formControlName="fullName" class="field" type="text" placeholder="Full name" required>\n    </div>\n\n    <div class="group-email">\n      <input class="email" type="text" placeholder="Email" required>\n    </div>\n\n    <div class="group-date">\n      <ion-item no-lines>\n       <ion-label>Select Birthday</ion-label>\n       <ion-datetime displayFormat="MMDDYYYY" [(ngModel)]="myDate" name="birthdate"></ion-datetime>\n      </ion-item>\n    </div>\n\n    <div class="group-zipcode">\n      <input class="zipcodefield" type="text" placeholder="Zipcode" required>\n    </div>\n\n    <ion-label class="group-accom">Accomodations:</ion-label>\n\n    <ion-list no-lines> \n\n      <ion-item class="disability">\n        <ion-label>Persons with Disability</ion-label>\n        <ion-checkbox [(ngModel)]="pepperoni" name="mobiledisability"></ion-checkbox>\n      </ion-item>\n    \n     </ion-list>\n\n  </form>\n\n<!-- Button for Sign Up -->\n    <button ion-button (click)="goToMainPage()">NEXT</button>\n \n</ion-content>\n'/*ion-inline-end:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/,
+            selector: 'page-signup',template:/*ion-inline-start:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <p align="center">First we need some more information \n      so we can help you find the things you \n      want to experience!</p>\n\n\n  <!-- this is our form for the signup page -->\n  <form class="form" autocomplete="on">\n    <!-- Dashboard Style -->\n    <div class="group-name">\n      <input class="field" type="text" placeholder="Full name" required>\n    </div>\n\n    <div class="group-email">\n      <input class="email" type="text" placeholder="Email" required>\n    </div>\n\n    <div class="group-date">\n      <ion-item no-lines>\n       <ion-label>Select Birthday</ion-label>\n       <ion-datetime displayFormat="MMDDYYYY" [(ngModel)]="myDate" name="birthdate"></ion-datetime>\n      </ion-item>\n    </div>\n\n    <div class="group-zipcode">\n      <input class="zipcodefield" type="text" placeholder="Zipcode" required>\n    </div>\n\n    <ion-label class="group-accom">Accomodations:</ion-label>\n\n    <ion-list no-lines> \n\n      <ion-item class="disability">\n        <ion-label>Persons with Disability</ion-label>\n        <ion-checkbox [(ngModel)]="pepperoni" name="mobiledisability"></ion-checkbox>\n      </ion-item>\n    \n     </ion-list>\n\n  </form>\n\n<!-- Button for Sign Up -->\n    <button ion-button (click)="goToMainPage()">NEXT</button>\n \n</ion-content>\n'/*ion-inline-end:"/Users/katricewilliams-dredden/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormGroup */]])
     ], SignupPage);
@@ -377,11 +377,11 @@ var map = {
 	],
 	"../pages/package/package.module": [
 		289,
-		1
+		0
 	],
 	"../pages/signup/signup.module": [
 		290,
-		0
+		1
 	]
 };
 function webpackAsyncContext(req) {
