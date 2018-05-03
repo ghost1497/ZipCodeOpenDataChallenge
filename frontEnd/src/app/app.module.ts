@@ -16,6 +16,7 @@ import { CustomPage } from '../pages/custom/custom';
 import { PackagePage } from '../pages/package/package';
 import { NplistPage } from '../pages/nplist/nplist';
 import { HttpClientModule } from '@angular/common/http';
+import { IonicStorageModule } from '@ionic/storage';
 
 
 
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
+    HttpClientModule,
+    IonicStorageModule.forRoot()
 
   ],
   bootstrap: [IonicApp],

@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CustomPage } from '../custom/custom';
 import { PackagePage } from '../package/package';
 
+
 /**
  * Generated class for the MainPage page.
  *
@@ -32,5 +33,7 @@ export class MainPage {
   goToCustomPage() {
     this.navCtrl.push(CustomPage);
   }
+
+
 
 }

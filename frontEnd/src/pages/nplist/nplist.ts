@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import * as _ from 'lodash';
+import { Storage } from '@ionic/storage';
 
 /**
  * Generated class for the NplistPage page.
@@ -23,7 +24,7 @@ export class NplistPage {
   parksArr: any;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public storage : Storage) {
     this.url = "https://visitdelawarebackendv2.herokuapp.com/parksInDE";
     let headers = {
       headers: new HttpHeaders({

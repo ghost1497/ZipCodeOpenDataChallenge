@@ -41,7 +41,7 @@ var CustomPage = /** @class */ (function () {
     };
     CustomPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-custom',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/'<!--\n  Generated template for the CustomPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Custom Options</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding=true>\n  <ion-card>\n    <ion-card-header>\n      Parks\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toNationalParkList()">\n        <ion-icon name="leaf" item-start></ion-icon>\n        National Parks\n      </button>\n      <button ion-item>\n        <ion-icon name="leaf" item-start></ion-icon>\n        State Park Events\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Food\n    </ion-card-header>\n    <ion-list>\n      <button ion-item>\n        <ion-icon name="pizza" item-start></ion-icon>\n        Fast Food\n      </button>\n      <button ion-item>\n        <ion-icon name="bowtie" item-start></ion-icon>\n        Fine Dining\n      </button>\n      <button ion-item>\n        <ion-icon name="contacts" item-start></ion-icon>\n        Family Establishments\n      </button>\n      <button ion-item>\n        <ion-icon name="beaker" item-start></ion-icon>\n        Coffee Shops\n      </button>\n      <button ion-item>\n        <ion-icon name="ice-cream" item-start>\n        </ion-icon>\n        Ice Cream\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Recreation\n    </ion-card-header>\n    <ion-list>\n      <button ion-item>\n        <ion-icon name="film" item-start></ion-icon>\n        Movie Theatres\n      </button>\n      <button ion-item>\n        <ion-icon name="american-football" item-start></ion-icon>\n        Sports Events\n      </button>\n      <button ion-item>\n        <ion-icon name="beer" item-start>\n        </ion-icon>\n        Bars\n      </button>\n      <button ion-item>\n        <ion-icon name="wine" item-start></ion-icon>\n        Night Clubs\n      </button>\n    </ion-list>\n  </ion-card>\n  <button ion-button color="primary" (click)=toShoppingCart() outline block>Build Itinerary</button>\n</ion-content>\n\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/,
+            selector: 'page-custom',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/'<!--\n  Generated template for the CustomPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Custom Options</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Parks\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toNationalParkList()">\n        <ion-icon name="leaf" item-start></ion-icon>\n        National Parks\n      </button>\n      <button ion-item>\n        <ion-icon name="leaf" item-start></ion-icon>\n        State Park Events\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Food\n    </ion-card-header>\n    <ion-list>\n      <button ion-item>\n        <ion-icon name="pizza" item-start></ion-icon>\n        Fast Food\n      </button>\n      <button ion-item>\n        <ion-icon name="bowtie" item-start></ion-icon>\n        Fine Dining\n      </button>\n      <button ion-item>\n        <ion-icon name="contacts" item-start></ion-icon>\n        Family Establishments\n      </button>\n      <button ion-item>\n        <ion-icon name="beaker" item-start></ion-icon>\n        Coffee Shops\n      </button>\n      <button ion-item>\n        <ion-icon name="ice-cream" item-start>\n        </ion-icon>\n        Ice Cream\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Recreation\n    </ion-card-header>\n    <ion-list>\n      <button ion-item>\n        <ion-icon name="film" item-start></ion-icon>\n        Movie Theatres\n      </button>\n      <button ion-item>\n        <ion-icon name="american-football" item-start></ion-icon>\n        Sports Events\n      </button>\n      <button ion-item>\n        <ion-icon name="beer" item-start>\n        </ion-icon>\n        Bars\n      </button>\n      <button ion-item>\n        <ion-icon name="wine" item-start></ion-icon>\n        Night Clubs\n      </button>\n    </ion-list>\n  </ion-card>\n  <button ion-button color="primary" (click)=toShoppingCart() outline block>Build Itinerary</button>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], CustomPage);
@@ -60,6 +60,7 @@ var CustomPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(161);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -72,6 +73,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the NplistPage page.
  *
@@ -79,11 +81,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var NplistPage = /** @class */ (function () {
-    function NplistPage(navCtrl, navParams, http) {
+    function NplistPage(navCtrl, navParams, http, storage) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.http = http;
+        this.storage = storage;
         this.parksArrNotFixed = [];
         this.url = "https://visitdelawarebackendv2.herokuapp.com/parksInDE";
         var headers = {
@@ -103,12 +106,11 @@ var NplistPage = /** @class */ (function () {
     };
     NplistPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-nplist',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/nplist/nplist.html"*/'<!--\n  Generated template for the NplistPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>National Parks</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card *ngFor="let park of parksArr">\n    <img src=\'../../assets/imgs/nature_lover.jpg\'>\n    <ion-card-content>\n      <ion-card-title>{{park.name}}</ion-card-title>\n      <p>\n        {{park.description}}\n      </p>\n      <div>\n        <label >Location: {{park.latLong}}</label>\n\n      </div>\n    </ion-card-content>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/nplist/nplist.html"*/,
+            selector: 'page-nplist',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/nplist/nplist.html"*/'<!--\n  Generated template for the NplistPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>National Parks</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card *ngFor="let park of parksArr">\n    <img src=\'../../assets/imgs/nature_lover.jpg\'>\n    <ion-card-content>\n      <ion-card-title>{{park.name}}</ion-card-title>\n      <p>\n        {{park.description}}\n      </p>\n      <div>\n        <label >Location: {{park.latLong}}</label>\n\n      </div>\n\n    </ion-card-content>\n    <ion-item>\n        <ion-label> Add to itinerary</ion-label>\n        <ion-toggle checked="false"></ion-toggle>\n      </ion-item>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/nplist/nplist.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */]])
     ], NplistPage);
     return NplistPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=nplist.js.map
@@ -429,43 +431,43 @@ webpackEmptyAsyncContext.id = 118;
 
 var map = {
 	"../pages/custom/custom.module": [
-		285,
+		287,
 		9
 	],
 	"../pages/done/done.module": [
-		286,
+		288,
 		8
 	],
 	"../pages/guide-one/guide-one.module": [
-		287,
+		289,
 		7
 	],
 	"../pages/itinerary/itinerary.module": [
-		288,
+		290,
 		6
 	],
 	"../pages/launch/launch.module": [
-		289,
+		291,
 		5
 	],
 	"../pages/list/list.module": [
-		290,
+		292,
 		4
 	],
 	"../pages/main/main.module": [
-		292,
+		293,
 		3
 	],
 	"../pages/nplist/nplist.module": [
-		291,
+		294,
 		2
 	],
 	"../pages/package/package.module": [
-		293,
+		295,
 		1
 	],
 	"../pages/signup/signup.module": [
-		294,
+		296,
 		0
 	]
 };
@@ -485,7 +487,7 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -530,7 +532,7 @@ var DonePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 202:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -575,7 +577,7 @@ var GuideOnePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 203:
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -620,13 +622,13 @@ var ItineraryPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 204:
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(226);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -634,7 +636,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 225:
+/***/ 226:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -642,19 +644,20 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(286);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_launch_launch__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_guide_one_guide_one__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_guide_one_guide_one__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_list_list__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_main_main__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_signup_signup__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_itinerary_itinerary__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_done_done__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_itinerary_itinerary__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_done_done__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_custom_custom__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_package_package__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_nplist_nplist__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_common_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_storage__ = __webpack_require__(161);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -666,6 +669,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 //import { StatusBar } from '@ionic-native/status-bar';
+
 
 
 
@@ -706,13 +710,14 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/itinerary/itinerary.module#ItineraryPageModule', name: 'ItineraryPage', segment: 'itinerary', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/launch/launch.module#LaunchPageModule', name: 'LaunchPage', segment: 'launch', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/list/list.module#ListPageModule', name: 'ListPage', segment: 'list', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/nplist/nplist.module#NplistPageModule', name: 'NplistPage', segment: 'nplist', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/main/main.module#MainPageModule', name: 'MainPage', segment: 'main', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/nplist/nplist.module#NplistPageModule', name: 'NplistPage', segment: 'nplist', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/package/package.module#PackagePageModule', name: 'PackagePage', segment: 'package', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
                     ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_15__angular_common_http__["b" /* HttpClientModule */]
+                __WEBPACK_IMPORTED_MODULE_15__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_16__ionic_storage__["a" /* IonicStorageModule */].forRoot()
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
@@ -742,7 +747,7 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 284:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -790,5 +795,5 @@ var MyApp = /** @class */ (function () {
 
 /***/ })
 
-},[204]);
+},[205]);
 //# sourceMappingURL=main.js.map
