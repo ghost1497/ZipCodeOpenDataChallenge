@@ -14,6 +14,7 @@ import { ItineraryPage } from '../pages/itinerary/itinerary';
 import { DonePage } from '../pages/done/done';
 import { CustomPage } from '../pages/custom/custom';
 import { PackagePage } from '../pages/package/package';
+import { NplistPage } from '../pages/nplist/nplist';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     ItineraryPage,
     DonePage,
     CustomPage,
-    PackagePage
+    PackagePage,
+    NplistPage
 
   ],
   imports: [
@@ -49,7 +51,8 @@ import { HttpClientModule } from '@angular/common/http';
     ItineraryPage,
     DonePage,
     CustomPage,
-    PackagePage
+    PackagePage,
+    NplistPage
   ],
   providers: [
     //StatusBar,

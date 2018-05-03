@@ -5,8 +5,6 @@ import { NavController } from 'ionic-angular';
 
 import { LaunchPage } from '../pages/launch/launch';
 
-import { MainPage } from '../pages/main/main';
-
 @Component({
   templateUrl: 'app.html'
 })

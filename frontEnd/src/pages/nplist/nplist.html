@@ -1,0 +1,31 @@
+<!--
+  Generated template for the NplistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>National Parks</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let park of parksArr">
+    <img src='../../assets/imgs/nature_lover.jpg'>
+    <ion-card-content>
+      <ion-card-title>{{park.name}}</ion-card-title>
+      <p>
+        {{park.description}}
+      </p>
+      <div>
+        <label >Location: {{park.latLong}}</label>
+
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

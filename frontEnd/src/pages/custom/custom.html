@@ -13,13 +13,13 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding=true>
   <ion-card>
     <ion-card-header>
       Parks
     </ion-card-header>
     <ion-list>
-      <button ion-item>
+      <button ion-item (click)="toNationalParkList()">
         <ion-icon name="leaf" item-start></ion-icon>
         National Parks
       </button>
@@ -83,5 +83,6 @@
       </button>
     </ion-list>
   </ion-card>
-
+  <button ion-button color="primary" (click)=toShoppingCart() outline block>Build Itinerary</button>
 </ion-content>
+
