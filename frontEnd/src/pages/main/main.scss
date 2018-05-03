@@ -1,0 +1,49 @@
+page-main {
+
+    div.label {
+        font-family: Avenir;
+        font-size: 15px;
+        font-weight: 900px; 
+        padding-left: 20%;
+        padding-top: 50px;
+    }
+
+    div.custom {
+        padding-left: 3%;
+        padding-top: 15%;
+        
+
+        .button-ios{
+            border-radius: 10px;
+            height: 2.8em;
+            font-size: 1.6rem;
+            color: #fff;
+            background: linear-gradient(to right, #1488cc, #2b32b2);
+            margin: 0.4rem 0.2rem;
+            padding: 0 1em;
+            height: 150px;
+            width: 280px;
+        }
+    
+    }
+
+    div.packages {
+        padding-left: 3%;
+        padding-top: 6%;
+
+        .button-ios {
+            
+            border-radius: 10px;
+            height: 2.8em;
+            font-size: 1.6rem;
+            color: #fff;
+            background: linear-gradient(to right, #1488cc, #2b32b2); 
+            margin: 0.4rem 0.2rem;
+            padding: 0 1em;
+            height: 150px;
+            width: 280px;
+            background-position-y: bottom;
+        }
+    }
+
+}
