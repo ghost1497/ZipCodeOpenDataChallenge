@@ -19,7 +19,7 @@
   <!-- this is our form for the signup page -->
   <ion-grid>
     <ion-row>
-      <ion-col width-100>
+      <ion-col>
         <ion-list no-lines>
           <form class="form" (ngSubmit)="save()">
             <!-- Dashboard Style -->
@@ -44,10 +44,10 @@
               <ion-label left stacked>Persons with Disability</ion-label>
               <ion-checkbox [(ngModel)]="handicapFlag" name="handicapFlag"></ion-checkbox>
             </ion-item>
+            <button ion-button color="primary" (click)="goToMainPage()" outline block>NEXT</button>
           </form>
         </ion-list>
       </ion-col>
     </ion-row>
   </ion-grid>
-  <button ion-button color="primary" (click)="goToMainPage()" outline block>NEXT</button>
 </ion-content>

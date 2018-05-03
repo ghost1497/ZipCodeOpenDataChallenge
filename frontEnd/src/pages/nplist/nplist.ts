@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
+import * as _ from 'lodash';
 
 /**
  * Generated class for the NplistPage page.
@@ -18,6 +19,7 @@ import { Observable } from 'rxjs/Observable';
 export class NplistPage {
 
   url: string;
+  parksArrNotFixed = [];
   parksArr: any;
 
 
@@ -33,6 +35,8 @@ export class NplistPage {
     data.subscribe(result => {
       this.parksArr = result;
     });
+
+    // this.parksArr = _.uniq(this.parksArrNotFixed);
   }
 
   ionViewDidLoad() {
