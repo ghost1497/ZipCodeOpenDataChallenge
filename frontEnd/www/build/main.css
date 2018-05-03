@@ -25678,6 +25678,68 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+.custom-page ion-card {
+  width: 95px;
+  height: 160px;
+}
+
+page-launch .logoimg {
+  width: 1000;
+  height: 500;
+  top: 27%;
+  left: 5%;
+  position: absolute;
+}
+
+page-launch ion-card {
+  height: 291.27px;
+  width: 269px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
+}
+
+page-launch .button {
+  height: 45px;
+  width: 289px;
+  background-color: white;
+  color: #000;
+  font-family: Avenir;
+  font-size: 16px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
+}
+
+page-launch .card-one-text {
+  top: 621px;
+  height: 40px;
+  width: 303px;
+  color: #000;
+  font-family: Avenir;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+}
+
+page-list .scroll-zoom-wrapper {
+  white-space: nowrap;
+}
+
+page-list ion-card {
+  width: 250px !important;
+  display: inline-block;
+}
+
+page-list ion-scroll {
+  min-height: 160px;
+  height: auto;
+}
+
+page-list ion-scroll .scroll-content {
+  padding: 0px !important;
+}
+
 page-main .card-background-page {
   background-image: url(../assets/imgs/example.jpg);
 }

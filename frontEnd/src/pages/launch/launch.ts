@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import {SignupPage} from '../signup/signup';
 /**
  * Generated class for the LaunchPage page.
  *
@@ -21,7 +21,8 @@ export class LaunchPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LaunchPage');
   }
+  goToSignupPage() {
+    this.navCtrl.push(SignupPage);
+  }
 
 }
-
-//needs ionic plugin for logo launch

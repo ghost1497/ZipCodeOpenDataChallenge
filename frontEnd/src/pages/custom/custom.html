@@ -4,6 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+
 <ion-header>
 
   <ion-navbar>
@@ -12,7 +13,80 @@
 
 </ion-header>
 
-
-<ion-content padding>
-
-</ion-content>
+<ion-content class="custom-page" padding>
+    <ion-grid no-padding>
+      <ion-row align-items-start> 
+        <ng-container>
+         
+        <ion-col col-4 *ngFor="let item of parksItems">
+          <ion-card (click)="saveSelection()">
+            <ion-card-header>{{ item.title }}</ion-card-header>
+            <ion-card-content>{{ item.text }}</ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ng-container>
+      
+      </ion-row>
+    </ion-grid>   
+    <button ion-button (click)="goToListPage()">NEXT</button>
+    </ion-content>
+    <!-- <ion-content class="custom-page" padding>
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-card class="card-one">
+                  <ion-card-content>
+                    <label>Family Fun</label>
+                  </ion-card-content>
+                
+                </ion-card>
+          </ion-col>
+          <ion-col>
+              <ion-card class="card-one">
+                  <ion-card-content>
+                    <label>Club Goers</label>
+                  </ion-card-content>
+                
+                </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-card class="card-one">
+                    <ion-card-content>
+                      <label>Brunch -n- Brews</label>
+                    </ion-card-content>
+                  
+                  </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card class="card-one">
+                    <ion-card-content>
+                      <label>Historic Wilmington</label>
+                    </ion-card-content>
+                  
+                  </ion-card>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col>
+                  <ion-card class="card-one">
+                      <ion-card-content>
+                        <label>Nature Lover</label>
+                      </ion-card-content>
+                    
+                    </ion-card>
+              </ion-col>
+              <ion-col>
+                  <ion-card class="card-one">
+                      <ion-card-content>
+                        <label>Free Adventures</label>
+                      </ion-card-content>
+                    
+                    </ion-card>
+              </ion-col>
+            </ion-row>
+      </ion-grid>
+      <button ion-button (click)="goToListPage()">NEXT</button>
+</ion-content> -->
+ 

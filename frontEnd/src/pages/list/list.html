@@ -1,0 +1,51 @@
+<!--
+  Generated template for the ListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>list</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<!-- <ion-content padding>
+    <ion-scroll scrollX="true" direction="x">
+        <ion-card *ngFor="let item of listCardsParks">
+          <ion-card-content>
+            <ion-card-title>
+              {{ item.title }}
+              </ion-card-title>
+            <button ion-item (click)="openDetailActivity(item)">            
+              More info
+              <ion-icon name="arrow-forward" item-right color="primary"></ion-icon>
+            </button>
+          </ion-card-content>
+        </ion-card>
+      </ion-scroll>
+</ion-content> -->
+
+<ion-content padding>
+    <ion-scroll scrollX="true" direction="x">
+      <ng-container *ngFor="let parkEvent of parkEvents; let i = index">
+      <ion-card *ngIf="i<5">
+          <ion-card-content>
+            <ion-card-title> {{parkEvent.start_time}}</ion-card-title>
+           
+              <!-- <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference="+{{park.photos.photo_reference}}+"&key=AIzaSyAv5Kq24hQJew5gTEGXgpV2x2uxsnm-HkA">
+               -->
+            <button ion-item (click)="openDetailActivity(item)">            
+              More info
+              <ion-icon name="arrow-forward" item-right color="primary"></ion-icon>
+            </button>
+          </ion-card-content>
+        </ion-card>
+      </ng-container>
+      </ion-scroll>
+
+</ion-content> -->
+

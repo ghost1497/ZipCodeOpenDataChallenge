@@ -34,13 +34,6 @@
             <p>Please enter a valid email.</p>
         </ion-item>
         
-        <!-- <ion-item>
-            <ion-label floating>Birth Date</ion-label>
-            <ion-input formControlName="birthDate" type="number" [class.invalid]="!signUpForm.controls.birthDate.valid && (signUpForm.controls.birthDate.dirty || submitAttempt)"></ion-input>
-        </ion-item>
-        <ion-item *ngIf="!signUpForm.controls.birthDate.valid  && (signUpForm.controls.birthDate.dirty || submitAttempt)">
-            <p>Please enter a valid birthdate.</p>
-        </ion-item> -->
         <ion-item>
             <ion-label>Birth Date</ion-label>
            <ion-datetime formControlName="birthDate" type="text"   displayFormat="MM DD YYYY" max="2006"> </ion-datetime>
@@ -53,14 +46,25 @@
         <ion-item *ngIf="!signUpForm.controls.zipcode.valid  && (signUpForm.controls.zipcode.dirty || submitAttempt)">
             <p>Please enter a valid zipcode.</p>
         </ion-item>
+        <ion-item no-lines>
+            <ion-label> Mobile Disibilty</ion-label>
+        <ion-checkbox formControlName="handicapFlag" color="dark" checked="true">Mobility Disibilty</ion-checkbox>
+        </ion-item>
+        <ion-item no-lines>
+                <ion-label> Allergies</ion-label>
+            <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            </ion-item>
+            <ion-item no-lines>
+                    <ion-label> Food Allergies</ion-label>
+                <ion-checkbox color="dark"></ion-checkbox>
+                </ion-item>
+                <ion-item no-lines>
+                        <ion-label> Vegan</ion-label>
+                    <ion-checkbox color="dark"></ion-checkbox>
+                    </ion-item>
+          
+    </form>
+</ion-list>
 
-
-
-<i class="fa fa-wheelchair-alt" aria-hidden="true">
-    <ion-checkbox formControlName="handicapFlag" color="dark" checked="true"></ion-checkbox>
-        </i>
-        
         <button  ion-button (click)="save()">Sign Up</button>
-        </form>
-      </ion-list>
 </ion-content>
