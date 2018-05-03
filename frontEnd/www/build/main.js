@@ -404,19 +404,19 @@ var map = {
 	],
 	"../pages/list/list.module": [
 		285,
-		3
+		0
 	],
 	"../pages/main/main.module": [
 		286,
-		2
+		3
 	],
 	"../pages/package/package.module": [
 		287,
-		1
+		2
 	],
 	"../pages/signup/signup.module": [
 		288,
-		0
+		1
 	]
 };
 function webpackAsyncContext(req) {
