@@ -107,16 +107,17 @@ export class ItineraryPage {
     directionsDisplay.setPanel(this.directionsPanel.nativeElement);
 
     directionsService.route({
-        origin: 'Zip Code Wilmington',
-        destination: 'adelaide oval',
+        origin: this.origin,
+        destination: this.destination,
         travelMode: google.maps.TravelMode['DRIVING']
     }, (res, status) => {
 
-        if(status == google.maps.DirectionsStatus.OK){
-            directionsDisplay.setDirections(res);
-        } else {
-            console.warn(status);
-        }
+        // if(status == google.maps.DirectionsStatus.OK){
+        //     directionsDisplay.setDirections(res);
+        // } else {
+        //     console.warn(status);
+        // }
+        directionsDisplay.setDirections(res);
 
     });
 

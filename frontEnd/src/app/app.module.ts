@@ -15,9 +15,12 @@ import { DonePage } from '../pages/done/done';
 import { CustomPage } from '../pages/custom/custom';
 import { PackagePage } from '../pages/package/package';
 import { NplistPage } from '../pages/nplist/nplist';
+import {CoffeeshopsPage} from '../pages/coffeeshops/coffeeshops';
 import { HttpClientModule } from '@angular/common/http';
 import { IonicStorageModule } from '@ionic/storage';
 import { Geolocation } from '@ionic-native/geolocation';
+import { IcecreamshopsPage } from '../pages/icecreamshops/icecreamshops';
+import { BarsPage } from '../pages/bars/bars';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { Geolocation } from '@ionic-native/geolocation';
     DonePage,
     CustomPage,
     PackagePage,
-    NplistPage
+    NplistPage,
+    CoffeeshopsPage,
+    IcecreamshopsPage,
+    BarsPage
 
   ],
   imports: [
@@ -54,7 +60,10 @@ import { Geolocation } from '@ionic-native/geolocation';
     DonePage,
     CustomPage,
     PackagePage,
-    NplistPage
+    NplistPage,
+    CoffeeshopsPage,
+    IcecreamshopsPage,
+    BarsPage
   ],
   providers: [
     //StatusBar,

@@ -1,9 +1,12 @@
-import { Component } from "@angular/core";
-import { IonicPage, NavController, NavParams } from "ionic-angular";
-import { NplistPage } from "../nplist/nplist";
-import { ItineraryPage } from "../itinerary/itinerary";
-import { Storage } from "@ionic/storage";
-import { AlertController } from "ionic-angular";
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NplistPage } from '../nplist/nplist';
+import {CoffeeshopsPage} from '../coffeeshops/coffeeshops';
+import {IcecreamshopsPage} from '../icecreamshops/icecreamshops';
+import { BarsPage } from '../bars/bars';
+import { ItineraryPage } from '../itinerary/itinerary';
+import { Storage } from '@ionic/storage';
+import { AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the CustomPage page.
@@ -33,6 +36,17 @@ export class CustomPage {
   toNationalParkList() {
     this.navCtrl.push(NplistPage);
   }
+  toCoffeeShopsList(){
+  this.navCtrl.push(CoffeeshopsPage);
+}
+toIceCreamShopsList(){
+  this.navCtrl.push(IcecreamshopsPage);
+}
+toBarsList(){
+  this.navCtrl.push(BarsPage);
+}
+
+
 
   toShoppingCart() {
     this.storage.keys().then(data => {

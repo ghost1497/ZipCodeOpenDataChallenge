@@ -1,0 +1,32 @@
+<!--
+  Generated template for the CoffeeshopsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Coffee Shops</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <ng-container  *ngFor="let coffee of coffeeShopsArry; let i = index">
+        <ion-card *ngIf="i<3">
+      <img src='{{coffee.image_url}}'>
+      <ion-card-content>
+        <ion-card-title>{{coffee.name}}</ion-card-title>
+        <a href={{coffee.url}}>Visit their website for more information here</a>
+        <div>
+          <label >Price: {{coffee.price}}</label>
+          <label >Rating: {{coffee.rating}}</label>
+        </div>
+
+      </ion-card-content>
+      <button ion-button color="primary" (click)="addToItinerary(coffee.name, coffee.coordinates)" outline block>Add to itinerary</button>
+    </ion-card>
+  </ng-container>
+
+  </ion-content>
