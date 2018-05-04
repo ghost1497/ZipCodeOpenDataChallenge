@@ -15,6 +15,7 @@ import { DonePage } from '../pages/done/done';
 import { CustomPage } from '../pages/custom/custom';
 import { PackagePage } from '../pages/package/package';
 import { NplistPage } from '../pages/nplist/nplist';
+import {CoffeeshopsPage} from '../pages/coffeeshops/coffeeshops';
 import { HttpClientModule } from '@angular/common/http';
 import { IonicStorageModule } from '@ionic/storage';
 
@@ -32,7 +33,8 @@ import { IonicStorageModule } from '@ionic/storage';
     DonePage,
     CustomPage,
     PackagePage,
-    NplistPage
+    NplistPage,
+    CoffeeshopsPage
 
   ],
   imports: [
@@ -54,7 +56,8 @@ import { IonicStorageModule } from '@ionic/storage';
     DonePage,
     CustomPage,
     PackagePage,
-    NplistPage
+    NplistPage,
+    CoffeeshopsPage
   ],
   providers: [
     //StatusBar,

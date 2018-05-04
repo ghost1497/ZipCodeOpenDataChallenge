@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NplistPage } from '../nplist/nplist';
-
+import {CoffeeshopsPage} from '../coffeeshops/coffeeshops';
 /**
  * Generated class for the CustomPage page.
  *
@@ -26,7 +26,9 @@ export class CustomPage {
   toNationalParkList(){
     this.navCtrl.push(NplistPage);
   }
-
+  toCoffeeShopsListList(){
+  this.navCtrl.push(CoffeeshopsPage);
+}
   toShoppingCart(){
 
   }

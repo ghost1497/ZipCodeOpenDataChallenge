@@ -14,7 +14,8 @@
 
 
 <ion-content padding>
-  <ion-card *ngFor="let park of parksArr">
+  <ng-container  *ngFor="let park of parksArr; let i = index">
+      <ion-card *ngIf="i<3">
     <img src='../../assets/imgs/nature_lover.jpg'>
     <ion-card-content>
       <ion-card-title>{{park.name}}</ion-card-title>
@@ -32,5 +33,6 @@
         <ion-toggle checked="false"></ion-toggle>
       </ion-item>
   </ion-card>
+</ng-container>
 
 </ion-content>
