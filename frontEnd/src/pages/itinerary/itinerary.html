@@ -14,5 +14,18 @@
 <ion-content padding>
     <iframe src="https://embed.waze.com/iframe?zoom=12&lat=45.6906304&lon=-120.810983"
     width="300" height="400"></iframe>
-
+    <ion-item-divider></ion-item-divider>
+    <h1 ion-text>Your Itinerary</h1>
+    <ion-item-divider>
+    <ion-card *ngFor="let item of itineraryList">
+      <ion-card-content>
+        <ion-label>{{item}}</ion-label>
+        <ion-row>
+          <ion-col>
+            <button ion-button color="danger" outline (click)="deleteItem(item)"> Delete item</button>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-item-divider>
 </ion-content>

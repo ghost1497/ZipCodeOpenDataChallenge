@@ -115,9 +115,10 @@ var NplistPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-nplist',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/nplist/nplist.html"*/'<!--\n  Generated template for the NplistPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>National Parks</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card *ngFor="let park of parksArr| slice:0:3; let i=index">\n    <img src=\'../../assets/imgs/nature_lover.jpg\'>\n    <ion-card-content>\n      <ion-card-title>{{park.name}}</ion-card-title>\n      <p>\n        {{park.description}}\n      </p>\n      <div>\n        <label>Location: {{park.latLong}}</label>\n      </div>\n    </ion-card-content>\n    <button ion-button color="primary" (click)="addToItinerary(park.name, park.latLong)" outline block>Add to itinerary</button>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/nplist/nplist.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */]) === "function" && _d || Object])
     ], NplistPage);
     return NplistPage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=nplist.js.map
@@ -131,6 +132,7 @@ var NplistPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItineraryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(162);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -142,6 +144,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
  * Generated class for the ItineraryPage page.
  *
@@ -149,20 +152,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ItineraryPage = /** @class */ (function () {
-    function ItineraryPage(navCtrl, navParams) {
+    function ItineraryPage(navCtrl, navParams, storage) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.storage = storage;
+        console.log(storage.keys());
+        this.storage.keys().then(function (data) {
+            _this.itineraryList = data;
+        });
     }
+    ItineraryPage_1 = ItineraryPage;
     ItineraryPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad ItineraryPage');
     };
-    ItineraryPage = __decorate([
+    ItineraryPage.prototype.deleteItem = function (item) {
+        this.storage.remove(item);
+        this.navCtrl.pop();
+        this.navCtrl.push(ItineraryPage_1);
+    };
+    ItineraryPage = ItineraryPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-itinerary',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/'<!--\n  Generated template for the ItineraryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>Your Personalized Itinerary</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n    <iframe src="https://embed.waze.com/iframe?zoom=12&lat=45.6906304&lon=-120.810983"\n    width="300" height="400"></iframe>\n\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/,
+            selector: 'page-itinerary',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/'<!--\n  Generated template for the ItineraryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>Your Personalized Itinerary</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n    <iframe src="https://embed.waze.com/iframe?zoom=12&lat=45.6906304&lon=-120.810983"\n    width="300" height="400"></iframe>\n    <ion-item-divider></ion-item-divider>\n    <h1 ion-text>Your Itinerary</h1>\n    <ion-item-divider>\n    <ion-card *ngFor="let item of itineraryList">\n      <ion-card-content>\n        <ion-label>{{item}}</ion-label>\n        <ion-row>\n          <ion-col>\n            <button ion-button color="danger" outline (click)="deleteItem(item)"> Delete item</button>\n          </ion-col>\n        </ion-row>\n      </ion-card-content>\n    </ion-card>\n  </ion-item-divider>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _c || Object])
     ], ItineraryPage);
     return ItineraryPage;
+    var ItineraryPage_1, _a, _b, _c;
 }());
 
 //# sourceMappingURL=itinerary.js.map
@@ -320,6 +336,7 @@ var SignupPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__custom_custom__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__package_package__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(162);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -333,6 +350,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the MainPage page.
  *
@@ -340,9 +358,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var MainPage = /** @class */ (function () {
-    function MainPage(navCtrl, navParams) {
+    function MainPage(navCtrl, navParams, storage) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.storage = storage;
+        this.storage.clear();
     }
     // ionViewDidLoad() {
     //   console.log('ionViewDidLoad MainPage');
@@ -357,9 +377,10 @@ var MainPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-main',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/main/main.html"*/'<!--\n  Generated template for the MainPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n\n\n<ion-content padding>\n  <div class="label">\n      <label>Let\'s creat your experience!</label>\n  </div>\n\n\n\n  <div class="custom">\n    <button ion-button outline block (click)="goToCustomPage()">Custom Packages</button>\n  </div>\n\n  <div class="packages">\n    <button ion-button outline block (click)="goToPackagePage()">Pre-Packages</button>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/main/main.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]) === "function" && _c || Object])
     ], MainPage);
     return MainPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=main.js.map
