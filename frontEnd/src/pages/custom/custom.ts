@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NplistPage } from '../nplist/nplist';
+import { ItineraryPage } from '../itinerary/itinerary';
 
 /**
  * Generated class for the CustomPage page.
@@ -28,6 +29,6 @@ export class CustomPage {
   }
 
   toShoppingCart(){
-
+    this.navCtrl.push(ItineraryPage);
   }
 }

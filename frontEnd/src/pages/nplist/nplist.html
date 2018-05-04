@@ -14,7 +14,7 @@
 
 
 <ion-content padding>
-  <ion-card *ngFor="let park of parksArr">
+  <ion-card *ngFor="let park of parksArr| slice:0:3; let i=index">
     <img src='../../assets/imgs/nature_lover.jpg'>
     <ion-card-content>
       <ion-card-title>{{park.name}}</ion-card-title>
@@ -22,15 +22,9 @@
         {{park.description}}
       </p>
       <div>
-        <label >Location: {{park.latLong}}</label>
-
+        <label>Location: {{park.latLong}}</label>
       </div>
-
     </ion-card-content>
-    <ion-item>
-        <ion-label> Add to itinerary</ion-label>
-        <ion-toggle checked="false"></ion-toggle>
-      </ion-item>
+    <button ion-button color="primary" (click)="addToItinerary(park.name, park.latLong)" outline block>Add to itinerary</button>
   </ion-card>
-
 </ion-content>

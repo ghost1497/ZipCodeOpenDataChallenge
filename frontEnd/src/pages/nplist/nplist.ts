@@ -37,11 +37,16 @@ export class NplistPage {
       this.parksArr = result;
     });
 
-    // this.parksArr = _.uniq(this.parksArrNotFixed);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NplistPage');
+  }
+
+  addToItinerary(nameOnJson: string, latLongOnJson: string){
+    console.log(nameOnJson);
+    this.storage.set(nameOnJson, latLongOnJson);
+    console.log(this.storage.length());
   }
 
 }
