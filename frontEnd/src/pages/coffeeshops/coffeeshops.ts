@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import * as _ from 'lodash';
 import { Storage } from '@ionic/storage';
+
 /**
  * Generated class for the CoffeeshopsPage page.
  *
@@ -17,40 +18,40 @@ import { Storage } from '@ionic/storage';
   templateUrl: 'coffeeshops.html',
 })
 export class CoffeeshopsPage {
- apiKey = "AIzaSyAv5Kq24hQJew5gTEGXgpV2x2uxsnm-HkA";
   url: string;
   coffeeShopsArrNotFixed = [];
-  coffeeShopsArry: any[];
- // coffeeShops = Object.keys(this.coffeeShopsArry);
+  coffeeShopsArry: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public storage : Storage) {
-    /*backendapplication server*/
-    //this.url = "https://visitdelawarebackendv2.herokuapp.com/parksInDE";
-   
-   /*google places api*/
-    this.url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.7489094,-75.5653067&radius=1500&type=restaurant&keyword=coffee&key=" + this.apiKey;
- /*error*/
- /*Failed to load https://maps.googleapis.com/maps/api/place/nearbysearch/
- json?location=39.7489094,-75.5653067&radius=1500&type=restaurant&keyword=coffee&key=AIzaSyAv5Kq24hQJew5gTEGXgpV2x2uxsnm-HkA: 
- Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
-  Origin 'http://localhost:8100' is therefore not allowed access.
- */
-    let headers = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      })
-    };
-    this.http.get(this.url, headers).subscribe(result => {
-      this.coffeeShopsArry = result['results'];
-      console.log(this.coffeeShopsArry);
-    });
 
-    // this.parksArr = _.uniq(this.parksArrNotFixed);
+    constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public storage : Storage, public alertCtrl: AlertController) {
+    this.url ="https://visitdelawarebackendv2.herokuapp.com/restaurantsInDE/coffee";
+      let headers = {
+        headers: new HttpHeaders({
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        })
+      };
+      let data: Observable<any> = this.http.get(this.url, headers);
+      data.subscribe(result => {
+        this.coffeeShopsArry = result;
+      });
+  
+    }
+  
+    ionViewDidLoad() {
+      console.log('ionViewDidLoad CoffeeshopsPage');
+    }
+  
+    addToItinerary(nameOnJson: string, latLongOnJson: string){
+      console.log(nameOnJson);
+      this.storage.set(nameOnJson, latLongOnJson);
+      let alert = this.alertCtrl.create({
+        title: 'Location Added',
+        subTitle: 'This location was added to your itinerary!',
+        buttons: ['OK']
+      });
+      alert.present();
+      console.log(this.storage.length());
+    }
+  
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CoffeeshopsPage');
-  }
-
-}

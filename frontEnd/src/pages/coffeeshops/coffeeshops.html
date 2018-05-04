@@ -15,23 +15,17 @@
 <ion-content padding>
     <ng-container  *ngFor="let coffee of coffeeShopsArry; let i = index">
         <ion-card *ngIf="i<3">
-      <img src='../../assets/imgs/nature_lover.jpg'>
+      <!-- <img src="coffee.image_url"> -->
       <ion-card-content>
         <ion-card-title>{{coffee.name}}</ion-card-title>
-        <p>
-          {{coffee.description}}
-        </p>
         <div>
-          <label >Location lat:{{coffee.geometry.location.lat}}</label>
-          <label >lng:{{coffee.geometry.location.lng}}</label>
+          <label >Location</label>
+          <label >{{coffee.coordinates.latitude}}</label>
           <label >Rating: {{coffee.rating}}</label>
         </div>
   
       </ion-card-content>
-      <ion-item>
-          <ion-label> Add to itinerary</ion-label>
-          <ion-toggle checked="false"></ion-toggle>
-        </ion-item>
+      <!-- <button ion-button color="primary" (click)="addToItinerary(coffee.name, coffee.coordinates.latitude)" outline block>Add to itinerary</button> -->
     </ion-card>
   </ng-container>
   
