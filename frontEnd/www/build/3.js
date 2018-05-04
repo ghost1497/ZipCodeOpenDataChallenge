@@ -1,14 +1,14 @@
 webpackJsonp([3],{
 
-/***/ 297:
+/***/ 298:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NplistPageModule", function() { return NplistPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PackagePageModule", function() { return PackagePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nplist__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__package__ = __webpack_require__(110);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var NplistPageModule = /** @class */ (function () {
-    function NplistPageModule() {
+var PackagePageModule = /** @class */ (function () {
+    function PackagePageModule() {
     }
-    NplistPageModule = __decorate([
+    PackagePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__nplist__["a" /* NplistPage */],
+                __WEBPACK_IMPORTED_MODULE_2__package__["a" /* PackagePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__nplist__["a" /* NplistPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__package__["a" /* PackagePage */]),
             ],
         })
-    ], NplistPageModule);
-    return NplistPageModule;
+    ], PackagePageModule);
+    return PackagePageModule;
 }());
 
-//# sourceMappingURL=nplist.module.js.map
+//# sourceMappingURL=package.module.js.map
 
 /***/ })
 

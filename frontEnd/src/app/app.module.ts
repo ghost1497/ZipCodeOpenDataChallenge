@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { IonicStorageModule } from '@ionic/storage';
 import { Geolocation } from '@ionic-native/geolocation';
 import { IcecreamshopsPage } from '../pages/icecreamshops/icecreamshops';
+import { BarsPage } from '../pages/bars/bars';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { IcecreamshopsPage } from '../pages/icecreamshops/icecreamshops';
     PackagePage,
     NplistPage,
     CoffeeshopsPage,
-    IcecreamshopsPage
+    IcecreamshopsPage,
+    BarsPage
 
   ],
   imports: [
@@ -60,7 +62,8 @@ import { IcecreamshopsPage } from '../pages/icecreamshops/icecreamshops';
     PackagePage,
     NplistPage,
     CoffeeshopsPage,
-    IcecreamshopsPage
+    IcecreamshopsPage,
+    BarsPage
   ],
   providers: [
     //StatusBar,
