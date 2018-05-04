@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { Storage } from '@ionic/storage';
+import { AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the NplistPage page.
@@ -23,7 +24,7 @@ export class NplistPage {
   parksArr: any;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public storage : Storage) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public storage : Storage, public alertCtrl: AlertController) {
     this.url = "https://visitdelawarebackendv2.herokuapp.com/parksInDE";
     let headers = {
       headers: new HttpHeaders({
@@ -45,6 +46,12 @@ export class NplistPage {
   addToItinerary(nameOnJson: string, latLongOnJson: string){
     console.log(nameOnJson);
     this.storage.set(nameOnJson, latLongOnJson);
+    let alert = this.alertCtrl.create({
+      title: 'Location Added',
+      subTitle: 'This location was added to your itinerary!',
+      buttons: ['OK']
+    });
+    alert.present();
     console.log(this.storage.length());
   }
 

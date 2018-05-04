@@ -17,7 +17,7 @@ import { PackagePage } from '../pages/package/package';
 import { NplistPage } from '../pages/nplist/nplist';
 import { HttpClientModule } from '@angular/common/http';
 import { IonicStorageModule } from '@ionic/storage';
-
+import { Geolocation } from '@ionic-native/geolocation';
 
 
 @NgModule({
@@ -59,6 +59,7 @@ import { IonicStorageModule } from '@ionic/storage';
   providers: [
     //StatusBar,
     SplashScreen,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
 
 

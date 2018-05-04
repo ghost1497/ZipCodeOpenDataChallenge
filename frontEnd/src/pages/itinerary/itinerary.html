@@ -12,8 +12,12 @@
 
 
 <ion-content padding>
-    <iframe src="https://embed.waze.com/iframe?zoom=12&lat=45.6906304&lon=-120.810983"
-    width="300" height="400"></iframe>
+    <ion-card>
+        <ion-card-content>
+            <div #directionsPanel></div>
+        </ion-card-content>
+    </ion-card>
+    <div #map id="map"></div>
     <ion-item-divider></ion-item-divider>
     <h1 ion-text>Your Itinerary</h1>
     <ion-item-divider>
