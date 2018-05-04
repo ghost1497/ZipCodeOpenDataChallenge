@@ -59,10 +59,12 @@ export class ItineraryPage {
     this.geolocation.getCurrentPosition().then((resp) => {
       this.lat = String(resp.coords.latitude);
       this.long = String(resp.coords.longitude);
+      console.log(resp.coords.longitude + ' ' + resp.coords.latitude);
      }).catch((error) => {
        console.log('Error getting location', error);
      });
      this.origin = this.lat + ", " + this.long;
+     console.log(this.origin);
   }
 
   deleteItem(item: any) {
@@ -105,8 +107,8 @@ export class ItineraryPage {
     directionsDisplay.setPanel(this.directionsPanel.nativeElement);
 
     directionsService.route({
-        origin: this.origin,
-        destination: this.destination,
+        origin: 'Zip Code Wilmington',
+        destination: 'adelaide oval',
         travelMode: google.maps.TravelMode['DRIVING']
     }, (res, status) => {
 
