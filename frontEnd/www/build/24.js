@@ -1,4 +1,4 @@
-webpackJsonp([0],{
+webpackJsonp([24],{
 
 /***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -39,4 +39,4 @@ var CoffeeshopsPageModule = /** @class */ (function () {
 /***/ })
 
 });
-//# sourceMappingURL=0.js.map
+//# sourceMappingURL=24.js.map

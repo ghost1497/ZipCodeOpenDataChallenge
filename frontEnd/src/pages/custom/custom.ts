@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NplistPage } from '../nplist/nplist';
 import {CoffeeshopsPage} from '../coffeeshops/coffeeshops';
+import {IcecreamshopsPage} from '../icecreamshops/icecreamshops';
 import { ItineraryPage } from '../itinerary/itinerary';
 import { Storage } from '@ionic/storage';
 import { AlertController } from 'ionic-angular';
@@ -33,6 +34,12 @@ export class CustomPage {
   toCoffeeShopsListList(){
   this.navCtrl.push(CoffeeshopsPage);
 }
+toIceCreamShopsListList(){
+  this.navCtrl.push(IcecreamshopsPage);
+}
+
+
+
   toShoppingCart(){
     this.storage.keys().then(data => {
       this.itinerary = data;

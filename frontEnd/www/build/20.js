@@ -1,14 +1,14 @@
-webpackJsonp([0],{
+webpackJsonp([20],{
 
-/***/ 289:
+/***/ 293:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoffeeshopsPageModule", function() { return CoffeeshopsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ItineraryPageModule", function() { return ItineraryPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__coffeeshops__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__itinerary__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,25 +18,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CoffeeshopsPageModule = /** @class */ (function () {
-    function CoffeeshopsPageModule() {
+var ItineraryPageModule = /** @class */ (function () {
+    function ItineraryPageModule() {
     }
-    CoffeeshopsPageModule = __decorate([
+    ItineraryPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__coffeeshops__["a" /* CoffeeshopsPage */],
+                __WEBPACK_IMPORTED_MODULE_2__itinerary__["a" /* ItineraryPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__coffeeshops__["a" /* CoffeeshopsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__itinerary__["a" /* ItineraryPage */]),
             ],
         })
-    ], CoffeeshopsPageModule);
-    return CoffeeshopsPageModule;
+    ], ItineraryPageModule);
+    return ItineraryPageModule;
 }());
 
-//# sourceMappingURL=coffeeshops.module.js.map
+//# sourceMappingURL=itinerary.module.js.map
 
 /***/ })
 
 });
-//# sourceMappingURL=0.js.map
+//# sourceMappingURL=20.js.map

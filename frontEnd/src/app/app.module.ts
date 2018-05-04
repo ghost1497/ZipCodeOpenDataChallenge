@@ -19,6 +19,7 @@ import {CoffeeshopsPage} from '../pages/coffeeshops/coffeeshops';
 import { HttpClientModule } from '@angular/common/http';
 import { IonicStorageModule } from '@ionic/storage';
 import { Geolocation } from '@ionic-native/geolocation';
+import { IcecreamshopsPage } from '../pages/icecreamshops/icecreamshops';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { Geolocation } from '@ionic-native/geolocation';
     CustomPage,
     PackagePage,
     NplistPage,
-    CoffeeshopsPage
+    CoffeeshopsPage,
+    IcecreamshopsPage
 
   ],
   imports: [
@@ -57,7 +59,8 @@ import { Geolocation } from '@ionic-native/geolocation';
     CustomPage,
     PackagePage,
     NplistPage,
-    CoffeeshopsPage
+    CoffeeshopsPage,
+    IcecreamshopsPage
   ],
   providers: [
     //StatusBar,

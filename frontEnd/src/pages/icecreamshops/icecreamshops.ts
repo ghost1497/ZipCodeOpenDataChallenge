@@ -6,7 +6,7 @@ import * as _ from 'lodash';
 import { Storage } from '@ionic/storage';
 
 /**
- * Generated class for the CoffeeshopsPage page.
+ * Generated class for the IcecreamshopsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -14,17 +14,17 @@ import { Storage } from '@ionic/storage';
 
 @IonicPage()
 @Component({
-  selector: 'page-coffeeshops',
-  templateUrl: 'coffeeshops.html',
+  selector: 'page-icecreamshops',
+  templateUrl: 'icecreamshops.html',
 })
-export class CoffeeshopsPage {
+export class IcecreamshopsPage {
   url: string;
-  coffeeShopsArrNotFixed = [];
-  coffeeShopsArry: any[];
+  iceCreamShopsArrNotFixed = [];
+  iceCreamShopsArry: any[];
 
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public storage : Storage, public alertCtrl: AlertController) {
-    this.url ="https://visitdelawarebackendv2.herokuapp.com/restaurantsInDE/coffee";
+    this.url ="https://visitdelawarebackendv2.herokuapp.com/restaurantsInDE/icecream";
       let headers = {
         headers: new HttpHeaders({
           'Content-Type': 'application/json',
@@ -33,15 +33,12 @@ export class CoffeeshopsPage {
       };
       let data: Observable<any> = this.http.get(this.url, headers);
       data.subscribe(result => {
-        this.coffeeShopsArry = result['businesses'];
+        this.iceCreamShopsArry = result['businesses'];
       });
   
     }
   
-    ionViewDidLoad() {
-      console.log('ionViewDidLoad CoffeeshopsPage');
-    }
-  
+   
     addToItinerary(nameOnJson: string, latLongOnJson: string){
       console.log(nameOnJson, latLongOnJson);
       this.storage.set(nameOnJson, latLongOnJson);
@@ -54,4 +51,10 @@ export class CoffeeshopsPage {
       console.log(this.storage.length());
     }
   
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad IcecreamshopsPage');
   }
+}
+  
+
