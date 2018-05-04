@@ -27,7 +27,7 @@ var CoffeeshopsPageModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2__coffeeshops__["a" /* CoffeeshopsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__coffeeshops__["a" /* CoffeeshopsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__coffeeshops__["a" /* CoffeeshopsPage */]),
             ],
         })
     ], CoffeeshopsPageModule);

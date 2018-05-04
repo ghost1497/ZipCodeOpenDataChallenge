@@ -27,7 +27,7 @@ var PackagePageModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2__package__["a" /* PackagePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__package__["a" /* PackagePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__package__["a" /* PackagePage */]),
             ],
         })
     ], PackagePageModule);
