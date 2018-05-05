@@ -9,6 +9,8 @@ import { Storage } from '@ionic/storage';
 import { AlertController } from 'ionic-angular';
 import { FinediningPage } from '../finedining/finedining';
 import { FastfoodPage } from '../fastfood/fastfood';
+import { FamilyfriendlyPage } from '../familyfriendly/familyfriendly';
+import { NightclubPage } from '../nightclub/nightclub';
 
 /**
  * Generated class for the CustomPage page.
@@ -24,6 +26,7 @@ import { FastfoodPage } from '../fastfood/fastfood';
 })
 export class CustomPage {
   itinerary = [];
+  
 
   constructor(
     public navCtrl: NavController,
@@ -53,6 +56,13 @@ toFineDiningList(){
 }
 toFastFoodList(){
   this.navCtrl.push(FastfoodPage);
+}
+
+toFamilyFriendlyList(){
+  this.navCtrl.push(FamilyfriendlyPage);
+}
+tonightClubList(){
+  this.navCtrl.push(NightclubPage);
 }
 
 

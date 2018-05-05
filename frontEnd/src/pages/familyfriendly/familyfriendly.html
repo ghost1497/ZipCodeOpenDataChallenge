@@ -14,5 +14,19 @@
 
 
 <ion-content padding>
+    <ng-container  *ngFor="let family of familyFriendlyArry; let i = index">
+        <ion-card *ngIf="i<3">
+      <img src='{{family.image_url}}'>
+      <ion-card-content>
+        <ion-card-title>{{family.name}}</ion-card-title>
+        <div>
+          <label >Price: {{family.price}}</label>
+          <label >Rating: {{family.rating}}</label>
+        </div>
+  
+      </ion-card-content>
+      <button ion-button color="primary" (click)="addToItinerary(family.name, family.coordinates)" outline block>Add to itinerary</button>
+    </ion-card>
+  </ng-container>
 
 </ion-content>

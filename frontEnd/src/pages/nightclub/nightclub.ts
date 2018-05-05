@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import * as _ from 'lodash';
 import { Storage } from '@ionic/storage';
 /**
- * Generated class for the FamilyfriendlyPage page.
+ * Generated class for the NightclubPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,17 +13,17 @@ import { Storage } from '@ionic/storage';
 
 @IonicPage()
 @Component({
-  selector: 'page-familyfriendly',
-  templateUrl: 'familyfriendly.html',
+  selector: 'page-nightclub',
+  templateUrl: 'nightclub.html',
 })
-export class FamilyfriendlyPage {
+export class NightclubPage {
   url: string;
-  iceCreamShopsArrNotFixed = [];
-  familyFriendlyArry: any[];
+  nightClubcArrNotFixed = [];
+  nightclubsArry: any[];
 
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, public storage : Storage, public alertCtrl: AlertController) {
-    this.url ="https://visitdelawarebackendv2.herokuapp.com/restaurantsInDE/Family+Friendly+Restaurants";
+    this.url ="https://visitdelawarebackendv2.herokuapp.com/restaurantsInDE/Night+Clubs";
       let headers = {
         headers: new HttpHeaders({
           'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ export class FamilyfriendlyPage {
       };
       let data: Observable<any> = this.http.get(this.url, headers);
       data.subscribe(result => {
-        this.familyFriendlyArry = result['businesses'];
+        this.nightclubsArry = result['businesses'];
       });
   
     }
@@ -49,9 +49,8 @@ export class FamilyfriendlyPage {
       alert.present();
       console.log(this.storage.length());
     }
-  
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FamilyfriendlyPage');
+    console.log('ionViewDidLoad NightclubPage');
   }
 
 }
