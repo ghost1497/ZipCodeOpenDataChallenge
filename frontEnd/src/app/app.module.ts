@@ -21,6 +21,8 @@ import { IonicStorageModule } from '@ionic/storage';
 import { Geolocation } from '@ionic-native/geolocation';
 import { IcecreamshopsPage } from '../pages/icecreamshops/icecreamshops';
 import { BarsPage } from '../pages/bars/bars';
+import { FinediningPage } from '../pages/finedining/finedining';
+import { FastfoodPage } from '../pages/fastfood/fastfood';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { BarsPage } from '../pages/bars/bars';
     NplistPage,
     CoffeeshopsPage,
     IcecreamshopsPage,
-    BarsPage
+    BarsPage,
+    FinediningPage,
+    FastfoodPage
 
   ],
   imports: [
@@ -63,7 +67,9 @@ import { BarsPage } from '../pages/bars/bars';
     NplistPage,
     CoffeeshopsPage,
     IcecreamshopsPage,
-    BarsPage
+    BarsPage,
+    FinediningPage,
+    FastfoodPage
   ],
   providers: [
     //StatusBar,

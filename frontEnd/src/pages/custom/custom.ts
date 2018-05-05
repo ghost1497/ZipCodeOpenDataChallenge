@@ -7,6 +7,8 @@ import { BarsPage } from '../bars/bars';
 import { ItineraryPage } from '../itinerary/itinerary';
 import { Storage } from '@ionic/storage';
 import { AlertController } from 'ionic-angular';
+import { FinediningPage } from '../finedining/finedining';
+import { FastfoodPage } from '../fastfood/fastfood';
 
 /**
  * Generated class for the CustomPage page.
@@ -22,6 +24,7 @@ import { AlertController } from 'ionic-angular';
 })
 export class CustomPage {
   itinerary = [];
+
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -44,6 +47,12 @@ toIceCreamShopsList(){
 }
 toBarsList(){
   this.navCtrl.push(BarsPage);
+}
+toFineDiningList(){
+  this.navCtrl.push(FinediningPage);
+}
+toFastFoodList(){
+  this.navCtrl.push(FastfoodPage);
 }
 
 
