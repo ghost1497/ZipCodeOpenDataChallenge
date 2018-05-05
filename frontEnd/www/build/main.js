@@ -471,12 +471,6 @@ var ItineraryPage = /** @class */ (function () {
         this.storage.keys().then(function (data) {
             _this.itineraryList = data;
         });
-        var alert = this.alertCtrl.create({
-            title: 'Travel Advisory Alert',
-            subTitle: 'Your travel route contructed for your itinerary contains a travel advisory: \nType: Construction   \nCounty: New Castle County  \nDate:  05/04/2018 9:10 AM \nNotice: 301 SB HAS INTERMITTENT LANE CLOSURES UNTIL AT STRAWBERRY LANE UNTIL 4PM.',
-            buttons: ['OK']
-        });
-        alert.present();
         this.getLocation();
     }
     ItineraryPage_1 = ItineraryPage;
@@ -534,6 +528,12 @@ var ItineraryPage = /** @class */ (function () {
         });
     };
     ItineraryPage.prototype.setNewDestination = function (input) {
+        var alert = this.alertCtrl.create({
+            title: 'Travel Advisory Alert',
+            subTitle: 'Your travel route contructed for your itinerary contains a travel advisory: \nType: Construction   \nCounty: New Castle County  \nDate:  05/04/2018 9:10 AM \nNotice: 301 SB HAS INTERMITTENT LANE CLOSURES UNTIL AT STRAWBERRY LANE UNTIL 4PM.',
+            buttons: ['OK']
+        });
+        alert.present();
         this.getLocation();
         this.destination = input;
         this.startNavigating();
@@ -558,24 +558,20 @@ var ItineraryPage = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])("map"),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object)
     ], ItineraryPage.prototype, "mapElement", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('directionsPanel'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */])
+        __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _b || Object)
     ], ItineraryPage.prototype, "directionsPanel", void 0);
     ItineraryPage = ItineraryPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: "page-itinerary",template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/'<!--\n  Generated template for the ItineraryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>Your Personalized Itinerary</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<style>\n    /* Always set the map height explicitly to define the size of the div\n     * element that contains the map. */\n    #map {\n      height: 100%;\n    }\n    /* Optional: Makes the sample page fill the window. */\n    html, body {\n      height: 100%;\n      margin: 0;\n      padding: 0;\n    }\n  </style>\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-content>\n      <div #directionsPanel></div>\n    </ion-card-content>\n  </ion-card>\n      <div #map id="map"></div>\n  <ion-item-divider></ion-item-divider>\n  <h1 ion-text>Your Itinerary</h1>\n  <ion-item-divider>\n    <ion-card *ngFor="let item of itineraryList">\n      <ion-card-content>\n        <ion-label>{{item}}</ion-label>\n        <ion-row>\n          <ion-col>\n            <button ion-button color="danger" outline (click)="deleteItem(item)"> Delete item</button>\n          </ion-col>\n          <ion-col>\n            <button ion-button color="secondary" outline (click)="setNewDestination(item)"> Navigate</button>\n          </ion-col>\n        </ion-row>\n      </ion-card-content>\n    </ion-card>\n  </ion-item-divider>\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+        __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _g || Object])
     ], ItineraryPage);
     return ItineraryPage;
-    var ItineraryPage_1;
+    var ItineraryPage_1, _a, _b, _c, _d, _e, _f, _g;
 }());
 
 //# sourceMappingURL=itinerary.js.map
