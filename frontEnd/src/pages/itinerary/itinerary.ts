@@ -37,12 +37,6 @@ export class ItineraryPage {
     this.storage.keys().then(data => {
       this.itineraryList = data;
     });
-    let alert = this.alertCtrl.create({
-      title: 'Travel Advisory Alert',
-      subTitle: 'Your travel route contructed for your itinerary contains a travel advisory: \nType: Construction   \nCounty: New Castle County  \nDate:  05/04/2018 9:10 AM \nNotice: 301 SB HAS INTERMITTENT LANE CLOSURES UNTIL AT STRAWBERRY LANE UNTIL 4PM.',
-      buttons: ['OK']
-    });
-    alert.present();
 
     this.getLocation();
   }
@@ -122,6 +116,12 @@ export class ItineraryPage {
 }
 
 setNewDestination(input: string){
+  let alert = this.alertCtrl.create({
+    title: 'Travel Advisory Alert',
+    subTitle: 'Your travel route contructed for your itinerary contains a travel advisory: \nType: Construction   \nCounty: New Castle County  \nDate:  05/04/2018 9:10 AM \nNotice: 301 SB HAS INTERMITTENT LANE CLOSURES UNTIL AT STRAWBERRY LANE UNTIL 4PM.',
+    buttons: ['OK']
+  });
+  alert.present();
   this.getLocation();
   this.destination = input;
   this.startNavigating();
