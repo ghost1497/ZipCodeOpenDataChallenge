@@ -11,6 +11,7 @@ import { FinediningPage } from '../finedining/finedining';
 import { FastfoodPage } from '../fastfood/fastfood';
 import { FamilyfriendlyPage } from '../familyfriendly/familyfriendly';
 import { NightclubPage } from '../nightclub/nightclub';
+import { MovietheaterPage } from '../movietheater/movietheater';
 
 /**
  * Generated class for the CustomPage page.
@@ -27,7 +28,6 @@ import { NightclubPage } from '../nightclub/nightclub';
 export class CustomPage {
   itinerary = [];
   
-
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -63,6 +63,9 @@ toFamilyFriendlyList(){
 }
 tonightClubList(){
   this.navCtrl.push(NightclubPage);
+}
+toMovieTheaterList(){
+  this.navCtrl.push(MovietheaterPage);
 }
 
 

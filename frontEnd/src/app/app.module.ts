@@ -25,6 +25,7 @@ import { FinediningPage } from '../pages/finedining/finedining';
 import { FastfoodPage } from '../pages/fastfood/fastfood';
 import { FamilyfriendlyPage } from '../pages/familyfriendly/familyfriendly';
 import { NightclubPage } from '../pages/nightclub/nightclub';
+import { MovietheaterPage } from '../pages/movietheater/movietheater';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { NightclubPage } from '../pages/nightclub/nightclub';
     FinediningPage,
     FastfoodPage,
     FamilyfriendlyPage,
-    NightclubPage
+    NightclubPage,
+    MovietheaterPage
 
   ],
   imports: [
@@ -75,7 +77,8 @@ import { NightclubPage } from '../pages/nightclub/nightclub';
     FinediningPage,
     FastfoodPage,
     FamilyfriendlyPage,
-    NightclubPage
+    NightclubPage,
+    MovietheaterPage
   ],
   providers: [
     //StatusBar,
