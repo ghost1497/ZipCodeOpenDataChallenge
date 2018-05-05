@@ -80,29 +80,11 @@ var BarsPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CoffeeshopsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(12);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nplist_nplist__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__coffeeshops_coffeeshops__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__icecreamshops_icecreamshops__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bars_bars__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__itinerary_itinerary__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__finedining_finedining__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__fastfood_fastfood__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__familyfriendly_familyfriendly__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__nightclub_nightclub__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__movietheater_movietheater__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__stateparkevents_stateparkevents__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__signup_signup__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__handicap_handicap__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_common_http__ = __webpack_require__(14);
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -116,7 +98,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-<<<<<<< HEAD
 /**
  * Generated class for the CoffeeshopsPage page.
  *
@@ -203,8 +184,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-=======
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 
 
 
@@ -296,11 +275,7 @@ var CustomPage = /** @class */ (function () {
     };
     CustomPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-<<<<<<< HEAD
-            selector: "page-custom",template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/'<!--\n  Generated template for the CustomPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Custom Packages</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Parks\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toNationalParkList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        National Parks\n      </button>\n      <button ion-item (click)="toStateParkEventList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        State Park Events\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Food\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toFastFoodList()">\n        <ion-icon name="pizza" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fast Food\n      </button>\n      <button ion-item (click)="toFineDiningList()">\n        <ion-icon name="bowtie" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fine Dining\n      </button>\n      <button ion-item (click)="toFamilyFriendlyList()">\n        <ion-icon name="contacts" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Family Establishments\n      </button>\n      <button ion-item (click)="toCoffeeShopsList()">\n        <ion-icon name="beaker" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Coffee Shops\n      </button>\n      <button ion-item (click)="toIceCreamShopsList()">\n        <ion-icon name="ice-cream" item-start [style.color]="\'#e3bb39\'">\n        </ion-icon>\n        Ice Cream\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Recreation\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toMovieTheaterList()">\n        <ion-icon name="film" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Movie Theatres\n      </button>\n      <button ion-item>\n        <ion-icon name="american-football" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Sports Events\n      </button>\n      <button ion-item (click)="toBarsList()">\n        <ion-icon name="beer" item-start [style.color]="\'#0e57a8\'">\n        </ion-icon>\n        Bars\n      </button>\n      <button ion-item (click)="tonightClubList()">\n        <ion-icon name="wine" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Night Clubs\n      </button>\n    </ion-list>\n  </ion-card>\n<<<<<<< HEAD\n  <button ion-button (click)=toShoppingCart()>Build Itinerary</button>\n=======\n  <ion-card *ngIf="handicapFlag">\n    <ion-card-header>\n      Handicap Resources\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="handicapPlaces()">\n        <ion-icon name="medical" item-start></ion-icon>\n        Wheelchair Accessible Places\n      </button>\n    </ion-list>\n  </ion-card>\n  <button ion-button color="primary" (click)=toShoppingCart() outline block>Build Itinerary</button>\n>>>>>>> d3225c1385be24e1039eae060748da50938beb8c\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/
-=======
-            selector: "page-custom",template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/'<!--\n  Generated template for the CustomPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Custom Packages</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Parks\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toNationalParkList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        National Parks\n      </button>\n      <button ion-item (click)="toStateParkEventList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        State Park Events\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Food\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toFastFoodList()">\n        <ion-icon name="pizza" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fast Food\n      </button>\n      <button ion-item (click)="toFineDiningList()">\n        <ion-icon name="bowtie" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fine Dining\n      </button>\n      <button ion-item (click)="toFamilyFriendlyList()">\n        <ion-icon name="contacts" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Family Establishments\n      </button>\n      <button ion-item (click)="toCoffeeShopsList()">\n        <ion-icon name="beaker" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Coffee Shops\n      </button>\n      <button ion-item (click)="toIceCreamShopsList()">\n        <ion-icon name="ice-cream" item-start [style.color]="\'#e3bb39\'">\n        </ion-icon>\n        Ice Cream\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Recreation\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toMovieTheaterList()">\n        <ion-icon name="film" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Movie Theatres\n      </button>\n      <button ion-item>\n        <ion-icon name="american-football" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Sports Events\n      </button>\n      <button ion-item (click)="toBarsList()">\n        <ion-icon name="beer" item-start [style.color]="\'#0e57a8\'">\n        </ion-icon>\n        Bars\n      </button>\n      <button ion-item (click)="tonightClubList()">\n        <ion-icon name="wine" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Night Clubs\n      </button>\n    </ion-list>\n  </ion-card>\n  <button ion-button (click)=toShoppingCart()>Build Itinerary</button>\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
+            selector: "page-custom",template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/'<!--\n  Generated template for the CustomPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Custom Packages</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Parks\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toNationalParkList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        National Parks\n      </button>\n      <button ion-item (click)="toStateParkEventList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        State Park Events\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Food\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toFastFoodList()">\n        <ion-icon name="pizza" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fast Food\n      </button>\n      <button ion-item (click)="toFineDiningList()">\n        <ion-icon name="bowtie" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fine Dining\n      </button>\n      <button ion-item (click)="toFamilyFriendlyList()">\n        <ion-icon name="contacts" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Family Establishments\n      </button>\n      <button ion-item (click)="toCoffeeShopsList()">\n        <ion-icon name="beaker" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Coffee Shops\n      </button>\n      <button ion-item (click)="toIceCreamShopsList()">\n        <ion-icon name="ice-cream" item-start [style.color]="\'#e3bb39\'">\n        </ion-icon>\n        Ice Cream\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Recreation\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toMovieTheaterList()">\n        <ion-icon name="film" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Movie Theatres\n      </button>\n      <button ion-item>\n        <ion-icon name="american-football" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Sports Events\n      </button>\n      <button ion-item (click)="toBarsList()">\n        <ion-icon name="beer" item-start [style.color]="\'#0e57a8\'">\n        </ion-icon>\n        Bars\n      </button>\n      <button ion-item (click)="tonightClubList()">\n        <ion-icon name="wine" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Night Clubs\n      </button>\n    </ion-list>\n  </ion-card>\n  <button ion-button (click)=toShoppingCart()>Build Itinerary</button>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
@@ -315,11 +290,7 @@ var CustomPage = /** @class */ (function () {
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ 107:
-=======
-/***/ 106:
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -396,85 +367,6 @@ var NplistPage = /** @class */ (function () {
 
 /***/ }),
 
-<<<<<<< HEAD
-=======
-/***/ 107:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CoffeeshopsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-/**
- * Generated class for the CoffeeshopsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CoffeeshopsPage = /** @class */ (function () {
-    function CoffeeshopsPage(navCtrl, navParams, http, storage, alertCtrl) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.http = http;
-        this.storage = storage;
-        this.alertCtrl = alertCtrl;
-        this.coffeeShopsArrNotFixed = [];
-        this.url = "https://visitdelawarebackendv2.herokuapp.com/restaurantsInDE/coffee";
-        var headers = {
-            headers: new __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["c" /* HttpHeaders */]({
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
-            })
-        };
-        var data = this.http.get(this.url, headers);
-        data.subscribe(function (result) {
-            _this.coffeeShopsArry = result['businesses'];
-        });
-    }
-    CoffeeshopsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CoffeeshopsPage');
-    };
-    CoffeeshopsPage.prototype.addToItinerary = function (nameOnJson, latLongOnJson) {
-        console.log(nameOnJson, latLongOnJson);
-        this.storage.set(nameOnJson, latLongOnJson);
-        var alert = this.alertCtrl.create({
-            title: 'Location Added',
-            subTitle: 'This location was added to your itinerary!',
-            buttons: ['OK']
-        });
-        alert.present();
-        console.log(this.storage.length());
-    };
-    CoffeeshopsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-coffeeshops',template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/coffeeshops/coffeeshops.html"*/'<!--\n  Generated template for the CoffeeshopsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Coffee Shops</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n    <ng-container  *ngFor="let coffee of coffeeShopsArry; let i = index">\n        <ion-card *ngIf="i<3">\n      <img src=\'{{coffee.image_url}}\'>\n      <ion-card-content>\n        <ion-card-title style="font-size: 15px; font-weight: bold;">{{coffee.name}}</ion-card-title>\n        <!-- <a href={{coffee.url}}>Visit their website for more information here</a> -->\n        <div>\n          <label >Price: {{coffee.price}}</label>\n          <label >Rating: {{coffee.rating}}</label>\n        </div>\n\n      </ion-card-content>\n      <button ion-button color="primary" (click)="addToItinerary(coffee.name, coffee.coordinates)" outline block>Add to itinerary</button>\n    </ion-card>\n  </ng-container>\n\n  </ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/coffeeshops/coffeeshops.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
-    ], CoffeeshopsPage);
-    return CoffeeshopsPage;
-}());
-
-//# sourceMappingURL=coffeeshops.js.map
-
-/***/ }),
-
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 /***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1008,7 +900,6 @@ var StateparkeventsPage = /** @class */ (function () {
 /***/ }),
 
 /***/ 115:
-<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1126,17 +1017,6 @@ var PackagePage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__itinerary_itinerary__ = __webpack_require__(52);
-=======
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__custom_custom__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__package_package__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(12);
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1187,23 +1067,15 @@ var ListPage = /** @class */ (function () {
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ 118:
-=======
-/***/ 116:
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HandicapPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(14);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_list__ = __webpack_require__(117);
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1271,23 +1143,14 @@ var HandicapPage = /** @class */ (function () {
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ 119:
-=======
-/***/ 117:
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LaunchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(53);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__itinerary_itinerary__ = __webpack_require__(52);
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1300,28 +1163,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-<<<<<<< HEAD
 /**
  * Generated class for the LaunchPage page.
-=======
-
-/**
- * Generated class for the ListPage page.
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-<<<<<<< HEAD
 var LaunchPage = /** @class */ (function () {
     function LaunchPage(navCtrl, navParams) {
-=======
-var ListPage = /** @class */ (function () {
-    function ListPage(navCtrl, navParams, storage) {
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.storage = storage;
     }
     // ionViewDidLoad() {
     //   console.log('ionViewDidLoad LaunchPage');
@@ -1329,158 +1180,10 @@ var ListPage = /** @class */ (function () {
     LaunchPage.prototype.goToSignupPage = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__signup_signup__["a" /* SignupPage */]);
     };
-<<<<<<< HEAD
     LaunchPage = __decorate([
-=======
-    ListPage.prototype.goToItinerary = function () {
-        this.storage.clear();
-        this.storage.set("White Clay Creek State Park", "1");
-        this.storage.set("First State National Historical Park", "2");
-        this.storage.set("El Diablo Burritos", "3");
-        this.storage.set("Alapocas Run State Park/Wilmington State Parks", "4");
-        this.storage.set("Rockford Tower at Alapocas State Park", "5");
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__itinerary_itinerary__["a" /* ItineraryPage */]);
-    };
-    ListPage = __decorate([
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-launch',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/launch/launch.html"*/'<!--\n  Generated template for the LaunchPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <!-- <ion-navbar>\n    <ion-title>launch</ion-title>\n  </ion-navbar> -->\n\n</ion-header>\n\n\n<ion-content padding>\n  <!-- <div>\n    <img src="assets/imgs/LOGOLOGO.png">\n  </div> -->\n\n  <ion-slides pager>\n\n    <ion-slide style="background-color: white" class="slide-one">\n      <div class="logoimg">\n        <img src="assets/imgs/SplashPage.png">\n      </div>\n    </ion-slide>\n\n    <ion-slide>\n      <ion-card style="background-color: #ffffff">\n          <img src="assets/imgs/illustration-one.png" style="padding-left: 8%;"/>\n        </ion-card>\n      <div class="card-one-text" style="padding-left: 10%;">\n        <h6>Ready For New Adventures But Can\'t Figure Out What To Do?</h6>\n      </div>\n    </ion-slide>\n\n    <ion-slide>\n        <ion-card style="background-color: #f3ca3e" >\n            <img src="assets/imgs/illustration-two.png" style="padding-left: 8%;"/>\n          </ion-card>\n          <div class="card-one-text" style="padding-left: 5%;">\n              <h6>This app allows you to explore Delaware and put together an itinerary for the day!</h6>\n            </div>\n    </ion-slide>\n\n    <ion-slide >\n        <ion-card style="background-color: #0f66c3">\n            <img src="assets/imgs/thumbsup.png" style="padding-left: 8%;"/>\n          </ion-card>\n          <div class="card-one-text">\n              <h6>Let\'s get started!</h6>\n            </div>\n      <div class="next-button" style="padding-top: 15%;">\n        <button ion-button (click)="goToSignupPage()">NEXT</button>\n      </div>\n\n    </ion-slide>\n\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/launch/launch.html"*/,
         }),
-<<<<<<< HEAD
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], LaunchPage);
-    return LaunchPage;
-=======
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
-    ], ListPage);
-    return ListPage;
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
-}());
-
-//needs ionic plugin for logo launch 
-//# sourceMappingURL=launch.js.map
-
-/***/ }),
-
-<<<<<<< HEAD
-=======
-/***/ 118:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HandicapPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(14);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-/**
- * Generated class for the HandicapPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var HandicapPage = /** @class */ (function () {
-    function HandicapPage(navCtrl, navParams, storage, http, alertCtrl) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.storage = storage;
-        this.http = http;
-        this.alertCtrl = alertCtrl;
-        this.handicapArr = [];
-        this.url = "https://visitdelawarebackendv2.herokuapp.com/restaurantsInDE/handicap";
-        var headers = {
-            headers: new __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["c" /* HttpHeaders */]({
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
-            })
-        };
-        var data = this.http.get(this.url, headers);
-        data.subscribe(function (result) {
-            _this.handicapArr = result['businesses'];
-        });
-    }
-    HandicapPage.prototype.addToItinerary = function (nameOnJson, latLongOnJson) {
-        console.log(nameOnJson, latLongOnJson);
-        this.storage.set(nameOnJson, latLongOnJson);
-        var alert = this.alertCtrl.create({
-            title: 'Location Added',
-            subTitle: 'This location was added to your itinerary!',
-            buttons: ['OK']
-        });
-        alert.present();
-        console.log(this.storage.length());
-    };
-    HandicapPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HandicapPage');
-    };
-    HandicapPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-handicap',template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/handicap/handicap.html"*/'<!--\n  Generated template for the HandicapPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Wheelchair Accessible Places</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ng-container *ngFor="let handicap of handicapArr; let i = index">\n    <ion-card *ngIf="i<3">\n      <img src=\'{{handicap.image_url}}\'>\n      <ion-card-content>\n        <ion-card-title>{{handicap.name}}</ion-card-title>\n        <div>\n          <label>Price: {{handicap.price}}</label>\n          <label>Rating: {{handicap.rating}}</label>\n        </div>\n\n      </ion-card-content>\n      <button ion-button color="primary" (click)="addToItinerary(handicap.name, handicap.coordinates)" outline block>Add to itinerary</button>\n    </ion-card>\n  </ng-container>\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/handicap/handicap.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
-    ], HandicapPage);
-    return HandicapPage;
-}());
-
-//# sourceMappingURL=handicap.js.map
-
-/***/ }),
-
-/***/ 119:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LaunchPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(53);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the LaunchPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var LaunchPage = /** @class */ (function () {
-    function LaunchPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    // ionViewDidLoad() {
-    //   console.log('ionViewDidLoad LaunchPage');
-    // }
-    LaunchPage.prototype.goToSignupPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__signup_signup__["a" /* SignupPage */]);
-    };
-    LaunchPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-launch',template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/launch/launch.html"*/'<!--\n  Generated template for the LaunchPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <!-- <ion-navbar>\n    <ion-title>launch</ion-title>\n  </ion-navbar> -->\n\n</ion-header>\n\n\n<ion-content padding>\n  <!-- <div>\n    <img src="assets/imgs/LOGOLOGO.png">\n  </div> -->\n\n  <ion-slides pager>\n\n    <ion-slide style="background-color: white" class="slide-one">\n      <div class="logoimg">\n        <img src="assets/imgs/SplashPage.png">\n      </div>\n    </ion-slide>\n\n    <ion-slide>\n      <ion-card style="background-color: #ffffff">\n          <img src="assets/imgs/illustration-one.png" style="padding-left: 8%;"/>\n        </ion-card>\n      <div class="card-one-text" style="padding-left: 10%;">\n        <h6>Ready For New Adventures But Can\'t Figure Out What To Do?</h6>\n      </div>\n    </ion-slide>\n\n    <ion-slide>\n        <ion-card style="background-color: #f3ca3e" >\n            <img src="assets/imgs/illustration-two.png" style="padding-left: 8%;"/>\n          </ion-card>\n          <div class="card-one-text" style="padding-left: 5%;">\n              <h6>This app allows you to explore Delaware and put together an itinerary for the day!</h6>\n            </div>\n    </ion-slide>\n\n    <ion-slide >\n        <ion-card style="background-color: #0f66c3">\n            <img src="assets/imgs/thumbsup.png" style="padding-left: 8%;"/>\n          </ion-card>\n          <div class="card-one-text">\n              <h6>Let\'s get started!</h6>\n            </div>\n      <div class="next-button" style="padding-top: 15%;">\n        <button ion-button (click)="goToSignupPage()">NEXT</button>\n      </div>\n\n    </ion-slide>\n\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/launch/launch.html"*/,
-        }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LaunchPage);
     return LaunchPage;
@@ -1491,7 +1194,6 @@ var LaunchPage = /** @class */ (function () {
 
 /***/ }),
 
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 /***/ 130:
 /***/ (function(module, exports) {
 
@@ -1518,19 +1220,11 @@ var map = {
 		18
 	],
 	"../pages/coffeeshops/coffeeshops.module": [
-<<<<<<< HEAD
 		298,
 		17
 	],
 	"../pages/custom/custom.module": [
 		299,
-=======
-		299,
-		17
-	],
-	"../pages/custom/custom.module": [
-		298,
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 		16
 	],
 	"../pages/familyfriendly/familyfriendly.module": [
@@ -1582,7 +1276,6 @@ var map = {
 		4
 	],
 	"../pages/nplist/nplist.module": [
-<<<<<<< HEAD
 		312,
 		3
 	],
@@ -1596,21 +1289,6 @@ var map = {
 	],
 	"../pages/stateparkevents/stateparkevents.module": [
 		315,
-=======
-		315,
-		3
-	],
-	"../pages/package/package.module": [
-		312,
-		2
-	],
-	"../pages/signup/signup.module": [
-		313,
-		1
-	],
-	"../pages/stateparkevents/stateparkevents.module": [
-		314,
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 		0
 	]
 };
@@ -1705,17 +1383,10 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_main_main__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_signup_signup__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_itinerary_itinerary__ = __webpack_require__(52);
-<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_custom_custom__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_package_package__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_nplist_nplist__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_coffeeshops_coffeeshops__ = __webpack_require__(105);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_custom_custom__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_package_package__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_nplist_nplist__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_coffeeshops_coffeeshops__ = __webpack_require__(107);
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_common_http__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_storage__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_geolocation__ = __webpack_require__(173);
@@ -1794,11 +1465,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/bars/bars.module#BarsPageModule', name: 'BarsPage', segment: 'bars', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/custom/custom.module#CustomPageModule', name: 'CustomPage', segment: 'custom', priority: 'low', defaultHistory: [] },
-<<<<<<< HEAD
-=======
                         { loadChildren: '../pages/coffeeshops/coffeeshops.module#CoffeeshopsPageModule', name: 'CoffeeshopsPage', segment: 'coffeeshops', priority: 'low', defaultHistory: [] },
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
+                        { loadChildren: '../pages/custom/custom.module#CustomPageModule', name: 'CustomPage', segment: 'custom', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/familyfriendly/familyfriendly.module#FamilyfriendlyPageModule', name: 'FamilyfriendlyPage', segment: 'familyfriendly', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/fastfood/fastfood.module#FastfoodPageModule', name: 'FastfoodPage', segment: 'fastfood', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/finedining/finedining.module#FinediningPageModule', name: 'FinediningPage', segment: 'finedining', priority: 'low', defaultHistory: [] },
@@ -1811,10 +1479,10 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/main/main.module#MainPageModule', name: 'MainPage', segment: 'main', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/movietheater/movietheater.module#MovietheaterPageModule', name: 'MovietheaterPage', segment: 'movietheater', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/nightclub/nightclub.module#NightclubPageModule', name: 'NightclubPage', segment: 'nightclub', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/nplist/nplist.module#NplistPageModule', name: 'NplistPage', segment: 'nplist', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/package/package.module#PackagePageModule', name: 'PackagePage', segment: 'package', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/stateparkevents/stateparkevents.module#StateparkeventsPageModule', name: 'StateparkeventsPage', segment: 'stateparkevents', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/nplist/nplist.module#NplistPageModule', name: 'NplistPage', segment: 'nplist', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/stateparkevents/stateparkevents.module#StateparkeventsPageModule', name: 'StateparkeventsPage', segment: 'stateparkevents', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_15__angular_common_http__["b" /* HttpClientModule */],
@@ -2042,11 +1710,7 @@ var ItineraryPage = /** @class */ (function () {
     ], ItineraryPage.prototype, "directionsPanel", void 0);
     ItineraryPage = ItineraryPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-<<<<<<< HEAD
-            selector: "page-itinerary",template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/'<!--\n  Generated template for the ItineraryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>Itinerary</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<style>\n    /* Always set the map height explicitly to define the size of the div\n     * element that contains the map. */\n    #map {\n      height: 70%;\n    }\n    /* Optional: Makes the sample page fill the window. */\n    html, body {\n      height: 100%;\n      margin: 0;\n      padding: 0;\n    }\n  </style>\n\n<ion-content padding>\n  <!-- <ion-card>\n    <ion-card-content>\n      <div #directionsPanel></div>\n    </ion-card-content>\n  </ion-card> -->\n      <div #map id="map"></div>\n  <ion-item-divider></ion-item-divider>\n  <h1 ion-text style="font-size: 16px;">Your Itinerary</h1>\n  <ion-item-divider>\n    <ion-card *ngFor="let item of itineraryList" style="width: 265px; padding-left: -10%;">\n      <ion-card-content>\n        <ion-label>{{item}}</ion-label>\n        <ion-row>\n          <ion-col>\n            <button ion-button color="danger" outline (click)="deleteItem(item)"> Delete item</button>\n          </ion-col>\n          <ion-col>\n            <button ion-button color="primary" outline (click)="setNewDestination(item)"> Navigate</button>\n          </ion-col>\n        </ion-row>\n      </ion-card-content>\n    </ion-card>\n  </ion-item-divider>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/
-=======
-            selector: "page-itinerary",template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/'<!--\n  Generated template for the ItineraryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>Itinerary</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<style>\n    /* Always set the map height explicitly to define the size of the div\n     * element that contains the map. */\n    #map {\n      height: 70%;\n    }\n    /* Optional: Makes the sample page fill the window. */\n    html, body {\n      height: 100%;\n      margin: 0;\n      padding: 0;\n    }\n  </style>\n\n<ion-content padding>\n  <!-- <ion-card>\n    <ion-card-content>\n      <div #directionsPanel></div>\n    </ion-card-content>\n  </ion-card> -->\n      <div #map id="map"></div>\n  <ion-item-divider></ion-item-divider>\n  <h1 ion-text style="font-size: 16px;">Your Itinerary</h1>\n  <ion-item-divider>\n    <ion-card *ngFor="let item of itineraryList" style="width: 265px; padding-left: -10%;">\n      <ion-card-content>\n        <ion-label>{{item}}</ion-label>\n        <ion-row>\n          <ion-col>\n            <button ion-button color="danger" outline (click)="deleteItem(item)"> Delete item</button>\n          </ion-col>\n          <ion-col>\n            <button ion-button color="primary" outline (click)="setNewDestination(item)"> Navigate</button>\n          </ion-col>\n        </ion-row>\n      </ion-card-content>\n    </ion-card>\n  </ion-item-divider>\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
+            selector: "page-itinerary",template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/'<!--\n  Generated template for the ItineraryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>Itinerary</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<style>\n    /* Always set the map height explicitly to define the size of the div\n     * element that contains the map. */\n    #map {\n      height: 70%;\n    }\n    /* Optional: Makes the sample page fill the window. */\n    html, body {\n      height: 100%;\n      margin: 0;\n      padding: 0;\n    }\n  </style>\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-content>\n      <div #directionsPanel></div>\n    </ion-card-content>\n  </ion-card>\n      <div #map id="map"></div>\n  <ion-item-divider></ion-item-divider>\n  <h1 ion-text style="font-size: 16px;">Your Itinerary</h1>\n  <ion-item-divider>\n    <ion-card *ngFor="let item of itineraryList" style="width: 265px; padding-left: -10%;">\n      <ion-card-content>\n        <ion-label>{{item}}</ion-label>\n        <ion-row>\n          <ion-col>\n            <button ion-button color="danger" outline (click)="deleteItem(item)"> Delete item</button>\n          </ion-col>\n          <ion-col>\n            <button ion-button color="primary" outline (click)="setNewDestination(item)"> Navigate</button>\n          </ion-col>\n        </ion-row>\n      </ion-card-content>\n    </ion-card>\n  </ion-item-divider>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/itinerary/itinerary.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
@@ -2142,11 +1806,7 @@ var SignupPage = /** @class */ (function () {
     };
     SignupPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-<<<<<<< HEAD
             selector: 'page-signup',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <p align="center">First we need some more information so we can help you find the things you want to experience!</p>\n\n\n  <!-- this is our form for the signup page -->\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        <ion-list no-lines>\n          <form class="form" (ngSubmit)="save()">\n            <!-- Dashboard Style -->\n            <ion-item class="group-name">\n              <ion-input [(ngModel)]="name" name="name" type="text" placeholder="Full name" required>\n              </ion-input>\n            </ion-item>\n            <ion-item class="group-email">\n              <ion-input [(ngModel)]="email" name="email" type="email" placeholder="Email" required>\n              </ion-input>\n            </ion-item>\n            <ion-item no-lines class="group-date">\n              <ion-label>Select Birthday</ion-label>\n              <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="birthday" name="birthday"></ion-datetime>\n            </ion-item>\n            <ion-item class="group-zipcode">\n              <ion-input [(ngModel)]="zipcode" name="zipcode" type="text" placeholder="Zipcode" required>\n              </ion-input>\n            </ion-item>\n            <ion-label class="group-accom">Accomodations:</ion-label>\n            <ion-item class="disability">\n              <ion-label left stacked>Person with Disability</ion-label>\n              <ion-checkbox [(ngModel)]="handicapFlag" name="handicapFlag"></ion-checkbox>\n            </ion-item>\n            <button ion-button (click)="goToMainPage()" style="padding-right: 5px" >NEXT</button>\n          </form>\n        </ion-list>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/,
-=======
-            selector: 'page-signup',template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <p align="center">First we need some more information so we can help you find the things you want to experience!</p>\n\n\n  <!-- this is our form for the signup page -->\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        <ion-list no-lines>\n          <form class="form" (ngSubmit)="save()">\n            <!-- Dashboard Style -->\n            <ion-item class="group-name">\n              <ion-input [(ngModel)]="name" name="name" type="text" placeholder="Full name" required>\n              </ion-input>\n            </ion-item>\n            <ion-item class="group-email">\n              <ion-input [(ngModel)]="email" name="email" type="email" placeholder="Email" required>\n              </ion-input>\n            </ion-item>\n            <ion-item no-lines class="group-date">\n              <ion-label>Select Birthday</ion-label>\n              <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="birthday" name="birthday"></ion-datetime>\n            </ion-item>\n            <ion-item class="group-zipcode">\n              <ion-input [(ngModel)]="zipcode" name="zipcode" type="text" placeholder="Zipcode" required>\n              </ion-input>\n            </ion-item>\n            <ion-label class="group-accom">Accomodations:</ion-label>\n            <ion-item class="disability">\n              <ion-label left stacked>Person with Disability</ion-label>\n              <ion-checkbox [(ngModel)]="handicapFlag" name="handicapFlag"></ion-checkbox>\n            </ion-item>\n            <button ion-button (click)="goToMainPage()" style="padding-right: 5px" >NEXT</button>\n          </form>\n        </ion-list>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/signup/signup.html"*/,
->>>>>>> c6f2699e8f67cb985397d0b050062209135f526a
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]])
     ], SignupPage);
