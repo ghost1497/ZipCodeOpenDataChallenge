@@ -26,6 +26,7 @@ import { FastfoodPage } from '../pages/fastfood/fastfood';
 import { FamilyfriendlyPage } from '../pages/familyfriendly/familyfriendly';
 import { NightclubPage } from '../pages/nightclub/nightclub';
 import { MovietheaterPage } from '../pages/movietheater/movietheater';
+import { StateparkeventsPage } from '../pages/stateparkevents/stateparkevents';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { MovietheaterPage } from '../pages/movietheater/movietheater';
     CustomPage,
     PackagePage,
     NplistPage,
+    StateparkeventsPage,
     CoffeeshopsPage,
     IcecreamshopsPage,
     BarsPage,
@@ -71,6 +73,7 @@ import { MovietheaterPage } from '../pages/movietheater/movietheater';
     CustomPage,
     PackagePage,
     NplistPage,
+    StateparkeventsPage,
     CoffeeshopsPage,
     IcecreamshopsPage,
     BarsPage,

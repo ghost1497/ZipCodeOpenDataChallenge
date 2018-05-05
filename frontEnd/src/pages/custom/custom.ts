@@ -12,6 +12,7 @@ import { FastfoodPage } from '../fastfood/fastfood';
 import { FamilyfriendlyPage } from '../familyfriendly/familyfriendly';
 import { NightclubPage } from '../nightclub/nightclub';
 import { MovietheaterPage } from '../movietheater/movietheater';
+import { StateparkeventsPage} from '../stateparkevents/stateparkevents';
 
 /**
  * Generated class for the CustomPage page.
@@ -41,6 +42,9 @@ export class CustomPage {
 
   toNationalParkList() {
     this.navCtrl.push(NplistPage);
+  }
+  toStateParkEventList() {
+    this.navCtrl.push(StateparkeventsPage);
   }
   toCoffeeShopsList(){
   this.navCtrl.push(CoffeeshopsPage);
