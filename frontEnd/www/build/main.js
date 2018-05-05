@@ -263,7 +263,7 @@ var CustomPage = /** @class */ (function () {
     };
     CustomPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-custom",template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/'<!--\n  Generated template for the CustomPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Custom Packages</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Parks\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toNationalParkList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        National Parks\n      </button>\n      <button ion-item (click)="toStateParkEventList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        State Park Events\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Food\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toFastFoodList()">\n        <ion-icon name="pizza" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fast Food\n      </button>\n      <button ion-item (click)="toFineDiningList()">\n        <ion-icon name="bowtie" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fine Dining\n      </button>\n      <button ion-item (click)="toFamilyFriendlyList()">\n        <ion-icon name="contacts" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Family Establishments\n      </button>\n      <button ion-item (click)="toCoffeeShopsList()">\n        <ion-icon name="beaker" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Coffee Shops\n      </button>\n      <button ion-item (click)="toIceCreamShopsList()">\n        <ion-icon name="ice-cream" item-start [style.color]="\'#e3bb39\'">\n        </ion-icon>\n        Ice Cream\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Recreation\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toMovieTheaterList()">\n        <ion-icon name="film" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Movie Theatres\n      </button>\n      <button ion-item>\n        <ion-icon name="american-football" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Sports Events\n      </button>\n      <button ion-item (click)="toBarsList()">\n        <ion-icon name="beer" item-start [style.color]="\'#0e57a8\'">\n        </ion-icon>\n        Bars\n      </button>\n      <button ion-item (click)="tonightClubList()">\n        <ion-icon name="wine" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Night Clubs\n      </button>\n    </ion-list>\n  </ion-card>\n  <button ion-button (click)=toShoppingCart()>Build Itinerary</button>\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/
+            selector: "page-custom",template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/'<!--\n  Generated template for the CustomPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Custom Packages</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Parks\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toNationalParkList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        National Parks\n      </button>\n      <button ion-item (click)="toStateParkEventList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        State Park Events\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Food\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toFastFoodList()">\n        <ion-icon name="pizza" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fast Food\n      </button>\n      <button ion-item (click)="toFineDiningList()">\n        <ion-icon name="bowtie" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fine Dining\n      </button>\n      <button ion-item (click)="toFamilyFriendlyList()">\n        <ion-icon name="contacts" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Family Establishments\n      </button>\n      <button ion-item (click)="toCoffeeShopsList()">\n        <ion-icon name="beaker" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Coffee Shops\n      </button>\n      <button ion-item (click)="toIceCreamShopsList()">\n        <ion-icon name="ice-cream" item-start [style.color]="\'#e3bb39\'">\n        </ion-icon>\n        Ice Cream\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Recreation\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toMovieTheaterList()">\n        <ion-icon name="film" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Movie Theatres\n      </button>\n      <button ion-item>\n        <ion-icon name="american-football" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Sports Events\n      </button>\n      <button ion-item (click)="toBarsList()">\n        <ion-icon name="beer" item-start [style.color]="\'#0e57a8\'">\n        </ion-icon>\n        Bars\n      </button>\n      <button ion-item (click)="tonightClubList()">\n        <ion-icon name="wine" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Night Clubs\n      </button>\n    </ion-list>\n  </ion-card>\n<<<<<<< HEAD\n  <button ion-button (click)=toShoppingCart()>Build Itinerary</button>\n=======\n  <ion-card *ngIf="handicapFlag">\n    <ion-card-header>\n      Handicap Resources\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="handicapPlaces()">\n        <ion-icon name="medical" item-start></ion-icon>\n        Wheelchair Accessible Places\n      </button>\n    </ion-list>\n  </ion-card>\n  <button ion-button color="primary" (click)=toShoppingCart() outline block>Build Itinerary</button>\n>>>>>>> d3225c1385be24e1039eae060748da50938beb8c\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
@@ -1278,7 +1278,7 @@ var PackagePage = /** @class */ (function () {
     };
     PackagePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-package',template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/package/package.html"*/'<!--\n  Generated template for the PackagePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-header>\n  <ion-navbar>\n    <ion-title>Pre-Packages</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="card-background-page" padding>\n\n  <ion-grid>\n\n    <ion-row>\n      <ion-col>\n        <ion-card class="card-one">\n          <img src="../../assets/imgs/family_photo.jpeg">\n          <label>Family Fun</label>\n        </ion-card>\n      </ion-col>\n      <ion-col>\n        <ion-card class="card-two">\n          <img src="../../assets/imgs/nightclub.jpg">\n          <label>Club Goers</label>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-card class="card-three">\n          <img src="../../assets/imgs/brunch-pic.jpg">\n          <label>Brunch -n- Brews</label>\n        </ion-card>\n      </ion-col>\n      <ion-col>\n        <ion-card class="card-four">\n          <img src="../../assets/imgs/historic_wilmington.jpg">\n          <label>Historic Wilmington</label>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-card class="card-five">\n          <img src="../../assets/imgs/nature_lover.jpg">\n          <label>Nature Lover</label>\n        </ion-card>\n      </ion-col>\n      <ion-col>\n        <ion-card class="card-six">\n          <img src="../../assets/imgs/adventure.jpg">\n          <label>Free Adventures</label>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <button ion-button (click)="goToListPage()">NEXT</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/package/package.html"*/,
+            selector: 'page-package',template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/package/package.html"*/'<!--\n  Generated template for the PackagePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-header>\n  <ion-navbar>\n    <ion-title>Pre-Packages</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="card-background-page" padding>\n\n  <ion-grid>\n\n    <ion-row>\n      <ion-col>\n        <ion-card class="card-one">\n          <img src="../../assets/imgs/family_photo.jpeg">\n          <label>Family Fun</label>\n        </ion-card>\n      </ion-col>\n      <ion-col>\n        <ion-card class="card-two">\n          <img src="../../assets/imgs/nightclub.jpg">\n          <label>Club Goers</label>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-card class="card-three">\n          <img src="../../assets/imgs/brunch-pic.jpg">\n          <label>Brunch -n- Brews</label>\n        </ion-card>\n      </ion-col>\n      <ion-col>\n        <ion-card class="card-four">\n          <img src="../../assets/imgs/historic_wilmington.jpg">\n          <label>Historic Wilmington</label>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <ion-card class="card-five" (click)="goToListPage()">\n          <img src="../../assets/imgs/nature_lover.jpg">\n          <label>Nature Lover</label>\n        </ion-card>\n      </ion-col>\n      <ion-col>\n        <ion-card class="card-six">\n          <img src="../../assets/imgs/adventure.jpg">\n          <label>Free Adventures</label>\n        </ion-card>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/package/package.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], PackagePage);
@@ -1323,7 +1323,7 @@ var ListPage = /** @class */ (function () {
     };
     ListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/list/list.html"*/'<!--\n  Generated template for the ListPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  \n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/list/list.html"*/,
+            selector: 'page-list',template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/list/list.html"*/'<!--\n  Generated template for the ListPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Nature Lover Package</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <div class="splash-bg"></div>\n  <h1>Contents of our Nature Lover Package</h1>\n  <p>\n    Come explore the beauty of Delaware! This package includes a day full of hiking, and historic spots that will excite anyone\n    from a complete foreigner to a Delaware native. It also includes a stop at the hit local burrito spot, "El Diablo Burritos".\n    The night is ended with stargazing at Alapocas State Park with fellow naturalists. If trails, tacos and twilight are\n    calling your name this package is perfect for you!\n  </p>\n  <ion-item-divider>\n    <ion-card>\n      <ion-card-content>\n        <ion-icon name="leaf"></ion-icon>\n        <h1>White Clay Creek State Park</h1>\n        <p>\n          Time: any\n          <br> Price: FREE\n          <br> Description: With nine different trails spread among and between three different park areas, White Clay Creek\n          has hiking for the amateur to the advanced hiker. Trails range from an easy one mile up to four miles individually.\n          Two interesting stops along the Twin Valley and Bryan\'s Field trails are historic markers: one marks the western\n          edge of the Mason-Dixon Line and the other marks the Arc Corner Monument where Pennsylvania and Delaware meet.\n        </p>\n      </ion-card-content>\n    </ion-card>\n    <ion-card>\n      <ion-card-content>\n        <ion-icon name="leaf"></ion-icon>\n        <h1>First State National Historical Park</h1>\n        <p>\n          Time: 11am\n          <br> Price: FREE\n          <br> Description: The park covers the early colonial history of Delaware and the role Delaware played in the establishment\n          of the nation, leading up to it being the first state to ratify the Constitution. It tells the unique story of\n          the early settlement of the Delaware Valley.\n        </p>\n      </ion-card-content>\n    </ion-card>\n    <ion-card>\n      <ion-card-content>\n        <ion-icon name="pizza"></ion-icon>\n        <h1>El Diablo Burritos</h1>\n        <p>\n          Time: 2pm\n          <br> Price: $\n          <br> Description: Delicious spot for some tasty tacos and burritos. All house made and fresh ingredients. A great place\n          to stop for a quick meal or sit down dinner.\n        </p>\n      </ion-card-content>\n    </ion-card>\n    <ion-card>\n      <ion-card-content>\n        <ion-icon name="leaf"></ion-icon>\n        <h1>Alapocas Run State Park/Wilmington State Parks</h1>\n        <p>\n          Time: 5pm\n          <br> Price: $\n          <br> Description: Alapocas Run State Park is a state park, located in Wilmington, Delaware, United States, along the\n          Brandywine Creek and its Alapocas Run tributary. Open year-round, it is 415 acres in area. Much of the state park\n          was created from land originally preserved by William Poole Bancroft in the early 1900s to be used as open space\n          parkland by the city of Wilmington as it expanded.The park also includes the Blue Ball Barn, a dairy barn built\n          by Alfred I. du Pont as part of his Nemours estate in 1914\n        </p>\n      </ion-card-content>\n    </ion-card>\n    <ion-card>\n      <ion-card-content>\n        <ion-icon name="leaf"></ion-icon>\n        <h1>Rockford Tower at Alapocas State Park</h1>\n        <p>\n          Time: 9pm\n          <br> Price: FREE\n          <br> Description: Stop by the Rockford Tower at Alapocas State Park and learn more about winter stargazing with park\n          naturalists. Climb to the top of the tower to see the night sky and the city of Wilmington.\n        </p>\n      </ion-card-content>\n    </ion-card>\n  </ion-item-divider>\n  <button ion-button (click)="goToItinerary()" outline block>Select This Package</button>\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/list/list.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ListPage);
@@ -1357,79 +1357,83 @@ webpackEmptyAsyncContext.id = 129;
 var map = {
 	"../pages/bars/bars.module": [
 		297,
-		18
+		40
 	],
 	"../pages/coffeeshops/coffeeshops.module": [
 		298,
-		17
+		39
 	],
 	"../pages/custom/custom.module": [
 		299,
-		16
+		38
 	],
 	"../pages/done/done.module": [
 		300,
-		15
+		37
 	],
 	"../pages/familyfriendly/familyfriendly.module": [
 		301,
-		14
+		36
 	],
 	"../pages/fastfood/fastfood.module": [
 		303,
-		13
+		35
 	],
 	"../pages/finedining/finedining.module": [
 		302,
-		12
+		34
 	],
 	"../pages/guide-one/guide-one.module": [
 		304,
-		11
+		33
+	],
+	"../pages/handicap/handicap.module": [
+		316,
+		21
 	],
 	"../pages/icecreamshops/icecreamshops.module": [
 		305,
-		10
+		32
 	],
 	"../pages/itinerary/itinerary.module": [
 		306,
-		9
+		31
 	],
 	"../pages/launch/launch.module": [
 		307,
-		8
+		30
 	],
 	"../pages/list/list.module": [
 		309,
-		7
+		29
 	],
 	"../pages/main/main.module": [
 		310,
-		6
+		28
 	],
 	"../pages/movietheater/movietheater.module": [
 		308,
-		5
+		27
 	],
 	"../pages/nightclub/nightclub.module": [
 		311,
-		4
+		26
 	],
 	"../pages/nplist/nplist.module": [
 		312,
-		3
+		25
 	],
 	"../pages/package/package.module": [
 		313,
-		2
+		24
 	],
 	"../pages/signup/signup.module": [
 		314,
-		1
+		23
 	],
 	"../pages/stateparkevents/stateparkevents.module": [
 		315,
-		0
+		22
 	]
 };
 function webpackAsyncContext(req) {
@@ -1482,7 +1486,8 @@ var DonePage = /** @class */ (function () {
     };
     DonePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-done',template:/*ion-inline-start:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/done/done.html"*/'<!--\n  Generated template for the DonePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>done</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/joshuawurdemann/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/done/done.html"*/,
+            selector: 'page-done',
+            templateUrl: 'done.html',
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], DonePage);

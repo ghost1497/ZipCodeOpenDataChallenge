@@ -11,7 +11,6 @@ import { ListPage } from '../pages/list/list';
 import { MainPage } from '../pages/main/main';
 import { SignupPage } from '../pages/signup/signup';
 import { ItineraryPage } from '../pages/itinerary/itinerary';
-import { DonePage } from '../pages/done/done';
 import { CustomPage } from '../pages/custom/custom';
 import { PackagePage } from '../pages/package/package';
 import { NplistPage } from '../pages/nplist/nplist';
@@ -27,6 +26,7 @@ import { FamilyfriendlyPage } from '../pages/familyfriendly/familyfriendly';
 import { NightclubPage } from '../pages/nightclub/nightclub';
 import { MovietheaterPage } from '../pages/movietheater/movietheater';
 import { StateparkeventsPage } from '../pages/stateparkevents/stateparkevents';
+import { HandicapPage } from '../pages/handicap/handicap';
 
 
 @NgModule({
@@ -38,7 +38,6 @@ import { StateparkeventsPage } from '../pages/stateparkevents/stateparkevents';
     MainPage,
     SignupPage,
     ItineraryPage,
-    DonePage,
     CustomPage,
     PackagePage,
     NplistPage,
@@ -50,7 +49,8 @@ import { StateparkeventsPage } from '../pages/stateparkevents/stateparkevents';
     FastfoodPage,
     FamilyfriendlyPage,
     NightclubPage,
-    MovietheaterPage
+    MovietheaterPage,
+    HandicapPage
 
   ],
   imports: [
@@ -69,7 +69,6 @@ import { StateparkeventsPage } from '../pages/stateparkevents/stateparkevents';
     MainPage,
     SignupPage,
     ItineraryPage,
-    DonePage,
     CustomPage,
     PackagePage,
     NplistPage,
@@ -81,7 +80,8 @@ import { StateparkeventsPage } from '../pages/stateparkevents/stateparkevents';
     FastfoodPage,
     FamilyfriendlyPage,
     NightclubPage,
-    MovietheaterPage
+    MovietheaterPage,
+    HandicapPage
   ],
   providers: [
     //StatusBar,
