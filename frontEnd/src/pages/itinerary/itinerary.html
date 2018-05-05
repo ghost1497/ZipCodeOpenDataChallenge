@@ -1,0 +1,51 @@
+<!--
+  Generated template for the ItineraryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Itinerary</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<style>
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 70%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+<ion-content padding>
+  <!-- <ion-card>
+    <ion-card-content>
+      <div #directionsPanel></div>
+    </ion-card-content>
+  </ion-card> -->
+      <div #map id="map"></div>
+  <ion-item-divider></ion-item-divider>
+  <h1 ion-text style="font-size: 16px;">Your Itinerary</h1>
+  <ion-item-divider>
+    <ion-card *ngFor="let item of itineraryList" style="width: 265px; padding-left: -10%;">
+      <ion-card-content>
+        <ion-label>{{item}}</ion-label>
+        <ion-row>
+          <ion-col>
+            <button ion-button color="danger" outline (click)="deleteItem(item)"> Delete item</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button color="primary" outline (click)="setNewDestination(item)"> Navigate</button>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-item-divider>
+</ion-content>

@@ -1,0 +1,161 @@
+page-signup {
+
+    p {
+        height: 75px;	
+        width: 310px;	
+        color: #000;	
+        font-family: Avenir;	
+        font-size: 15px;	
+        font-weight: 500;	
+        line-height: 25px;	
+        text-align: center;
+        padding-top: 20%;
+        padding-right: 5%;
+        padding-left: 10%;
+
+    }
+
+
+   .form {
+       padding-top: 40%;
+       padding-left: 5%;
+       margin: auto;
+   }
+
+   div.group-name {
+       display: block;
+       padding-left: 5%;
+       
+
+       input[type=text] {
+           width: 234px;
+           height: 29px;
+           font-family: Avenir;
+           color: #000;
+           line-height: normal;
+           box-sizing: border-box;
+           border: 1px solid #808080;
+           border-radius: 4px;
+           text-indent: 2%;
+           
+       }
+   }
+
+   div.group-email {
+    display: block;
+    padding-top: 6%;
+    padding-left: 5%;
+    
+
+    input[type=text] {
+        width: 234px;
+        height: 29px;
+        font-family: Avenir;
+        line-height: normal;
+        box-sizing: border-box;
+        border: 1px solid #808080;
+        border-radius: 4px;
+        text-indent: 2%; 
+        
+    }
+}
+    // .item-block {
+    //     font-family: Avenir;
+    //     font-size: 15px;
+    //     color: #000;
+    //     text-align: left;
+        
+    //     .item-inner {
+
+    //     }
+    // }
+
+    div.group-date{
+        padding-right: 10%;
+        padding-left:-10%;
+        padding-top:6%;
+        width: 247px;
+        height: 29px;                
+        font-family: Avenir;
+
+        ion-item.item {
+            height: 29px;
+
+            div.item-inner{
+                height: 29px;
+
+                div.input-wrapper {
+                    height: 29px;
+
+                    #lbl-0.label.label-ios {
+                        height: 29px;
+                        font-size: 15px;
+                        padding-top: 0%;
+                    }
+                }
+            }
+        }
+    }
+
+    div.group-zipcode {
+        display: block;
+        padding-top: 12%;
+        padding-left: 5%;
+    
+
+    input[type=text] {
+        width: 117px;
+        height: 29px;
+        font-family: Avenir;
+        line-height: normal;
+        box-sizing: border-box;
+        border: 1px solid #808080;
+        border-radius: 4px;
+        text-indent: 4%; 
+        
+    }
+    }
+
+    ion-label.group-accom {
+        padding-left: 5%;
+        padding-top: 1%;
+        font-family: Avenir;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    div.next-button {
+        height: 45px;	
+        width: 289px;	
+        background-color: white;	
+        color: #000;
+        font-family: Avenir;
+        font-size: 16px;
+        box-shadow: 0 2px 4px 0 rgba(183,180,180,0.5);
+    }
+
+    ion-list.list {
+        width: 240px;
+        font-family: Avenir;
+        font-size: 8px;
+        padding-bottom: 5%;
+      
+    }
+
+    .button-ios {
+        height: 45px;	
+        width: 275px;
+        background-color: white;	
+        color: #000;
+        font-family: Avenir;
+        font-size: 16px;
+        box-shadow: 0 2px 4px 0 rgba(183,180,180,0.5);
+        padding-right: 5%;
+        
+    }
+
+        
+    
+
+
+}

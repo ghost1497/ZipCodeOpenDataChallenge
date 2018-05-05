@@ -1,0 +1,17 @@
+page-list {
+  .splash-bg {
+    position: relative;
+    background: url('../../assets/imgs/nature_lover.jpg') no-repeat transparent;
+    background-size: cover;
+    height: 70%;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: animatedBackground 50s linear infinite;
+  }
+
+  @keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
+
+}

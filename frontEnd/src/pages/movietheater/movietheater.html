@@ -1,0 +1,31 @@
+<!--
+  Generated template for the MovietheaterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Movie Theater</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ng-container  *ngFor="let movie of movieTheaterArry; let i = index">
+        <ion-card *ngIf="i<3">
+      <img src='{{movie.image_url}}'>
+      <ion-card-content>
+        <ion-card-title style="font-size: 15px; font-weight: bold;">{{movie.name}}</ion-card-title>
+        <div>
+          <label >Price: {{movie.price}}</label>
+          <label >Rating: {{movie.rating}}</label>
+        </div>
+  
+      </ion-card-content>
+      <button ion-button color="primary" (click)="addToItinerary(movie.name, movie.coordinates)" outline block>Add to itinerary</button>
+    </ion-card>
+  </ng-container>
+</ion-content>

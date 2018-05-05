@@ -1,0 +1,59 @@
+{
+  "name": "frontEnd",
+  "version": "0.0.1",
+  "author": "Ionic Framework",
+  "homepage": "http://ionicframework.com/",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint": "ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
+  },
+  "dependencies": {
+    "@angular/animations": "5.2.9",
+    "@angular/common": "5.2.9",
+    "@angular/compiler": "5.2.9",
+    "@angular/compiler-cli": "5.2.9",
+    "@angular/core": "5.2.9",
+    "@angular/forms": "5.2.9",
+    "@angular/http": "5.2.9",
+    "@angular/platform-browser": "5.2.9",
+    "@angular/platform-browser-dynamic": "5.2.9",
+    "@ionic-native/core": "4.6.0",
+    "@ionic-native/geolocation": "^4.7.0",
+    "@ionic-native/splash-screen": "^4.6.0",
+    "@ionic-native/status-bar": "4.6.0",
+    "@ionic-native/toast": "^4.7.0",
+    "@ionic/storage": "^2.1.3",
+    "@types/google-maps": "^3.2.0",
+    "@types/lodash": "^4.14.108",
+    "cordova": "^8.0.0",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-x-toast": "^2.6.2",
+    "cordova-sqlite-storage": "^2.3.1",
+    "elementtree": "^0.1.7",
+    "ionic": "^3.20.0",
+    "ionic-angular": "3.9.2",
+    "ionicons": "3.0.0",
+    "lodash": "^4.17.10",
+    "rxjs": "5.5.8",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.26"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "3.1.8",
+    "typescript": "~2.6.2"
+  },
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-splashscreen": {},
+      "cordova-sqlite-storage": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-x-toast": {}
+    }
+  }
+}

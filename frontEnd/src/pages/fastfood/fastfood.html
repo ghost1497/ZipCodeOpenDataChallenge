@@ -1,0 +1,31 @@
+<!--
+  Generated template for the FastfoodPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Fast Food</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ng-container  *ngFor="let fastfood of fastFoodArry; let i = index">
+        <ion-card *ngIf="i<3">
+      <img src='{{fastfood.image_url}}'>
+      <ion-card-content>
+        <ion-card-title style="font-size: 15px; font-weight: bold;">{{fastfood.name}}</ion-card-title>
+        <div>
+          <label >Price: {{fastfood.price}}</label>
+          <label >Rating: {{fastfood.rating}}</label>
+        </div>
+  
+      </ion-card-content>
+      <button ion-button color="primary" (click)="addToItinerary(fastfood.name, fastfood.coordinates)" outline block>Add to itinerary</button>
+    </ion-card>
+  </ng-container>
+</ion-content>
