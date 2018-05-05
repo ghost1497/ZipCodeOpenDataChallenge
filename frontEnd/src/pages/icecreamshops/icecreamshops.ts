@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-import * as _ from 'lodash';
 import { Storage } from '@ionic/storage';
 
 /**
@@ -35,10 +34,10 @@ export class IcecreamshopsPage {
       data.subscribe(result => {
         this.iceCreamShopsArry = result['businesses'];
       });
-  
+
     }
-  
-   
+
+
     addToItinerary(nameOnJson: string, latLongOnJson: string){
       console.log(nameOnJson, latLongOnJson);
       this.storage.set(nameOnJson, latLongOnJson);
@@ -50,11 +49,11 @@ export class IcecreamshopsPage {
       alert.present();
       console.log(this.storage.length());
     }
-  
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IcecreamshopsPage');
   }
 }
-  
+
 

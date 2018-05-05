@@ -1,14 +1,25 @@
 webpackJsonp([4],{
 
+<<<<<<< HEAD
 /***/ 311:
+=======
+/***/ 299:
+>>>>>>> 0b028821afb594eef2e85a2b8d0ce98d762577ac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+<<<<<<< HEAD
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NightclubPageModule", function() { return NightclubPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nightclub__ = __webpack_require__(111);
+=======
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListPageModule", function() { return ListPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list__ = __webpack_require__(112);
+>>>>>>> 0b028821afb594eef2e85a2b8d0ce98d762577ac
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,6 +29,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+<<<<<<< HEAD
 var NightclubPageModule = /** @class */ (function () {
     function NightclubPageModule() {
     }
@@ -35,6 +47,25 @@ var NightclubPageModule = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=nightclub.module.js.map
+=======
+var ListPageModule = /** @class */ (function () {
+    function ListPageModule() {
+    }
+    ListPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__list__["a" /* ListPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__list__["a" /* ListPage */]),
+            ],
+        })
+    ], ListPageModule);
+    return ListPageModule;
+}());
+
+//# sourceMappingURL=list.module.js.map
+>>>>>>> 0b028821afb594eef2e85a2b8d0ce98d762577ac
 
 /***/ })
 

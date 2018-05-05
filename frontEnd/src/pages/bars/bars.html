@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>bars</ion-title>
+    <ion-title>Bars</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -19,11 +19,13 @@
       <img src='{{bar.image_url}}'>
       <ion-card-content>
         <ion-card-title>{{bar.name}}</ion-card-title>
+        <a href={{bar.url}}>Visit their website for more information here</a>
+
         <div>
           <label >Price: {{bar.price}}</label>
           <label >Rating: {{bar.rating}}</label>
         </div>
-  
+
       </ion-card-content>
       <button ion-button color="primary" (click)="addToItinerary(bar.name, bar.coordinates)" outline block>Add to itinerary</button>
     </ion-card>

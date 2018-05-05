@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-import * as _ from 'lodash';
 import { Storage } from '@ionic/storage';
 /**
  * Generated class for the BarsPage page.
@@ -34,7 +33,7 @@ export class BarsPage {
       data.subscribe(result => {
         this.barsArry = result['businesses'];
       });
-  
+
     }
     addToItinerary(nameOnJson: string, latLongOnJson: string){
       console.log(nameOnJson, latLongOnJson);

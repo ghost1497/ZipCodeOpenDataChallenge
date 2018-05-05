@@ -11,8 +11,6 @@ import { AlertController } from "ionic-angular";
  * Ionic pages and navigation.
  */
 
-declare var google;
-
 @IonicPage()
 @Component({
   selector: "page-itinerary",
@@ -59,10 +57,12 @@ export class ItineraryPage {
     this.geolocation.getCurrentPosition().then((resp) => {
       this.lat = String(resp.coords.latitude);
       this.long = String(resp.coords.longitude);
+      console.log(resp.coords.longitude + ' ' + resp.coords.latitude);
      }).catch((error) => {
        console.log('Error getting location', error);
      });
      this.origin = this.lat + ", " + this.long;
+     console.log(this.origin);
   }
 
   deleteItem(item: any) {
@@ -110,11 +110,12 @@ export class ItineraryPage {
         travelMode: google.maps.TravelMode['DRIVING']
     }, (res, status) => {
 
-        if(status == google.maps.DirectionsStatus.OK){
-            directionsDisplay.setDirections(res);
-        } else {
-            console.warn(status);
-        }
+        // if(status == google.maps.DirectionsStatus.OK){
+        //     directionsDisplay.setDirections(res);
+        // } else {
+        //     console.warn(status);
+        // }
+        directionsDisplay.setDirections(res);
 
     });
 

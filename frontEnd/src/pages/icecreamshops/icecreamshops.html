@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>icecreamshops</ion-title>
+    <ion-title>Ice Cream Shops</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -19,11 +19,12 @@
       <img src='{{icecream.image_url}}'>
       <ion-card-content>
         <ion-card-title>{{icecream.name}}</ion-card-title>
+        <a href={{icecream.url}}>Visit their website for more information here</a>
         <div>
           <label >Price: {{icecream.price}}</label>
           <label >Rating: {{icecream.rating}}</label>
         </div>
-  
+
       </ion-card-content>
       <button ion-button color="primary" (click)="addToItinerary(icecream.name, icecream.coordinates)" outline block>Add to itinerary</button>
     </ion-card>
