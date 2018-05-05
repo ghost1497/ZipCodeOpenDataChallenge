@@ -11,8 +11,6 @@ import { AlertController } from "ionic-angular";
  * Ionic pages and navigation.
  */
 
-declare var google;
-
 @IonicPage()
 @Component({
   selector: "page-itinerary",

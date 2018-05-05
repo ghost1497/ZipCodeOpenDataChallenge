@@ -10,17 +10,30 @@
   </ion-navbar>
 </ion-header>
 
+<style>
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 
 <ion-content padding>
-    <ion-card>
-        <ion-card-content>
-            <div #directionsPanel></div>
-        </ion-card-content>
-    </ion-card>
-    <div #map id="map"></div>
-    <ion-item-divider></ion-item-divider>
-    <h1 ion-text>Your Itinerary</h1>
-    <ion-item-divider>
+  <ion-card>
+    <ion-card-content>
+      <div #directionsPanel></div>
+    </ion-card-content>
+  </ion-card>
+      <div #map id="map"></div>
+  <ion-item-divider></ion-item-divider>
+  <h1 ion-text>Your Itinerary</h1>
+  <ion-item-divider>
     <ion-card *ngFor="let item of itineraryList">
       <ion-card-content>
         <ion-label>{{item}}</ion-label>
@@ -29,7 +42,7 @@
             <button ion-button color="danger" outline (click)="deleteItem(item)"> Delete item</button>
           </ion-col>
           <ion-col>
-              <button ion-button color="secondary" outline (click)="setNewDestination(item)"> Navigate</button>
+            <button ion-button color="secondary" outline (click)="setNewDestination(item)"> Navigate</button>
           </ion-col>
         </ion-row>
       </ion-card-content>
