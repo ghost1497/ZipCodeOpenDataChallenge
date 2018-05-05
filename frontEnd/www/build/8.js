@@ -1,25 +1,14 @@
 webpackJsonp([8],{
 
-<<<<<<< HEAD
-/***/ 307:
-=======
-/***/ 295:
->>>>>>> 0b028821afb594eef2e85a2b8d0ce98d762577ac
+/***/ 306:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-<<<<<<< HEAD
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LaunchPageModule", function() { return LaunchPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__launch__ = __webpack_require__(114);
-=======
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuideOnePageModule", function() { return GuideOnePageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__guide_one__ = __webpack_require__(209);
->>>>>>> 0b028821afb594eef2e85a2b8d0ce98d762577ac
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -29,7 +18,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-<<<<<<< HEAD
 var LaunchPageModule = /** @class */ (function () {
     function LaunchPageModule() {
     }
@@ -47,25 +35,6 @@ var LaunchPageModule = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=launch.module.js.map
-=======
-var GuideOnePageModule = /** @class */ (function () {
-    function GuideOnePageModule() {
-    }
-    GuideOnePageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__guide_one__["a" /* GuideOnePage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__guide_one__["a" /* GuideOnePage */]),
-            ],
-        })
-    ], GuideOnePageModule);
-    return GuideOnePageModule;
-}());
-
-//# sourceMappingURL=guide-one.module.js.map
->>>>>>> 0b028821afb594eef2e85a2b8d0ce98d762577ac
 
 /***/ })
 
