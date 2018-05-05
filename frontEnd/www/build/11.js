@@ -1,14 +1,14 @@
 webpackJsonp([11],{
 
-/***/ 305:
+/***/ 304:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuideOnePageModule", function() { return GuideOnePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HandicapPageModule", function() { return HandicapPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__guide_one__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__handicap__ = __webpack_require__(118);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var GuideOnePageModule = /** @class */ (function () {
-    function GuideOnePageModule() {
+var HandicapPageModule = /** @class */ (function () {
+    function HandicapPageModule() {
     }
-    GuideOnePageModule = __decorate([
+    HandicapPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__guide_one__["a" /* GuideOnePage */],
+                __WEBPACK_IMPORTED_MODULE_2__handicap__["a" /* HandicapPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__guide_one__["a" /* GuideOnePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__handicap__["a" /* HandicapPage */]),
             ],
         })
-    ], GuideOnePageModule);
-    return GuideOnePageModule;
+    ], HandicapPageModule);
+    return HandicapPageModule;
 }());
 
-//# sourceMappingURL=guide-one.module.js.map
+//# sourceMappingURL=handicap.module.js.map
 
 /***/ })
 

@@ -83,5 +83,16 @@
       </button>
     </ion-list>
   </ion-card>
+  <ion-card *ngIf="handicapFlag">
+    <ion-card-header>
+      Handicap Resources
+    </ion-card-header>
+    <ion-list>
+      <button ion-item (click)="handicapPlaces()">
+        <ion-icon name="medical" item-start></ion-icon>
+        Wheelchair Accessible Places
+      </button>
+    </ion-list>
+  </ion-card>
   <button ion-button color="primary" (click)=toShoppingCart() outline block>Build Itinerary</button>
 </ion-content>
