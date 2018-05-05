@@ -25698,12 +25698,55 @@ ion-navbar.toolbar {
   background: #ff7400;
 }
 
+page-bars ion-card.card-ios {
+  font-family: Avenir;
+}
+
+page-coffeeshops ion-card.card-ios {
+  font-family: Avenir;
+}
+
+page-custom ion-card.card {
+  font-family: Avenir;
+}
+
+page-custom ion-card.card ion-card-header {
+  background-color: #6bb8ff;
+  font-weight: bold;
+}
+
+page-custom button.button-ios {
+  width: 330px;
+  background-color: white;
+  color: #000;
+  font-family: Avenir;
+  font-size: 16px;
+  -webkit-box-shadow: 0 2px 2px 0 #cbcacd;
+  box-shadow: 0 2px 2px 0 #cbcacd;
+}
+
+page-familyfriendly ion-card.card-ios {
+  font-family: Avenir;
+}
+
+page-fastfood ion-card.card-ios {
+  font-family: Avenir;
+}
+
+page-finedining ion-card.card-ios {
+  font-family: Avenir;
+}
+
+page-icecreamshops ion-card.card-ios {
+  font-family: Avenir;
+}
+
 page-launch .logoimg {
-  width: 1000;
+  width: 1500;
   height: 500;
   top: 27%;
   left: 5%;
-  position: absolute;
+  position: center;
 }
 
 page-launch ion-card {
@@ -25735,28 +25778,36 @@ page-launch .card-one-text {
   font-weight: 300;
   line-height: 20px;
   text-align: center;
+  padding-top: 10%;
+}
+
+page-launch div.card-one-text {
+  padding-left: 12%;
 }
 
 page-main div.label {
   font-family: Avenir;
-  font-size: 15px;
-  font-weight: 900px;
-  padding-left: 20%;
-  padding-top: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 13%;
+  padding-top: 60px;
 }
 
 page-main div.custom {
-  padding-left: 3%;
-  padding-top: 15%;
+  padding-left: 8%;
+  padding-top: 22%;
 }
 
 page-main div.custom .button-ios {
   border-radius: 10px;
   height: 2.8em;
   font-size: 1.6rem;
+  font-weight: bold;
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(#1488cc), to(#2b32b2));
-  background: linear-gradient(to right, #1488cc, #2b32b2);
+  font-family: Avenir;
+  background-color: #0f66c3;
+  -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.25);
   margin: 0.4rem 0.2rem;
   padding: 0 1em;
   height: 150px;
@@ -25764,7 +25815,7 @@ page-main div.custom .button-ios {
 }
 
 page-main div.packages {
-  padding-left: 3%;
+  padding-left: 8%;
   padding-top: 6%;
 }
 
@@ -25773,13 +25824,28 @@ page-main div.packages .button-ios {
   height: 2.8em;
   font-size: 1.6rem;
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(#1488cc), to(#2b32b2));
-  background: linear-gradient(to right, #1488cc, #2b32b2);
+  font-weight: bold;
+  font-family: Avenir;
+  background-color: #0f66c3;
+  -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.25);
   margin: 0.4rem 0.2rem;
   padding: 0 1em;
   height: 150px;
   width: 280px;
   background-position-y: bottom;
+}
+
+page-movietheater ion-card.card-ios {
+  font-family: Avenir;
+}
+
+page-nightclub ion-card.card-ios {
+  font-family: Avenir;
+}
+
+page-nplist ion-card.card-ios {
+  font-family: Avenir;
 }
 
 page-package ion-navbar {
@@ -25811,13 +25877,13 @@ page-package label {
 
 page-package .button-ios {
   height: 45px;
-  width: 289px;
+  width: 330px;
   background-color: white;
   color: #000;
   font-family: Avenir;
   font-size: 16px;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
-  box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
+  -webkit-box-shadow: 0 2px 2px 0 #cbcacd;
+  box-shadow: 0 2px 2px 0 #cbcacd;
 }
 
 page-signup p {
@@ -25831,6 +25897,7 @@ page-signup p {
   text-align: center;
   padding-top: 20%;
   padding-right: 5%;
+  padding-left: 10%;
 }
 
 page-signup .form {
@@ -25948,11 +26015,16 @@ page-signup ion-list.list {
 
 page-signup .button-ios {
   height: 45px;
-  width: 289px;
+  width: 275px;
   background-color: white;
   color: #000;
   font-family: Avenir;
   font-size: 16px;
   -webkit-box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
   box-shadow: 0 2px 4px 0 rgba(183, 180, 180, 0.5);
+  padding-right: 5%;
+}
+
+page-stateparkevents ion-card.card-ios {
+  font-family: Avenir;
 }

@@ -33,7 +33,7 @@
             </ion-item>
             <ion-item no-lines class="group-date">
               <ion-label>Select Birthday</ion-label>
-              <ion-datetime displayFormat="MMDDYYYY" [(ngModel)]="birthday" name="birthday"></ion-datetime>
+              <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="birthday" name="birthday"></ion-datetime>
             </ion-item>
             <ion-item class="group-zipcode">
               <ion-input [(ngModel)]="zipcode" name="zipcode" type="text" placeholder="Zipcode" required>
@@ -41,10 +41,10 @@
             </ion-item>
             <ion-label class="group-accom">Accomodations:</ion-label>
             <ion-item class="disability">
-              <ion-label left stacked>Persons with Disability</ion-label>
+              <ion-label left stacked>Person with Disability</ion-label>
               <ion-checkbox [(ngModel)]="handicapFlag" name="handicapFlag"></ion-checkbox>
             </ion-item>
-            <button ion-button color="primary" (click)="goToMainPage()" outline block>NEXT</button>
+            <button ion-button (click)="goToMainPage()" style="padding-right: 5px" >NEXT</button>
           </form>
         </ion-list>
       </ion-col>

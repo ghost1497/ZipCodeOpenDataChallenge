@@ -1,11 +1,11 @@
 page-launch {
 
     .logoimg {
-        width: 1000;
+        width: 1500;
         height: 500;
         top: 27%;
         left: 5%; 
-        position: absolute;
+        position: center;
     }
 
 
@@ -37,6 +37,11 @@ page-launch {
         font-weight: 300;	
         line-height: 20px;	
         text-align: center;
+        padding-top: 10%;
+    }
+
+    div.card-one-text {
+        padding-left: 12%;
     }
 
 }

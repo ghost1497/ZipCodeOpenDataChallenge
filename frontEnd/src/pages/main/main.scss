@@ -2,23 +2,27 @@ page-main {
 
     div.label {
         font-family: Avenir;
-        font-size: 15px;
-        font-weight: 900px; 
-        padding-left: 20%;
-        padding-top: 50px;
+        font-size: 18px;
+        font-weight: bold; 
+        padding-left: 13%;
+        padding-top: 60px;
     }
 
     div.custom {
-        padding-left: 3%;
-        padding-top: 15%;
+        padding-left: 8%;
+        padding-top: 22%;
         
 
         .button-ios{
             border-radius: 10px;
             height: 2.8em;
             font-size: 1.6rem;
+            font-weight: bold;
             color: #fff;
-            background: linear-gradient(to right, #1488cc, #2b32b2);
+            font-family: Avenir;
+//border-color: linear-gradient(to right, #1488cc, #2b32b2);
+            background-color: #0f66c3;
+            box-shadow: 0 3px 2px 0 rgba(0 ,0,0,0.25);
             margin: 0.4rem 0.2rem;
             padding: 0 1em;
             height: 150px;
@@ -28,7 +32,7 @@ page-main {
     }
 
     div.packages {
-        padding-left: 3%;
+        padding-left: 8%;
         padding-top: 6%;
 
         .button-ios {
@@ -37,7 +41,11 @@ page-main {
             height: 2.8em;
             font-size: 1.6rem;
             color: #fff;
-            background: linear-gradient(to right, #1488cc, #2b32b2); 
+            font-weight: bold;
+            font-family: Avenir;
+            // background: linear-gradient(to right, #1488cc, #2b32b2); 
+            background-color: #0f66c3;
+            box-shadow: 0 3px 2px 0 rgba(0 ,0,0,0.25);
             margin: 0.4rem 0.2rem;
             padding: 0 1em;
             height: 150px;

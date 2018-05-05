@@ -1,3 +1,24 @@
 page-custom {
 
+    ion-card.card {
+        font-family: Avenir;
+        
+        ion-card-header {
+            background-color: #6bb8ff;
+            font-weight: bold;
+
+
+        }
+    }
+
+    button.button-ios {
+        width: 330px;
+        background-color: white;	
+        color: #000;
+        font-family: Avenir;
+        font-size: 16px;
+        box-shadow: 0 2px 2px 0 rgba(203,202,205,1.0);
+
+    }
+
 }

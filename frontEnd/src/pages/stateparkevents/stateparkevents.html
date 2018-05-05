@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>stateparkevents</ion-title>
+    <ion-title>State Park Events</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -16,15 +16,15 @@
 <ion-content padding>
     <ng-container  *ngFor="let event of stateParkEventArry; let i = index">
         <ion-card *ngIf="i<3">
-      
+            <img src='../../assets/imgs/nature_lover.jpg'>
       <ion-card-content>
-        <ion-card-title>Name: {{event.park}}</ion-card-title>
+        <ion-card-title style="font-size: 15px; font-weight: bold;">Name: {{event.park}}</ion-card-title>
         <div>
            
-          <label > {{event.description}}</label>
-          <label >Price: {{event.cost}}</label>
-          <label >Date: {{event.start_date}}</label>
-          <label >Time: {{event.start_time}}</label>
+          <label style="font-size: 13px;"> {{event.description}}</label>
+          <label style="font-weight: bold">Price: {{event.cost}}</label>
+          <!-- <label >Date: {{event.start_date}}</label> -->
+          <label style="font-weight: bold">Time: {{event.start_time}}</label>
           
         </div>
   

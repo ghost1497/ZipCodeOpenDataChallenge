@@ -17,13 +17,13 @@
   <ion-card *ngFor="let park of parksArr| slice:0:3; let i=index">
     <img src='../../assets/imgs/nature_lover.jpg'>
     <ion-card-content>
-      <ion-card-title>{{park.name}}</ion-card-title>
-      <p>
+      <ion-card-title style="font-size: 15px; font-weight: bold;">{{park.name}}</ion-card-title>
+      <p style="font-size: 13px;">
         {{park.description}}
       </p>
-      <div>
+      <!-- <div>
         <label>Location: {{park.latLong}}</label>
-      </div>
+      </div> -->
     </ion-card-content>
     <button ion-button color="primary" (click)="addToItinerary(park.name, park.latLong)" outline block>Add to itinerary</button>
   </ion-card>
