@@ -21,7 +21,7 @@ export class HandicapPage {
   handicapArr = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, public http: HttpClient, public alertCtrl: AlertController) {
-    this.url ="https://visitdelawarebackendv2.herokuapp.com/restaurantsInDE/handicap";
+    this.url ="https://visitdelawarebackendv2.herokuapp.com/restaurantsInDE/wheelchair_accessible";
       let headers = {
         headers: new HttpHeaders({
           'Content-Type': 'application/json',

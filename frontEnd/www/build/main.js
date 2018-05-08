@@ -275,7 +275,7 @@ var CustomPage = /** @class */ (function () {
     };
     CustomPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-custom",template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/'<!--\n  Generated template for the CustomPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Custom Packages</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Parks\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toNationalParkList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        National Parks\n      </button>\n      <button ion-item (click)="toStateParkEventList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        State Park Events\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Food\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toFastFoodList()">\n        <ion-icon name="pizza" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fast Food\n      </button>\n      <button ion-item (click)="toFineDiningList()">\n        <ion-icon name="bowtie" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fine Dining\n      </button>\n      <button ion-item (click)="toFamilyFriendlyList()">\n        <ion-icon name="contacts" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Family Establishments\n      </button>\n      <button ion-item (click)="toCoffeeShopsList()">\n        <ion-icon name="beaker" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Coffee Shops\n      </button>\n      <button ion-item (click)="toIceCreamShopsList()">\n        <ion-icon name="ice-cream" item-start [style.color]="\'#e3bb39\'">\n        </ion-icon>\n        Ice Cream\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Recreation\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toMovieTheaterList()">\n        <ion-icon name="film" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Movie Theatres\n      </button>\n      <button ion-item>\n        <ion-icon name="american-football" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Sports Events\n      </button>\n      <button ion-item (click)="toBarsList()">\n        <ion-icon name="beer" item-start [style.color]="\'#0e57a8\'">\n        </ion-icon>\n        Bars\n      </button>\n      <button ion-item (click)="tonightClubList()">\n        <ion-icon name="wine" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Night Clubs\n      </button>\n    </ion-list>\n  </ion-card>\n  <button ion-button (click)=toShoppingCart()>Build Itinerary</button>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/
+            selector: "page-custom",template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/'<!--\n  Generated template for the CustomPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Custom Packages</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Parks\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toNationalParkList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        National Parks\n      </button>\n      <button ion-item (click)="toStateParkEventList()">\n        <ion-icon name="leaf" item-start [style.color]="\'#88be48\'"></ion-icon>\n        State Park Events\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Food\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toFastFoodList()">\n        <ion-icon name="pizza" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fast Food\n      </button>\n      <button ion-item (click)="toFineDiningList()">\n        <ion-icon name="bowtie" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Fine Dining\n      </button>\n      <button ion-item (click)="toFamilyFriendlyList()">\n        <ion-icon name="contacts" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Family Establishments\n      </button>\n      <button ion-item (click)="toCoffeeShopsList()">\n        <ion-icon name="beaker" item-start [style.color]="\'#e3bb39\'"></ion-icon>\n        Coffee Shops\n      </button>\n      <button ion-item (click)="toIceCreamShopsList()">\n        <ion-icon name="ice-cream" item-start [style.color]="\'#e3bb39\'">\n        </ion-icon>\n        Ice Cream\n      </button>\n    </ion-list>\n  </ion-card>\n\n  <ion-card>\n    <ion-card-header>\n      Recreation\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="toMovieTheaterList()">\n        <ion-icon name="film" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Movie Theatres\n      </button>\n      <button ion-item>\n        <ion-icon name="american-football" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Sports Events\n      </button>\n      <button ion-item (click)="toBarsList()">\n        <ion-icon name="beer" item-start [style.color]="\'#0e57a8\'">\n        </ion-icon>\n        Bars\n      </button>\n      <button ion-item (click)="tonightClubList()">\n        <ion-icon name="wine" item-start [style.color]="\'#0e57a8\'"></ion-icon>\n        Night Clubs\n      </button>\n    </ion-list>\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Handicap Resources\n    </ion-card-header>\n    <ion-list>\n      <button ion-item (click)="handicapPlaces()">\n        <ion-icon name="medical" item-start></ion-icon>\n        Wheelchair Accessible Places\n      </button>\n    </ion-list>\n  </ion-card>\n  <button ion-button (click)=toShoppingCart()>Build Itinerary</button>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/custom/custom.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
@@ -1104,7 +1104,7 @@ var HandicapPage = /** @class */ (function () {
         this.http = http;
         this.alertCtrl = alertCtrl;
         this.handicapArr = [];
-        this.url = "https://visitdelawarebackendv2.herokuapp.com/restaurantsInDE/handicap";
+        this.url = "https://visitdelawarebackendv2.herokuapp.com/restaurantsInDE/wheelchair_accessible";
         var headers = {
             headers: new __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["c" /* HttpHeaders */]({
                 'Content-Type': 'application/json',
@@ -1132,7 +1132,7 @@ var HandicapPage = /** @class */ (function () {
     };
     HandicapPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-handicap',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/handicap/handicap.html"*/'<!--\n  Generated template for the HandicapPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Wheelchair Accessible Places</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ng-container *ngFor="let handicap of handicapArr; let i = index">\n    <ion-card *ngIf="i<3">\n      <img src=\'{{handicap.image_url}}\'>\n      <ion-card-content>\n        <ion-card-title>{{handicap.name}}</ion-card-title>\n        <div>\n          <label>Price: {{handicap.price}}</label>\n          <label>Rating: {{handicap.rating}}</label>\n        </div>\n\n      </ion-card-content>\n      <button ion-button color="primary" (click)="addToItinerary(handicap.name, handicap.coordinates)" outline block>Add to itinerary</button>\n    </ion-card>\n  </ng-container>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/handicap/handicap.html"*/,
+            selector: 'page-handicap',template:/*ion-inline-start:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/handicap/handicap.html"*/'<!--\n  Generated template for the HandicapPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Wheelchair Accessible Places</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ng-container *ngFor="let handicap of handicapArr; let i = index">\n    <ion-card *ngIf="i<3">\n      <img src=\'{{handicap.image_url}}\'>\n      <ion-card-content>\n        <ion-card-title>{{handicap.name}}</ion-card-title>\n        <label bold>Wheelchair Accessible</label>\n        <div>\n          <label>Price: {{handicap.price}}</label>\n          <label>Rating: {{handicap.rating}}</label>\n        </div>\n\n      </ion-card-content>\n      <button ion-button color="primary" (click)="addToItinerary(handicap.name, handicap.coordinates)" outline block>Add to itinerary</button>\n    </ion-card>\n  </ng-container>\n</ion-content>\n'/*ion-inline-end:"/Users/frankierodriguez/Dev/ZipCodeOpenDataChallenge/frontEnd/src/pages/handicap/handicap.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], HandicapPage);
@@ -1252,19 +1252,19 @@ var map = {
 		10
 	],
 	"../pages/itinerary/itinerary.module": [
-		306,
+		309,
 		9
 	],
 	"../pages/launch/launch.module": [
-		307,
+		306,
 		8
 	],
 	"../pages/list/list.module": [
-		308,
+		307,
 		7
 	],
 	"../pages/main/main.module": [
-		309,
+		308,
 		6
 	],
 	"../pages/movietheater/movietheater.module": [
@@ -1284,11 +1284,11 @@ var map = {
 		2
 	],
 	"../pages/signup/signup.module": [
-		314,
+		315,
 		1
 	],
 	"../pages/stateparkevents/stateparkevents.module": [
-		315,
+		314,
 		0
 	]
 };
@@ -1473,16 +1473,16 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/guide-one/guide-one.module#GuideOnePageModule', name: 'GuideOnePage', segment: 'guide-one', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/handicap/handicap.module#HandicapPageModule', name: 'HandicapPage', segment: 'handicap', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/icecreamshops/icecreamshops.module#IcecreamshopsPageModule', name: 'IcecreamshopsPage', segment: 'icecreamshops', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/itinerary/itinerary.module#ItineraryPageModule', name: 'ItineraryPage', segment: 'itinerary', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/launch/launch.module#LaunchPageModule', name: 'LaunchPage', segment: 'launch', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/list/list.module#ListPageModule', name: 'ListPage', segment: 'list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/main/main.module#MainPageModule', name: 'MainPage', segment: 'main', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/itinerary/itinerary.module#ItineraryPageModule', name: 'ItineraryPage', segment: 'itinerary', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/movietheater/movietheater.module#MovietheaterPageModule', name: 'MovietheaterPage', segment: 'movietheater', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/nightclub/nightclub.module#NightclubPageModule', name: 'NightclubPage', segment: 'nightclub', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/nplist/nplist.module#NplistPageModule', name: 'NplistPage', segment: 'nplist', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/package/package.module#PackagePageModule', name: 'PackagePage', segment: 'package', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/stateparkevents/stateparkevents.module#StateparkeventsPageModule', name: 'StateparkeventsPage', segment: 'stateparkevents', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/stateparkevents/stateparkevents.module#StateparkeventsPageModule', name: 'StateparkeventsPage', segment: 'stateparkevents', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_15__angular_common_http__["b" /* HttpClientModule */],
